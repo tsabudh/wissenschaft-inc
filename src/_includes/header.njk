@@ -1,0 +1,17 @@
+{% from "components/link.njk" import Link %}
+
+
+<header
+  class="fixed mix-blend-difference isolate top-0 w-full px-4 pt-1 flex gap-4 justify-between bg-transparent z-[9000] text-white">
+  <div class="wissenschafttext z-9000">
+    <a href="/" class="uppercase font-lexend font-semibold text-white mix-blend-difference">
+      wissenschaft inc.
+    </a>
+  </div>
+  <div class="stickynavigation flex gap-4 font-semibold self-start">
+    {{ Link("/services", "Services") }}
+    {{ Link("/about", "About") }}
+    {{ Link("/contact", "Contact") }}
+  </div>
+</header>
+

@@ -1,0 +1,31 @@
+.barba-load-container {
+  position: fixed;
+  height: 100dvh;
+  width: 100dvw;
+  z-index: 10000;
+  transform: translate3d(0, 110%, 0);
+
+  &_bg-texts {
+    overflow: hidden;
+    width: 100%;
+    & p {
+      width: max-content;
+      white-space: nowrap;
+    }
+    & p:nth-child(even) {
+      animation: marquee 10s ease-in-out reverse infinite;
+    }
+    & p:nth-child(odd) {
+      animation: marquee 9s ease-in  infinite;
+    }
+    & p:nth-child(3) {
+      animation: marquee 7s linear reverse infinite;
+    }
+    & p:nth-child(4) {
+      animation: marquee 7s ease-out infinite;
+    }
+    & p:nth-child(5) {
+      animation: marquee 8s ease-out reverse infinite;
+    }
+  }
+}
