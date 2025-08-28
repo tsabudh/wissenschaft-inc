@@ -1,7 +1,7 @@
 {
-  "name": "twissenschaft.github.io",
+  "name": "wissenschaft-inc",
   "version": "3.0.0",
-  "description": "Portfolio website for @twissenschaft",
+  "description": "Portfolio website for @wissenschaft",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -12,20 +12,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/twissenschaft/twissenschaft.github.io.git"
+    "url": "git+https://github.com/tsabudh/wissenschaft-inc.git"
   },
   "keywords": [
-    "twissenschaft",
     "wissenschaft",
-    "Bahadur",
-    "Thapa"
+    "wissenschaft"
   ],
   "author": "wissenschaft Bahadur Thapa",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/twissenschaft/twissenschaft.github.io/issues"
+    "url": "https://github.com/tsabudh/wissenschaft-inc/issues"
   },
-  "homepage": "https://github.com/twissenschaft/twissenschaft.github.io#readme",
+  "homepage": "https://github.com/tsabudh/wissenschaft-inc",
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-directory-output": "^1.0.1",
