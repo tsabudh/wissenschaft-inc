@@ -1,7 +1,8 @@
 {% from "components/link.njk" import Link %}
+{% from "components/card_1.njk" import Card_1 %}
 
-<main class="px-5 pb-80">
-    <section class="py-20 mb-10">
+<main class="px-10 pb-80">
+    <section class="py-10 mb-10">
 
         <div class="relative mx-auto w-full flex justify-center">
 
@@ -26,9 +27,7 @@
 
             </div>
         </div>
-    </section>
-    <section class="py-10">
-        <div class="flex flex-col gap-6 mx-auto ">
+        <div class="flex flex-col gap-6 mx-auto mb-40">
 
             <h2 class="text-center text-5xl">
                 Get the best product on the market
@@ -41,13 +40,24 @@
                 methods and the rules we rely on.
             </p>
         </div>
-        <div class="flex gap-10 mt-10 max-lg:flex-col">
-            <div class="basis-1/2">
+    </section>
+    <section class="py-10">
+
+        <div class="flex gap-10 mt-10 max-lg:flex-col ">
+            <div class="basis-1/2 flex flex-col gap-10 justify-start">
                 <p>
                     Wissenschaft is a reliable partner that delivers high-quality products. Their team is skilled,
                     communicative, and proactive, making them a pleasure to work with. They consistently meet deadlines
                     and exceed expectations.
                 </p>
+                <div class="flex flex-col gap-6">
+                    <p class="uppercase text-blue-400 font-medium">Services</p>
+
+                    {{ Card_1("Web Development") }}
+                    {{ Card_1("App Development") }}
+                    {{ Card_1("Product Design") }}
+                </div>
+
             </div>
             <figure class="basis-1/2 rounded-sm overflow-hidden ">
                 <img src="/assets/images/mockup.jpg" alt="Wissenschaft-app">
