@@ -24,7 +24,6 @@ export default function (eleventyConfig) {
     viteOptions: viteConfig,
   });
 
-
   eleventyConfig.addExtension("scss", {
     outputFileExtension: "css",
     useLayouts: false,
