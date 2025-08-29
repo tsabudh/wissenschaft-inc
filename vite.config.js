@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default defineConfig({
-  base: "/", // GitHub Pages root (twissenschaft.github.io)
+  base: "/wissenschaft-inc", // GitHub Pages root (wissenschaft)
   root: ".", // project root
   build: {
     outDir: "_site", // Eleventy’s output folder
