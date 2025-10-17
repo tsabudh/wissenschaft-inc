@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function CompanySection() {
@@ -26,10 +27,13 @@ export default function CompanySection() {
                 </div>
               </div>
 
-              <img
+              <Image
                 src="/images/team_hands.jpg"
                 alt="Wissenschaft Inc"
                 className="z-0 rounded-xl grayscale-50"
+                width={600}
+                height={400}
+                priority
               />
             </figure>
           </div>
