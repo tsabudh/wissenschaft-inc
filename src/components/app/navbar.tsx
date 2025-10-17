@@ -39,7 +39,7 @@ export default function Navbar() {
                   <Link href="/services/web-dev">Web Development</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="/services/mobile">Mobile Apps</Link>
+                  <Link href="/services/mobile-app">Mobile Apps</Link>
                 </NavigationMenuLink>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -72,10 +72,10 @@ export default function Navbar() {
               <NavigationMenuTrigger>How we work</NavigationMenuTrigger>
               <NavigationMenuContent className="p-4">
                 <NavigationMenuLink asChild>
-                  <Link href="/process/agile">Agile</Link>
+                  <Link href="/approach/agile">Agile</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="/process/discovery">Discovery</Link>
+                  <Link href="/approach/discovery">Discovery</Link>
                 </NavigationMenuLink>
               </NavigationMenuContent>
             </NavigationMenuItem>
