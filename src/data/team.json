@@ -1,0 +1,28 @@
+{
+  "members": [
+    {
+      "name": "Sabudh Bahadur Thapa",
+      "position": "Software Engineer",
+      "image": "/team/sabudh.png",
+      "bio": "Building efficient, scalable systems with a deep focus on backend engineering and system design."
+    },
+    {
+      "name": "Brian Sapkota",
+      "position": "Manager",
+      "image": "/team/brian.jpg",
+      "bio": "Ensures smooth collaboration, effective communication, and project excellence across all operations."
+    },
+    {
+      "name": "Dura Ethan",
+      "position": "Chief Technology Officer (CTO)",
+      "image": "/team/dura.jpg",
+      "bio": "Leads the technological vision with innovative thinking and a passion for cutting-edge solutions."
+    },
+    {
+      "name": "Kyle Han Seo",
+      "position": "Business Lead",
+      "image": "/team/kyle.jpg",
+      "bio": "Drives business strategy and partnerships, aligning innovation with real-world market needs."
+    }
+  ]
+}

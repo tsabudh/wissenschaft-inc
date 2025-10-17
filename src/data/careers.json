@@ -1,0 +1,43 @@
+{
+  "openings": [
+    {
+      "id": 1,
+      "title": "Backend Engineer",
+      "department": "Engineering",
+      "location": "Remote",
+      "type": "Full-time",
+      "description": "Design, build, and optimize scalable backend systems using modern technologies such as NestJS, PostgreSQL, and Kafka.",
+      "requirements": [
+        "3+ years of experience in backend development",
+        "Proficiency in TypeScript and Node.js",
+        "Experience with distributed systems and message queues"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Frontend Developer",
+      "department": "Engineering",
+      "location": "Hybrid (Kathmandu, Nepal)",
+      "type": "Full-time",
+      "description": "Create beautiful, responsive, and performant UIs using React, Next.js, and TailwindCSS.",
+      "requirements": [
+        "Strong understanding of React and Next.js",
+        "Familiarity with component-driven design",
+        "Basic knowledge of REST APIs and GraphQL"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "UI/UX Designer",
+      "department": "Design",
+      "location": "Remote",
+      "type": "Contract",
+      "description": "Collaborate with cross-functional teams to create user-centered designs that elevate user experience and brand identity.",
+      "requirements": [
+        "2+ years of experience in UI/UX design",
+        "Proficiency with Figma or Adobe XD",
+        "Portfolio demonstrating strong design thinking"
+      ]
+    }
+  ]
+}
