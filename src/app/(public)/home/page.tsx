@@ -4,7 +4,7 @@ import ServiceSection from "@/components/views/home/service-section";
 import TestimonialSection from "@/components/views/home/testimonial-section";
 import React from "react";
 
-export default function Page() {
+export default function HomePage() {
   return (
     <main>
       <HeroSection />
