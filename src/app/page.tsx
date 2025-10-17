@@ -1,4 +1,3 @@
-import Navbar from "@/components/app/navbar";
 import type { ReactNode } from "react";
 
 export default async function StaticLayout({

@@ -1,4 +1,3 @@
-import CarouselA from "@/components/ui/carousels/carousel-a";
 import aboutData from "@/data/about-company.json";
 
 export default function AboutPage() {
@@ -16,7 +15,7 @@ export default function AboutPage() {
           data science, market research software, business process optimization, cost optimization,
           and product development. With a steadfast commitment to excellence and innovation,
           Wissenschaft surpasses global standards in delivering bespoke solutions that empower
-          businesses to thrive in today's dynamic landscape.
+          businesses to thrive in today&apos;s dynamic landscape.
         </p>
 
         <div className="mt-16 grid gap-8 md:grid-cols-2">
