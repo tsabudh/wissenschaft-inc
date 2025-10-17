@@ -1,42 +1,38 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 type TestimonialCardProps = {
-  avatar?: string;        
-  name: string;           
-  designation: string;   
-  quote: string;         
+  avatar?: string;
+  name: string;
+  designation: string;
+  quote: string;
 };
 
-const TestimonialCard: React.FC<TestimonialCardProps> = ({
-  avatar,
-  name,
-  designation,
-  quote,
-}) => {
+const TestimonialCard: React.FC<TestimonialCardProps> = ({ avatar, name, designation, quote }) => {
   return (
-    <div className="_card_2 group flex bg-slate-100 rounded-2xl overflow-hidden cursor-default shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-100">
-      <div className="p-6 flex-1 relative text-xl">
+    <div className="_card_2 group flex cursor-default overflow-hidden rounded-2xl bg-slate-100 shadow-sm transition-all duration-100 hover:-translate-y-1 hover:shadow-md">
+      <div className="relative flex-1 p-6 text-xl">
         {/* Avatar + Name */}
-        <div className="flex items-center gap-4 mb-4">
+        <div className="mb-4 flex items-center gap-4">
           {avatar && (
-            <img
+            <Image
               src={avatar}
               alt={name}
-              className="w-12 h-12 rounded-full object-cover border border-slate-200"
+              className="h-12 w-12 rounded-full border border-slate-200 object-cover"
             />
           )}
           <div>
-            <h3 className="text-slate-600 font-semibold text-2xl group-hover:text-slate-600">
+            <h3 className="text-2xl font-semibold text-slate-600 group-hover:text-slate-600">
               {name}
             </h3>
-            <span className="text-gray-400 text-sm">{designation}</span>
+            <span className="text-sm text-gray-400">{designation}</span>
           </div>
         </div>
 
         {/* Quote */}
-        <p className="text-gray-500 mt-2 italic leading-relaxed">“{quote}”</p>
+        <p className="mt-2 leading-relaxed text-gray-500 italic">“{quote}”</p>
       </div>
     </div>
   );

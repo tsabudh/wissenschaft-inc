@@ -1,7 +1,6 @@
 // app/not-found.tsx
 "use client";
 
-import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 export default function NotFoundPage() {
@@ -12,7 +11,7 @@ export default function NotFoundPage() {
       <h1 className="animate-bounce text-9xl font-extrabold">404</h1>
       <h2 className="mt-4 text-3xl font-semibold md:text-4xl">Oops! Page not found</h2>
       <p className="mt-2 max-w-md text-center text-lg text-white/80 md:text-xl">
-        The page you're looking for doesn’t exist. It might have been removed or you typed the URL
+        The page you&apos;re looking for doesn&apos;t exist. It might have been removed or you typed the URL
         wrong.
       </p>
       <button
