@@ -11,14 +11,14 @@ const TestimonialSection: React.FC = () => {
           <TestimonialCard
             avatar="/images/avatar_male.jpg"
             name="Kyle Seo"
-            designation="CEO, TechCorp"
+            designation="Business Development Officer, SK"
             quote="Working with Wissenschaft Inc. has been a game-changer for our company. Their innovative approach has helped us streamline processes and achieve business goals faster than ever before."
           />
 
           <TestimonialCard
             avatar="/images/avatar_female.jpg"
             name="Emily Johnson"
-            designation="Founder, CreativeHub"
+            designation="CEO, Direct Contact Medical"
             quote="Wissenschaft Inc. has provided us with unparalleled service and support. Their expertise and dedication have been critical to our success. I highly recommend their services to any company looking to enhance their technological capabilities."
           />
         </div>
