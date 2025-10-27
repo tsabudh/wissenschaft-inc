@@ -6,7 +6,7 @@ import React from "react";
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="mx-auto max-w-7xl">
       <HeroSection />
       <CompanySection />
       <ServiceSection />
