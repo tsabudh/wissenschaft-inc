@@ -4,19 +4,13 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <main className="relative bg-white px-10">
+    <main className="relative px-10">
       <section className="h-[100dvh] py-6">
         <div className="flex h-full items-center justify-start py-6">
           <div>
-            <h1 className="relative text-9xl font-medium text-slate-950 uppercase">
-              Y<span>our</span> Vision.
-              <span className="absolute inset-0 text-9xl font-medium text-black uppercase mix-blend-difference group-hover:translate-1.5 group-hover:bg-black group-hover:text-white">
-                Your Vision.
-              </span>
-            </h1>
-
-            <h1 className="text-9xl font-medium text-white uppercase mix-blend-difference">
-              {"\u2003"}Our Expertise.
+            <h1 className="text-9xl">
+              Turn your ideas into <span className="text-blue-500">profits</span>, where innovation
+              meets <span className="text-blue-500">success</span>
             </h1>
 
             <h2 className="mt-4 text-2xl text-slate-700">

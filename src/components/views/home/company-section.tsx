@@ -13,8 +13,8 @@ export default function CompanySection() {
 
             <div className="col-start-1 col-end-2 py-4 max-lg:col-end-2 max-lg:row-start-3 max-lg:row-end-4">
               <h2 className="text-3xl">
-                We provide design, development, strategy, and marketing services to companies &amp;
-                organizations of all sizes.
+                We provide product development, custom mobile application, web application and
+                generative AI solutions for clients &amp; organizations of all sizes.
               </h2>
             </div>
 
@@ -22,8 +22,8 @@ export default function CompanySection() {
               <div className="absolute -top-10 right-5 z-1 rounded-xl bg-sky-900">
                 <div className="flex flex-col gap-2 p-6 text-3xl font-medium text-blue-200">
                   <h2>Site &amp; App</h2>
-                  <h2>Brand</h2>
-                  <h2>Software</h2>
+                  <h2>Gen AI</h2>
+                  <h2>Product</h2>
                 </div>
               </div>
 

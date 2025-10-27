@@ -4,31 +4,22 @@ import React from "react";
 const TestimonialSection: React.FC = () => {
   return (
     <main className="px-10">
-      <section className="py-10 mb-10">
-        <h2 className="text-5xl text-blue-400 font-medium mb-10">
-          What our clients say
-        </h2>
+      <section className="mb-10 py-10">
+        <h2 className="mb-10 text-5xl font-medium text-blue-400">What our clients say</h2>
 
         <div className="grid grid-cols-3 gap-10 max-lg:grid-cols-1">
           <TestimonialCard
-            avatar="/images/kyle.jpg"
+            avatar="/images/avatar_male.jpg"
             name="Kyle Seo"
             designation="CEO, TechCorp"
             quote="Working with Wissenschaft Inc. has been a game-changer for our company. Their innovative approach has helped us streamline processes and achieve business goals faster than ever before."
           />
 
           <TestimonialCard
-            avatar="/images/john.jpg"
-            name="John Doe"
+            avatar="/images/avatar_female.jpg"
+            name="Emily Johnson"
             designation="Founder, CreativeHub"
-            quote="Wissenschaft transformed our online presence. Their team was professional, creative, and responsive throughout the process. Highly recommended!"
-          />
-
-          <TestimonialCard
-            avatar="/images/sarah.jpg"
-            name="Sarah Lee"
-            designation="Marketing Director, BrightWorks"
-            quote="The collaboration was seamless and efficient. The results exceeded our expectations and boosted our brand visibility significantly."
+            quote="Wissenschaft Inc. has provided us with unparalleled service and support. Their expertise and dedication have been critical to our success. I highly recommend their services to any company looking to enhance their technological capabilities."
           />
         </div>
       </section>
