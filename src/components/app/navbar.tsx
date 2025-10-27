@@ -28,7 +28,9 @@ export default function Navbar() {
           <NavigationMenuList className="">
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Link href="/about" className="font-semibold text-slate-500">About</Link>
+                <Link href="/about" className="font-semibold text-slate-500">
+                  About
+                </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
 
@@ -40,6 +42,12 @@ export default function Navbar() {
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
                   <Link href="/services/mobile-app">Mobile Apps</Link>
+                </NavigationMenuLink>
+                <NavigationMenuLink asChild>
+                  <Link href="/services/product-dev">Product Development</Link>
+                </NavigationMenuLink>
+                <NavigationMenuLink asChild>
+                  <Link href="/services/generative-ai">Generative AI</Link>
                 </NavigationMenuLink>
               </NavigationMenuContent>
             </NavigationMenuItem>
