@@ -21,6 +21,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ avatar, name, designa
               src={avatar}
               alt={name}
               className="h-12 w-12 rounded-full border border-slate-200 object-cover"
+              width={200}
+              height={200}
             />
           )}
           <div>
