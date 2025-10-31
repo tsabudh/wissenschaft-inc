@@ -43,7 +43,7 @@ export default function Footer() {
                 <Link href="#">Direct Contact Medical</Link>
               </li>
               <li>
-                <Link href="case-studies/skax">SK AX</Link>
+                <Link href="/case-studies/skax">SK AX</Link>
               </li>
             </ul>
           </div>
