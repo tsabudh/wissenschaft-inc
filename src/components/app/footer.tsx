@@ -1,14 +1,18 @@
 import Link from "next/link";
+import BrandLogo from "../ui/icons/brand-logo";
 
 export default function Footer() {
   return (
     <footer className="bg-slate-800 px-10 py-20 text-gray-200">
       <div>
         <div className="mb-10">
-          <Link href="/" className="font-lexend text-2xl font-semibold text-white uppercase">
-            wissenschaft inc.
+          <Link
+            href="/"
+            className="font-lexend text-2xl font-semibold text-white uppercase block max-w-xs"
+          >
+            <BrandLogo />
           </Link>
-          <div className="border-b border-b-blue-50" />
+          <div className="border-b border-b-blue-50 mt-3" />
         </div>
 
         <div className="mx-auto grid max-w-7xl grid-cols-4 gap-10 max-md:grid-cols-1">
@@ -39,7 +43,7 @@ export default function Footer() {
                 <Link href="#">Direct Contact Medical</Link>
               </li>
               <li>
-                <Link href="#">SK AX</Link>
+                <Link href="case-studies/skax">SK AX</Link>
               </li>
             </ul>
           </div>
