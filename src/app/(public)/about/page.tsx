@@ -2,13 +2,13 @@ import aboutData from "@/data/about-company.json";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-800">
-      <section className="mx-auto max-w-5xl px-6 py-20">
+    <main className="min-h-screen bg-gray-50 px-6 py-12 text-slate-900 md:px-12 lg:px-24">
+      <section className="mx-auto max-w-7xl py-20">
         <h1 className="mb-6 text-center text-4xl font-bold">
           Elevating Business Excellence through Innovative Solutions
         </h1>
 
-        <p className="mx-auto mb-12 max-w-3xl text-center text-lg leading-relaxed text-gray-600">
+        <p className="mx-auto mb-12 max-w-5xl text-center text-lg leading-relaxed text-gray-600">
           Wissenschaft is a distinguished software company renowned for its exceptional services in
           data science, market research software, business process optimization, cost optimization,
           and product development. With a steadfast commitment to excellence and innovation,
@@ -35,7 +35,7 @@ export default function AboutPage() {
         </div>
       </section>
       <section className="bg-white py-16">
-        <div className="mx-auto max-w-5xl px-6">
+        <div className="mx-auto">
           <h2 className="mb-10 text-center text-3xl font-semibold text-gray-800 md:text-4xl">
             What Defines Wissenschaft
           </h2>
