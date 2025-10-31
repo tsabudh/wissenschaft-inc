@@ -1,5 +1,5 @@
 import React from "react";
-import IconBrand from "@/components/ui/icons/brand";
+import IconBrand from "@/components/ui/icons/brand-logo";
 import ServiceCard from "@/components/ui/cards/card-a";
 
 export default function ServiceSection() {
