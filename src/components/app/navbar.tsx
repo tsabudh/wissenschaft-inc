@@ -10,17 +10,18 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import BrandLogo from "../ui/icons/brand-logo";
+import BrandLogoColorful from "../ui/icons/brand-logo-colorful";
 
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-[1000] w-full bg-zinc-200 text-slate-500">
-      <div className="container mx-auto flex h-16 items-center justify-between px-6">
+      <div className=" mx-auto flex h-16 items-center justify-between px-6">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2 text-xl font-bold">
-          <span className="bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">
-            Wissenschaft
-          </span>
-          <span>Inc.</span>
+        <Link href="/" className="flex items-center justify-center text-xl font-bold">
+          <div className="_wrapper w-50 mx-4">
+            <BrandLogoColorful />
+          </div>
         </Link>
 
         {/* Center Nav */}
