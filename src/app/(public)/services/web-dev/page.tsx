@@ -353,7 +353,6 @@ export default function WebDevPage() {
             </p>
 
             <div className="flex flex-wrap items-center gap-3">
-              {/* Placeholder logos - replace with real images / svgs */}
               <div className="flex h-10 w-48 items-center justify-center rounded-md border border-gray-100 bg-gray-50 text-sm text-gray-500">
                 Direct Contact Medical
               </div>
