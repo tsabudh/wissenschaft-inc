@@ -402,7 +402,7 @@ export default function WebDevPage() {
       <section id="contact" className="rounded-xl bg-purple-600 py-16 text-center text-white">
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">Ready to build your web product?</h3>
         <p className="mb-6 text-lg md:text-xl px-4">
-          Tell us about your project and we'll recommend the fastest path to results.
+          Tell us about your project and we&apos;ll recommend the fastest path to results.
         </p>
         <div className="flex items-center justify-center gap-3">
           <Link

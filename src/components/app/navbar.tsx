@@ -10,7 +10,6 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import BrandLogo from "../ui/icons/brand-logo";
 import BrandLogoColorful from "../ui/icons/brand-logo-colorful";
 
 export default function Navbar() {

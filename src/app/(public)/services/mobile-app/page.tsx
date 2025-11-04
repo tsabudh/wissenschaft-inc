@@ -44,7 +44,7 @@ export default function MobileAppPage() {
         <header className="mb-6 text-center">
           <h2 className="text-2xl font-bold">Who we build for</h2>
           <p className="text-gray-600">
-            From first-time founders to global enterprises — whether you're launching an app from
+            From first-time founders to global enterprises — whether you&apos;re launching an app from
             scratch or extending an existing website to mobile.
           </p>
         </header>
@@ -135,7 +135,7 @@ export default function MobileAppPage() {
           <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Native apps</h3>
             <p className="mb-3 text-sm text-gray-600">
-              Built specifically for each platform using the platform's official languages. Native
+              Built specifically for each platform using the platform&apos;s official languages. Native
               apps provide the best performance, smoothest animations, and the deepest access to
               device features such as sensors and cameras. Ideal when reliability, battery
               efficiency, and platform-consistent UI are priorities.
