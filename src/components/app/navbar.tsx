@@ -16,10 +16,10 @@ import BrandLogoColorful from "../ui/icons/brand-logo-colorful";
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-[1000] w-full bg-zinc-200 text-slate-500">
-      <div className=" mx-auto flex h-16 items-center justify-between px-6">
+      <div className="mx-auto flex h-16 items-center justify-between px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center justify-center text-xl font-bold">
-          <div className="_wrapper w-50 mx-4">
+          <div className="_wrapper mx-4 w-50">
             <BrandLogoColorful />
           </div>
         </Link>
@@ -54,18 +54,6 @@ export default function Navbar() {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Technologies</NavigationMenuTrigger>
-              <NavigationMenuContent className="p-4">
-                <NavigationMenuLink asChild>
-                  <Link href="/tech/react">React</Link>
-                </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="/tech/node">Node.js</Link>
-                </NavigationMenuLink>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
               <NavigationMenuTrigger>Clients</NavigationMenuTrigger>
               <NavigationMenuContent className="p-4">
                 <NavigationMenuLink asChild>
@@ -87,18 +75,6 @@ export default function Navbar() {
                   <Link href="/approach/discovery">Discovery</Link>
                 </NavigationMenuLink>
               </NavigationMenuContent>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <Link href="/careers" passHref>
-                <NavigationMenuLink>Careers</NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <Link href="/blog" passHref>
-                <NavigationMenuLink>Blog</NavigationMenuLink>
-              </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
