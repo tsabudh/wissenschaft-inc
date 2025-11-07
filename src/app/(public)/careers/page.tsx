@@ -53,14 +53,15 @@ export default function CareersPage() {
             </div>
           )
         )}
+        {careers.openings.length === 0 ? <p>We do not have any openings right now. </p> : null}
       </section>
 
       {/* Footer Section */}
       <section className="mt-24 text-center">
-        <h2 className="mb-4 text-3xl font-semibold text-gray-800">Don’t See Your Role?</h2>
+        <h2 className="mb-4 text-3xl font-semibold text-gray-800">Don&apos;t See Your Role?</h2>
         <p className="mx-auto mb-6 max-w-xl text-gray-600">
-          We’re always looking for passionate individuals to join our growing team. Send us your CV
-          — we’d love to hear from you.
+          We&apos;re always looking for passionate individuals to join our growing team. Send us
+          your CV — we&apos;d love to hear from you.
         </p>
         <a
           href="mailto:careers@wissenschaft-inc.com"
