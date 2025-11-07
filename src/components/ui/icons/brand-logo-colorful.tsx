@@ -3,7 +3,13 @@ import React, { SVGProps } from "react";
 export default function BrandLogoColorful(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 354 32" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <ellipse cx="348.593" cy="26.8803" rx="5.12001" ry="5.12001" fill="currentColor" />
+      <ellipse
+        cx="348.593"
+        cy="26.8803"
+        rx="5.12001"
+        ry="5.12001"
+        fill="oklch(54.6% 0.245 262.881)"
+      />
       <path
         id="logo-w"
         d="M8.26183 31.1855L0 1.39637H4.72728L10.5309 24.4655H10.8073L16.8437 1.39637H21.5273L27.5637 24.48H27.84L33.6291 1.39637H38.371L30.0946 31.1855H25.5709L19.3018 8.87274H19.0691L12.8 31.1855H8.26183Z"
