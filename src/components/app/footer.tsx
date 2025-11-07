@@ -1,5 +1,6 @@
 import Link from "next/link";
 import BrandLogo from "../ui/icons/brand-logo";
+import LinkFooter from "../ui/link-footer";
 
 export default function Footer() {
   return (
@@ -8,11 +9,11 @@ export default function Footer() {
         <div className="mb-10">
           <Link
             href="/"
-            className="font-lexend text-2xl font-semibold text-white uppercase block max-w-xs"
+            className="font-lexend block max-w-xs text-2xl font-semibold text-white uppercase"
           >
             <BrandLogo />
           </Link>
-          <div className="border-b border-b-blue-50 mt-3" />
+          <div className="mt-3 border-b border-b-blue-50" />
         </div>
 
         <div className="mx-auto grid max-w-7xl grid-cols-4 gap-10 max-md:grid-cols-1">
@@ -21,16 +22,16 @@ export default function Footer() {
             <h3 className="mb-4 font-semibold text-white">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/services/web-dev">Web Development</Link>
+                <LinkFooter href="/services/web-dev">Web Development</LinkFooter>
               </li>
               <li>
-                <Link href="/services/mobile-app">Mobile App Development</Link>
+                <LinkFooter href="/services/mobile-app">Mobile App Development</LinkFooter>
               </li>
               <li>
-                <Link href="/services/product-dev">Product Development</Link>
+                <LinkFooter href="/services/product-dev">Product Development</LinkFooter>
               </li>
               <li>
-                <Link href="/services/generative-ai">Generative AI</Link>
+                <LinkFooter href="/services/generative-ai">Generative AI</LinkFooter>
               </li>
             </ul>
           </div>
@@ -40,10 +41,7 @@ export default function Footer() {
             <h3 className="mb-4 font-semibold text-white">Case Studies</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="#">Direct Contact Medical</Link>
-              </li>
-              <li>
-                <Link href="/case-studies/skax">SK AX</Link>
+                <LinkFooter href="/case-studies/skax">SK AX</LinkFooter>
               </li>
             </ul>
           </div>
@@ -53,72 +51,13 @@ export default function Footer() {
             <h3 className="mb-4 font-semibold text-white">Company</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/approach">How We Work</Link>
+                <LinkFooter href="/approach">How We Work</LinkFooter>
               </li>
               <li>
-                <Link href="#">Resources</Link>
+                <LinkFooter href="/careers">Careers</LinkFooter>
               </li>
               <li>
-                <Link href="#">Blog</Link>
-              </li>
-              <li>
-                <Link href="#">Careers</Link>
-              </li>
-              <li>
-                <Link href="#">Contact Us</Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Technologies */}
-          <div>
-            <h3 className="mb-4 font-semibold text-white">Technologies</h3>
-            <ul className="grid grid-cols-2 space-y-2 gap-x-6 text-sm">
-              <li>
-                <Link href="#">Python</Link>
-              </li>
-              <li>
-                <Link href="#">OpenAI</Link>
-              </li>
-              <li>
-                <Link href="#">Kotlin</Link>
-              </li>
-
-              <li>
-                <Link href="#">React.js</Link>
-              </li>
-
-              <li>
-                <Link href="#">Angular</Link>
-              </li>
-              <li>
-                <Link href="#">LangChain</Link>
-              </li>
-              <li>
-                <Link href="#">Django</Link>
-              </li>
-
-              <li>
-                <Link href="#">React Native</Link>
-              </li>
-
-              <li>
-                <Link href="#">Solidity</Link>
-              </li>
-              <li>
-                <Link href="#">Node.js</Link>
-              </li>
-              <li>
-                <Link href="#">AWS</Link>
-              </li>
-              <li>
-                <Link href="#">Vue.js</Link>
-              </li>
-              <li>
-                <Link href="#">Node-RED</Link>
-              </li>
-              <li>
-                <Link href="#">HTML + CSS</Link>
+                <LinkFooter href="#">Contact Us</LinkFooter>
               </li>
             </ul>
           </div>
