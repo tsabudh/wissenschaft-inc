@@ -4,7 +4,7 @@ import LinkFooter from "../ui/link-footer";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-800 px-10 py-20 text-gray-200">
+    <footer className="bg-slate-800 px-6 py-20 text-gray-200 lg:px-20">
       <div>
         <div className="mb-10">
           <Link

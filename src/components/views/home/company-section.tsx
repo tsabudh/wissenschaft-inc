@@ -3,7 +3,7 @@ import React from "react";
 
 export default function CompanySection() {
   return (
-    <main className="px-10">
+    <main className="px-6 lg:px-20">
       <section className="py-20">
         <div className="relative mx-auto mb-40 flex w-full justify-center">
           <div className="grid grid-cols-2 [grid-template-rows:auto_1fr] gap-x-10 max-lg:!grid-cols-1 max-lg:[grid-template-rows:auto_1fr_auto]">

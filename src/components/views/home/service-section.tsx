@@ -4,7 +4,7 @@ import ServiceCard from "@/components/ui/cards/card-a";
 
 export default function ServiceSection() {
   return (
-    <main className="px-10">
+    <main className="px-6 lg:px-20">
       <section className="py-20">
         {/* Intro Section */}
         <h2 className="mb-10 text-5xl font-medium text-blue-400">What we do</h2>

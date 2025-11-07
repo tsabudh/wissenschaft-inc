@@ -1,31 +1,37 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 export default function HeroSection() {
   return (
-    <main className="relative px-10">
-      <section className="h-[100dvh] py-6">
-        <div className="flex h-full items-center justify-start py-6">
-          <div>
-            <h1 className="text-9xl">
-              Turn your ideas into <span className="text-blue-500">profits</span>, where innovation
-              meets <span className="text-blue-500">success</span>
-            </h1>
+    <main className="relative overflow-hidden bg-white px-6 lg:px-20">
+      <section className="flex min-h-[100dvh] items-center py-20">
+        <div className="mx-auto max-w-5xl text-left">
+          {/* Headline */}
+          <h1 className="text-4xl leading-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+            Turn your ideas into <span className="text-blue-600">profits</span>, where innovation
+            meets <span className="text-blue-600">success</span>.
+          </h1>
 
-            <h2 className="mt-4 text-2xl text-slate-700">
-              We craft software that&apos;s tailored to your business, easy to adopt, and built to
-              last.
-            </h2>
+          {/* Subheading */}
+          <h2 className="mt-6 max-w-3xl text-lg font-medium text-slate-600 sm:text-xl md:text-2xl">
+            We craft software that&apos;s tailored to your business, easy to adopt, and built to
+            last.
+          </h2>
 
-            <div className="mt-4 flex gap-4">
-              <a
-                href="#"
-                className="relative before:absolute before:bottom-0 before:left-0 before:w-full before:origin-right before:scale-x-0 before:border-b-2 before:border-blue-400 before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100"
-              >
-                Learn more →
-              </a>
-            </div>
+          {/* CTA */}
+          <div className="mt-8 flex flex-wrap items-center gap-4">
+            <Link href="/about" className="">
+              Learn more →
+            </Link>
+
+            <Link
+              href="/contact"
+              className="text-md rounded-lg bg-blue-600 px-4 py-2 font-medium text-white shadow-md transition hover:bg-blue-700"
+            >
+              Get started
+            </Link>
           </div>
         </div>
       </section>
