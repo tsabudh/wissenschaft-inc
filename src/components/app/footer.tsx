@@ -65,6 +65,9 @@ export default function Footer() {
               <li>
                 <LinkFooter href="/case-studies/skax">SK AX</LinkFooter>
               </li>
+              <li>
+                <LinkFooter href="/case-studies/sk-gigax">SK GigaX</LinkFooter>
+              </li>
             </ul>
           </div>
 
