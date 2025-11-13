@@ -36,6 +36,28 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Technologies */}
+          <div>
+            <h3 className="mb-4 font-semibold text-white">Technologies</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <LinkFooter href="/technologies/gcp">GCP</LinkFooter>
+              </li>
+              <li>
+                <LinkFooter href="/technologies/aws">AWS</LinkFooter>
+              </li>
+              <li>
+                <LinkFooter href="/technologies/python">Python</LinkFooter>
+              </li>
+              <li>
+                <LinkFooter href="/technologies/typescript">TypeScript</LinkFooter>
+              </li>
+              <li>
+                <LinkFooter href="/technologies/rust">Rust</LinkFooter>
+              </li>
+            </ul>
+          </div>
+
           {/* Case Studies */}
           <div>
             <h3 className="mb-4 font-semibold text-white">Case Studies</h3>

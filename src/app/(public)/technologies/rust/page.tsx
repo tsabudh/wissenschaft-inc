@@ -1,0 +1,222 @@
+"use client";
+
+import { rustArticles } from "@/data/articles";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+
+export default function RustPage() {
+  return (
+    <main className="mx-auto min-h-screen max-w-7xl bg-gray-50 px-6 py-16 text-gray-800 lg:px-20">
+      {/* 🦀 HERO */}
+      <section className="py-10 text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mb-6 text-4xl font-bold text-orange-700 md:text-6xl"
+        >
+          Build System-Critical Software with Rust
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          className="mx-auto max-w-3xl text-lg text-gray-600"
+        >
+          We use Rust to build ultra-reliable, high-performance systems where efficiency, safety,
+          and concurrency matter most — from backend infrastructure to edge computing and IoT.
+        </motion.p>
+      </section>
+
+      {/* ⚙️ EXPERTISE */}
+      <section className="mb-24 grid items-center gap-12 md:grid-cols-2">
+        <div>
+          <h2 className="mb-4 text-3xl font-bold text-gray-900">
+            Our Expertise in Rust Engineering
+          </h2>
+          <p className="leading-relaxed text-gray-600">
+            Our team applies Rust in environments where performance and predictability are
+            non-negotiable. From distributed backend systems and real-time services to embedded and
+            cloud-native applications, we engineer software that&apos;s fast, safe, and built to
+            last.
+          </p>
+        </div>
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="flex justify-center"
+        >
+          <Image
+            src="/images/tech-rust.png"
+            alt="Rust Expertise Illustration"
+            width={450}
+            height={350}
+          />
+        </motion.div>
+      </section>
+
+      {/* 🔒 WHY RUST */}
+      <section className="mb-24 text-center">
+        <h2 className="mb-8 text-3xl font-bold text-gray-900">Why We Use Rust</h2>
+        <div className="mx-auto max-w-4xl space-y-6 text-gray-600">
+          <p>
+            Rust delivers the power of low-level languages like C++ with the safety guarantees of
+            modern programming. Its ownership model eliminates data races and memory leaks at
+            compile time, ensuring stability even under extreme workloads.
+          </p>
+          <p>
+            Whether building performance-critical backend systems, compilers, or WebAssembly
+            applications, Rust&apos;s balance of control and safety helps us ship faster and with
+            greater confidence.
+          </p>
+        </div>
+      </section>
+
+      {/* 🧩 TOOLS & ECOSYSTEM */}
+      <section className="mb-24 text-center">
+        <h2 className="mb-10 text-3xl font-bold text-gray-900">Tools and Ecosystem We Love</h2>
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+          {[
+            "Actix Web",
+            "Tokio",
+            "Axum",
+            "Rocket",
+            "Tonic (gRPC)",
+            "Serde",
+            "Diesel",
+            "SeaORM",
+          ].map((tool) => (
+            <motion.div
+              key={tool}
+              whileHover={{ scale: 1.05 }}
+              className="rounded-xl bg-white p-6 shadow-md"
+            >
+              <p className="font-semibold text-gray-700">{tool}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* 🔗 TECH STACK INTEGRATION */}
+      <section className="mb-24 text-center">
+        <h2 className="mb-10 text-3xl font-bold text-gray-900">
+          How Rust Fits Into Your Tech Stack
+        </h2>
+        <div className="mx-auto grid max-w-5xl items-start gap-8 md:grid-cols-3">
+          {[
+            {
+              title: "High-Performance Backends",
+              desc: "We build low-latency services and API backends using Rust frameworks like Actix and Axum — ideal for systems requiring real-time performance.",
+            },
+            {
+              title: "Systems & Infrastructure",
+              desc: "Rust is our choice for CLI tools, data pipelines, and infrastructure automation where reliability and speed are mission-critical.",
+            },
+            {
+              title: "WebAssembly & Cross-Platform",
+              desc: "With WebAssembly, Rust powers secure, high-speed modules that integrate seamlessly with JavaScript, Node.js, or browsers.",
+            },
+          ].map((block, i) => (
+            <motion.div
+              key={i}
+              whileHover={{ y: -4 }}
+              className="relative rounded-xl bg-white p-6 shadow-md"
+            >
+              <h3 className="mb-2 text-xl font-semibold text-orange-700">{block.title}</h3>
+              <p className="text-sm text-gray-600">{block.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* ⚖️ WHEN TO USE RUST */}
+      <section className="mb-24 text-center">
+        <h2 className="mb-10 text-3xl font-bold text-gray-900">
+          When to Use Rust (and When Not To)
+        </h2>
+        <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-2">
+          <div className="rounded-xl border border-green-100 bg-white p-8 shadow-md">
+            <h3 className="mb-3 text-2xl font-semibold text-emerald-600">When to Use Rust</h3>
+            <ul className="list-inside list-disc space-y-3 text-left text-gray-600 marker:text-emerald-600">
+              <li>Performance-critical backends and APIs</li>
+              <li>Low-level systems and embedded software</li>
+              <li>Concurrent or parallel processing workloads</li>
+              <li>High-security or safety-critical environments</li>
+            </ul>
+          </div>
+          <div className="rounded-xl border border-red-100 bg-white p-8 shadow-md">
+            <h3 className="mb-3 text-2xl font-semibold text-orange-600">When Not to Use Rust</h3>
+            <ul className="list-inside list-disc space-y-3 text-left text-gray-600 marker:text-orange-600">
+              <li>Rapid prototyping or MVPs needing fast iteration</li>
+              <li>Projects where ecosystem maturity is a concern</li>
+              <li>Teams without systems-level programming experience</li>
+              <li>Simple scripts or small automation tasks</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* 📰 BLOG SECTION (Placeholder for now) */}
+      <section className="mb-24 text-center">
+        <h2 className="mb-10 text-3xl font-bold text-gray-900">Insights from Our Team</h2>
+        <p className="mx-auto mb-10 max-w-2xl text-gray-600">
+          Articles from our engineers exploring Rust&apos;s role in building safe, concurrent, and
+          high-performance systems — from backend infrastructure to tooling.
+        </p>
+        <div className="grid gap-8 md:grid-cols-3">
+          {rustArticles.map((article) => (
+            <motion.div
+              key={article.name}
+              whileHover={{ scale: 1.03 }}
+              className="rounded-xl bg-white p-6 text-left shadow-md transition-shadow hover:shadow-lg"
+            >
+              <Link href={article.link}>
+                <div className="mb-4 h-40 w-full overflow-hidden rounded-lg bg-gray-200">
+                  {article.imageUrl ? (
+                    <Image
+                      src={article.imageUrl}
+                      alt={article.name}
+                      width={400}
+                      height={160}
+                      className="h-full w-full object-cover"
+                    />
+                  ) : (
+                    <div className="h-full w-full bg-gradient-to-br from-sky-500 to-indigo-500"></div>
+                  )}
+                </div>
+                <h3 className="mb-2 text-lg font-semibold">{article.name}</h3>
+                <p className="text-sm text-gray-600">{article.description}</p>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* 🚀 CTA */}
+      <section id="contact" className="rounded-xl bg-orange-700 px-4 py-16 text-center text-white">
+        <h3 className="mb-4 text-3xl font-bold md:text-4xl">
+          Ready to engineer high-performance systems with Rust?
+        </h3>
+        <p className="mb-6 px-4 text-lg md:text-xl">
+          Let&apos;s build secure, lightning-fast infrastructure designed to scale with precision.
+        </p>
+        <div className="flex items-center justify-center gap-3">
+          <Link
+            href="/contact"
+            className="rounded-lg bg-white px-8 py-3 font-semibold text-orange-700 shadow-lg transition hover:scale-105 hover:bg-gray-100"
+          >
+            Get Started
+          </Link>
+          <Link
+            href="/contact#brief"
+            className="rounded-lg border border-white/30 px-6 py-3 text-white hover:bg-white/5"
+          >
+            Send Brief
+          </Link>
+        </div>
+      </section>
+    </main>
+  );
+}
