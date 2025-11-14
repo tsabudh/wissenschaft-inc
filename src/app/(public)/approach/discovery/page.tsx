@@ -75,25 +75,25 @@ export default function DiscoveryApproachPage() {
 
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div>
-            <ol className="list-inside list-decimal space-y-3 text-gray-700">
+            <ol className="list-inside list-decimal space-y-3 text-gray-700 marker:font-bold">
               <li>
-                <strong>1. Kickoff & Alignment —</strong> We align on business goals, timelines, and
+                <strong>Kickoff & Alignment —</strong> We align on business goals, timelines, and
                 expectations to ensure our teams are perfectly in sync.
               </li>
               <li>
-                <strong>2. Stakeholder Workshops —</strong> Through guided sessions, we uncover
+                <strong>Stakeholder Workshops —</strong> Through guided sessions, we uncover
                 requirements, constraints, and success metrics that shape our roadmap.
               </li>
               <li>
-                <strong>3. Research & Feasibility —</strong> We validate ideas through technical
+                <strong>Research & Feasibility —</strong> We validate ideas through technical
                 audits, user interviews, and proof-of-concepts.
               </li>
               <li>
-                <strong>4. Prototyping & Feedback —</strong> Rapid prototypes visualize concepts,
+                <strong>Prototyping & Feedback —</strong> Rapid prototypes visualize concepts,
                 validate UX decisions, and gather early feedback from your team.
               </li>
               <li>
-                <strong>5. Roadmap & MVP Definition —</strong> We deliver a prioritized backlog and
+                <strong>Roadmap & MVP Definition —</strong> We deliver a prioritized backlog and
                 clear technical strategy, so your MVP is focused, achievable, and impactful.
               </li>
             </ol>

@@ -1,243 +1,192 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function AgileApproachPage() {
   return (
-    <main className="mx-auto min-h-screen max-w-7xl bg-gray-50 px-6 py-16 text-gray-800 lg:px-20">
-      {/* HERO */}
-      <section className="mb-20 text-center">
-        <h1 className="mb-4 text-4xl font-extrabold leading-tight md:text-5xl lg:text-6xl">
-          Building software through an agile, collaborative approach
+    <main className="mx-auto min-h-screen max-w-7xl bg-gray-50 text-gray-800">
+      {/* Hero Section */}
+      <section className="relative px-6 py-20 text-center md:px-10">
+        <h1 className="mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl">
+          Agile Delivery — Turning Strategy Into Predictable, Continuous Progress
         </h1>
-        <h2 className="mb-4 text-xl font-extrabold leading-tight md:text-3xl lg:text-4xl">
-          Flexible process, predictable outcomes
-        </h2>
-        <p className="mx-auto max-w-3xl text-lg text-gray-600 md:text-xl">
-          We use agile principles to deliver value continuously — turning ideas into working software 
-          fast, adapting to feedback, and keeping business goals in focus. This approach reduces risk, 
-          increases transparency, and ensures your product stays aligned with real user needs.
+        <p className="mx-auto max-w-3xl text-lg text-gray-600">
+          Agile isn't about speed — it's about clarity, adaptability, and delivering value without
+          surprises. Our Agile Delivery approach gives your business the confidence that every
+          sprint moves your product forward, aligns with your goals, and responds to real user
+          feedback.
         </p>
-        <div className="mt-8 flex justify-center gap-4">
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-6 py-3 font-semibold text-white shadow-lg transition-transform hover:scale-[1.02]"
-          >
-            Discuss your project
-          </Link>
-          <Link
-            href="#principles"
-            className="text-md inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 font-medium shadow-sm"
-          >
-            Learn more
-          </Link>
+
+        <div className="mt-12 flex justify-center">
+          <Image
+            src="/images/team-collaboration.jpg"
+            alt="Agile collaboration workshop"
+            width={750}
+            height={420}
+            className="rounded-2xl shadow-lg"
+          />
         </div>
       </section>
 
-      {/* CORE PRINCIPLES */}
-      <section id="principles" className="mb-16">
-        <header className="mb-6">
-          <h2 className="text-2xl font-bold">Core agile principles we follow</h2>
-          <p className="text-gray-600">
-            Our delivery model is built on collaboration, transparency, and iteration — designed 
-            to keep your product moving forward and your team in sync.
+      {/* What Agile Means for Your Business */}
+      <section className="my-10 rounded-3xl bg-white px-6 py-20 shadow-sm md:px-10">
+        <div className="mb-12 text-center">
+          <h2 className="mb-3 text-3xl font-bold text-gray-900">
+            What Agile Means for Your Business
+          </h2>
+          <p className="mx-auto max-w-2xl text-gray-600">
+            Agile isn't just a development method — it's a decision-making framework. It helps you
+            reduce risk, stay aligned with customers, and validate the right features at the right
+            time. You stay in control as the product evolves.
           </p>
-        </header>
+        </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
-            <h3 className="mb-2 text-lg font-semibold">Iterative progress</h3>
-            <p className="text-md text-gray-600">
-              We break down complex goals into smaller, testable deliverables — enabling early 
-              validation, measurable progress, and continuous learning.
+        <div className="grid gap-8 md:grid-cols-3">
+          <div className="rounded-xl bg-gray-50 p-6 shadow-sm hover:shadow-md">
+            <h3 className="mb-2 text-lg font-semibold">Clarity & Visibility</h3>
+            <p className="text-gray-600">
+              Regular demos, real-time progress tracking, and transparent communication ensure you
+              always know what's being built and why.
             </p>
-          </article>
+          </div>
 
-          <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
-            <h3 className="mb-2 text-lg font-semibold">Collaboration & communication</h3>
-            <p className="text-md text-gray-600">
-              Direct communication with your stakeholders, product owners, and engineers ensures 
-              rapid decision-making and shared understanding.
+          <div className="rounded-xl bg-gray-50 p-6 shadow-sm hover:shadow-md">
+            <h3 className="mb-2 text-lg font-semibold">Adaptability at Every Step</h3>
+            <p className="text-gray-600">
+              Priorities shift — and that's normal. Agile allows us to pivot quickly without losing
+              momentum or clarity.
             </p>
-          </article>
+          </div>
 
-          <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
-            <h3 className="mb-2 text-lg font-semibold">Transparency & feedback</h3>
-            <p className="text-md text-gray-600">
-              Regular demos, sprint reviews, and retrospectives create accountability and provide 
-              visibility into every stage of progress.
+          <div className="rounded-xl bg-gray-50 p-6 shadow-sm hover:shadow-md">
+            <h3 className="mb-2 text-lg font-semibold">Business-First Decision Making</h3>
+            <p className="text-gray-600">
+              Every sprint focuses on delivering measurable business impact — not just completing
+              tickets.
             </p>
-          </article>
+          </div>
         </div>
       </section>
 
-      {/* OUR WORKFLOW */}
-      <section id="workflow" className="mb-20">
-        <header className="mb-8">
-          <h2 className="text-2xl font-bold">Our agile delivery workflow</h2>
-          <p className="text-gray-600">
-            We follow a structured yet flexible delivery loop that keeps momentum high while 
-            allowing for strategic pivots when needed.
+      {/* Agile Delivery Process */}
+      <section className="px-6 py-20 md:px-10">
+        <div className="mb-10 text-center">
+          <h2 className="mb-3 text-3xl font-bold text-gray-900">Our Agile Delivery Process</h2>
+          <p className="mx-auto max-w-3xl text-gray-600">
+            A predictable and collaborative framework designed to minimize risk, accelerate value,
+            and keep your product aligned with user and business needs.
           </p>
-        </header>
+        </div>
 
-        <div className="flex flex-col items-center gap-10 md:flex-row">
-          <div className="md:w-1/2">
-            <ol className="list-inside list-decimal space-y-4 text-gray-700">
+        <div className="grid items-center gap-10 md:grid-cols-2">
+          <div>
+            <ol className="list-inside list-decimal space-y-3 text-gray-700 marker:font-bold">
               <li>
-                <strong>Discovery & planning:</strong> We begin by understanding your product vision, 
-                business constraints, and success metrics to define a clear roadmap.
+                <strong>Sprint Planning —</strong> We set clear goals for each sprint based on
+                business priorities, scope, and available capacity.
               </li>
               <li>
-                <strong>Sprint planning:</strong> Together, we prioritize features and define 
-                achievable sprint goals based on value, complexity, and impact.
+                <strong>Design & Development —</strong> Features are built in small, testable
+                increments, ensuring rapid progress with minimal risk.
               </li>
               <li>
-                <strong>Design & development:</strong> Our cross-functional team builds incrementally 
-                using short, feedback-driven iterations.
+                <strong>Testing & Quality Assurance —</strong> Automated and manual tests validate
+                functionality, performance, and user experience continuously.
               </li>
               <li>
-                <strong>Testing & QA:</strong> Automated and manual tests validate functionality, 
-                usability, and performance at every cycle.
+                <strong>Sprint Review —</strong> You see working software every two weeks — tangible
+                output, not theoretical plans.
               </li>
               <li>
-                <strong>Review & iteration:</strong> Each sprint ends with a review to capture 
-                feedback, improve velocity, and refine the product.
-              </li>
-              <li>
-                <strong>Deployment & scaling:</strong> We release continuously and monitor stability, 
-                preparing for future growth through automation and observability.
+                <strong>Retrospective & Improvement —</strong> We refine processes, improve
+                velocity, and adapt based on real-world feedback and new information.
               </li>
             </ol>
           </div>
 
-          <div className="relative h-64 md:h-80 md:w-1/2">
+          <div className="relative h-80">
             <Image
-              src="/images/agile-workflow.jpg"
-              alt="Agile Workflow Diagram"
+              src="/images/agile-board.png"
+              alt="Agile process visualization"
               fill
-              className="object-contain"
-              priority
+              className="rounded-2xl object-contain shadow-lg bg-linear-60 from-blue-300 to-amber-200"
             />
           </div>
         </div>
       </section>
 
-      {/* BENEFITS TO YOUR BUSINESS */}
-      <section id="benefits" className="mb-20">
-        <header className="mb-8">
-          <h2 className="text-2xl font-bold">Why businesses choose our agile model</h2>
-          <p className="text-gray-600">
-            Agile isn’t just a development framework — it’s a business advantage that brings 
-            adaptability, faster delivery, and data-driven clarity.
-          </p>
-        </header>
-
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <article className="rounded-xl bg-white p-8 shadow-md">
-            <h3 className="mb-3 text-xl font-semibold">Predictable outcomes</h3>
-            <p className="text-gray-600">
-              With time-boxed sprints, fixed deliverables, and transparent reporting, you always 
-              know what’s being built and when to expect results.
+      {/* Collaboration & Transparency */}
+      <section className="my-10 rounded-3xl bg-white px-6 py-20 shadow-sm md:px-10">
+        <div className="grid items-center gap-10 md:grid-cols-2">
+          <div className="relative h-72 md:h-96">
+            <Image
+              src="/images/agile-collaboration.jpg"
+              alt="Agile collaboration"
+              fill
+              className="rounded-2xl object-cover"
+            />
+          </div>
+          <div>
+            <h2 className="mb-4 text-3xl font-semibold text-gray-900">
+              Full Transparency, Constant Communication
+            </h2>
+            <p className="mb-4 text-gray-600">
+              Agile thrives on collaboration. You'll have total visibility into planning,
+              prioritization, progress, and decisions — no hidden work, no surprises.
             </p>
-          </article>
-
-          <article className="rounded-xl bg-white p-8 shadow-md">
-            <h3 className="mb-3 text-xl font-semibold">Faster time-to-market</h3>
             <p className="text-gray-600">
-              Deliver MVPs and incremental features quickly — testing real-world impact before 
-              investing heavily in full builds.
+              Through dashboards, regular touchpoints, and sprint reviews, we work as an extension
+              of your team — aligned around your goals and outcomes.
             </p>
-          </article>
-
-          <article className="rounded-xl bg-white p-8 shadow-md">
-            <h3 className="mb-3 text-xl font-semibold">Continuous improvement</h3>
-            <p className="text-gray-600">
-              Regular retrospectives help teams evolve — improving quality, collaboration, and 
-              delivery speed with each sprint.
-            </p>
-          </article>
-
-          <article className="rounded-xl bg-white p-8 shadow-md">
-            <h3 className="mb-3 text-xl font-semibold">Empowered teams & clients</h3>
-            <p className="text-gray-600">
-              We co-own success with you. Agile empowers everyone — from developers to executives — 
-              with data, clarity, and decision-making power.
-            </p>
-          </article>
+          </div>
         </div>
       </section>
 
-      {/* TOOLS & PRACTICES */}
-      <section id="tools" className="mb-20">
-        <header className="mb-6">
-          <h2 className="text-2xl font-bold">Tools & practices we use</h2>
-          <p className="text-gray-600">
-            Our agile practice is backed by a stack of proven collaboration and delivery tools.
-          </p>
-        </header>
-
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          <div className="rounded-xl bg-white p-6 shadow-sm">
-            <h4 className="mb-2 font-semibold">Collaboration</h4>
-            <p className="text-md mb-3 text-gray-600">Slack, Notion, Figma, Jira, Linear</p>
-            <ul className="text-sm text-gray-500">
-              <li>Daily standups & async updates</li>
-              <li>Shared documentation & visibility</li>
-              <li>Design & feedback in real time</li>
-            </ul>
+      {/* Business Impact Section */}
+      <section className="px-6 py-20 md:px-10">
+        <div className="grid items-center gap-10 md:grid-cols-2">
+          <div>
+            <h2 className="mb-4 text-3xl font-semibold text-gray-900">
+              Predictable Delivery. Reduced Risk. Measurable Outcomes.
+            </h2>
+            <p className="mb-4 text-gray-600">
+              Agile gives you structured progress with room to adapt. Instead of long timelines and
+              uncertain outcomes, you get continuous delivery and clear expectations every step of
+              the way.
+            </p>
+            <p className="text-gray-600">
+              Each sprint produces real value — validated features, working software, and insights
+              that shape the product more intelligently.
+            </p>
           </div>
 
-          <div className="rounded-xl bg-white p-6 shadow-sm">
-            <h4 className="mb-2 font-semibold">Delivery & CI/CD</h4>
-            <p className="text-md mb-3 text-gray-600">GitHub Actions, Docker, Vercel, Kubernetes</p>
-            <ul className="text-sm text-gray-500">
-              <li>Continuous integration & deployment</li>
-              <li>Automated testing pipelines</li>
-              <li>Version control & peer review</li>
-            </ul>
-          </div>
-
-          <div className="rounded-xl bg-white p-6 shadow-sm">
-            <h4 className="mb-2 font-semibold">Observability & QA</h4>
-            <p className="text-md mb-3 text-gray-600">Prometheus, Grafana, Sentry, Cypress</p>
-            <ul className="text-sm text-gray-500">
-              <li>End-to-end test coverage</li>
-              <li>Performance & error monitoring</li>
-              <li>Continuous feedback loops</li>
-            </ul>
+          <div className="relative h-80">
+            <Image
+              src="/images/agile-outcome.jpg"
+              alt="Agile outcomes"
+              fill
+              className="rounded-2xl object-cover shadow-lg"
+            />
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="rounded-xl bg-green-600 py-16 text-center text-white">
+      <section className="my-10 rounded-3xl bg-green-700 py-16 text-center text-white shadow-md">
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">
-          Work with a team that delivers results — one sprint at a time
+          Build With a Team That Delivers Value — Every Sprint
         </h3>
-        <p className="mx-auto mb-6 max-w-2xl text-lg md:text-xl">
-          Our agile model adapts to your goals and growth — whether you’re launching a new MVP or 
-          scaling a mature product.
+        <p className="mx-auto mb-6 max-w-2xl text-lg text-green-100 md:text-xl">
+          Whether you're launching an MVP or scaling a mature system, our Agile Delivery model keeps
+          you aligned, informed, and ahead of the curve.
         </p>
-        <div className="flex items-center justify-center gap-3">
-          <Link
-            href="/contact"
-            className="rounded-lg bg-white px-8 py-3 font-semibold text-green-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
-          >
-            Get in touch
-          </Link>
-          <Link
-            href="/contact#brief"
-            className="rounded-lg border border-white/30 px-6 py-3 text-white hover:bg-white/5"
-          >
-            Send project brief
-          </Link>
-        </div>
+        <Link
+          href="/contact"
+          className="inline-block rounded-lg bg-white px-8 py-3 font-semibold text-green-700 shadow-lg transition hover:scale-105 hover:bg-gray-100"
+        >
+          Start Your Agile Journey
+        </Link>
       </section>
 
-      <footer className="text-md mt-12 text-center text-gray-500">
-        <p>© {new Date().getFullYear()} Wissenschaft Inc. Agile delivery, built for results.</p>
-      </footer>
     </main>
   );
 }
