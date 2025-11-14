@@ -41,6 +41,9 @@ export default function Footer() {
             <h3 className="mb-4 font-semibold text-white">Technologies</h3>
             <ul className="space-y-2 text-sm">
               <li>
+                <LinkFooter href="/technologies/ai-ml">AI/ML</LinkFooter>
+              </li>
+              <li>
                 <LinkFooter href="/technologies/gcp">GCP</LinkFooter>
               </li>
               <li>
