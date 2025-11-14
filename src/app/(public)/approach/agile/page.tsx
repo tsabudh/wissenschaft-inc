@@ -10,7 +10,7 @@ export default function AgileApproachPage() {
           Agile Delivery — Turning Strategy Into Predictable, Continuous Progress
         </h1>
         <p className="mx-auto max-w-3xl text-lg text-gray-600">
-          Agile isn't about speed — it's about clarity, adaptability, and delivering value without
+          Agile isn&apos;t about speed — it&apos;s about clarity, adaptability, and delivering value without
           surprises. Our Agile Delivery approach gives your business the confidence that every
           sprint moves your product forward, aligns with your goals, and responds to real user
           feedback.
@@ -34,7 +34,7 @@ export default function AgileApproachPage() {
             What Agile Means for Your Business
           </h2>
           <p className="mx-auto max-w-2xl text-gray-600">
-            Agile isn't just a development method — it's a decision-making framework. It helps you
+            Agile isn&apos;t just a development method — it&apos;s a decision-making framework. It helps you
             reduce risk, stay aligned with customers, and validate the right features at the right
             time. You stay in control as the product evolves.
           </p>
@@ -45,14 +45,14 @@ export default function AgileApproachPage() {
             <h3 className="mb-2 text-lg font-semibold">Clarity & Visibility</h3>
             <p className="text-gray-600">
               Regular demos, real-time progress tracking, and transparent communication ensure you
-              always know what's being built and why.
+              always know what&apos;s being built and why.
             </p>
           </div>
 
           <div className="rounded-xl bg-gray-50 p-6 shadow-sm hover:shadow-md">
             <h3 className="mb-2 text-lg font-semibold">Adaptability at Every Step</h3>
             <p className="text-gray-600">
-              Priorities shift — and that's normal. Agile allows us to pivot quickly without losing
+              Priorities shift — and that&apos;s normal. Agile allows us to pivot quickly without losing
               momentum or clarity.
             </p>
           </div>
@@ -130,7 +130,7 @@ export default function AgileApproachPage() {
               Full Transparency, Constant Communication
             </h2>
             <p className="mb-4 text-gray-600">
-              Agile thrives on collaboration. You'll have total visibility into planning,
+              Agile thrives on collaboration. You&apos;ll have total visibility into planning,
               prioritization, progress, and decisions — no hidden work, no surprises.
             </p>
             <p className="text-gray-600">
@@ -176,7 +176,7 @@ export default function AgileApproachPage() {
           Build With a Team That Delivers Value — Every Sprint
         </h3>
         <p className="mx-auto mb-6 max-w-2xl text-lg text-green-100 md:text-xl">
-          Whether you're launching an MVP or scaling a mature system, our Agile Delivery model keeps
+          Whether you&apos;re launching an MVP or scaling a mature system, our Agile Delivery model keeps
           you aligned, informed, and ahead of the curve.
         </p>
         <Link
