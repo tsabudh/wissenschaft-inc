@@ -30,9 +30,10 @@ const caseStudy = {
     author: "Marketing Lead, SK GigaX Europe",
   },
   gallery: [
-    { alt: "Hero section mockup", src: "/images/skax-mockup.png" },
-    { alt: "Services section variants", src: "/images/skax-features.png" },
-    { alt: "CMS collections overview", src: "/images/skax-cms.png" },
+    { alt: "GigaX Hero section", src: "/images/gigax-hero.png" },
+    { alt: "Services section", src: "/images/gigax-features.png" },
+    { alt: "GigaX FAQs", src: "/images/gigax-faqs.png" },
+    { alt: "GigaX About", src: "/images/gigax-about.png" },
   ],
 };
 
