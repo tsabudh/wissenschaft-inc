@@ -1,11 +1,12 @@
 "use client";
 
+import { gtmEvent } from "@/components/gtm/GTMEvent";
 import Link from "next/link";
 import React from "react";
 
 export default function HeroSection() {
   return (
-    <main className="relative overflow-hidden bg-white px-6 lg:px-20">
+    <main className="relative overflow-hidden px-6 lg:px-20">
       <section className="flex min-h-[100dvh] items-center py-20">
         <div className="mx-auto max-w-5xl text-left">
           {/* Headline */}
@@ -22,13 +23,30 @@ export default function HeroSection() {
 
           {/* CTA */}
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <Link href="/about" className="">
+            <Link
+              href="/about"
+              className="dark:hover:bg-blue/50 rounded-lg px-4 py-2 font-medium hover:bg-blue-600 hover:text-white"
+              onClick={() => {
+                gtmEvent({
+                  event: "cta_click",
+                  button: "Learn more",
+                  destination: "/about",
+                });
+              }}
+            >
               Learn more →
             </Link>
 
             <Link
               href="/contact"
               className="text-md rounded-lg bg-blue-600 px-4 py-2 font-medium text-white shadow-md transition hover:bg-blue-700"
+              onClick={() => {
+                gtmEvent({
+                  event: "cta_click",
+                  button: "Get started",
+                  destination: "/contact",
+                });
+              }}
             >
               Get started
             </Link>

@@ -12,7 +12,7 @@ type TestimonialCardProps = {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ avatar, name, designation, quote }) => {
   return (
-    <div className="_card_2 group flex cursor-default overflow-hidden rounded-2xl bg-slate-100 shadow-sm transition-all duration-100 hover:-translate-y-1 hover:shadow-md">
+    <div className="_card_2 group flex cursor-default overflow-hidden rounded-md bg-slate-100 shadow-sm transition-all duration-100 hover:-translate-y-1 hover:shadow-md">
       <div className="relative flex-1 p-6 text-xl">
         {/* Avatar + Name */}
         <div className="mb-4 flex items-center gap-4">
