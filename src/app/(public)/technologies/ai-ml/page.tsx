@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { aiMlArticles } from "@/data/articles"; // you can define this similar to pythonArticles
+import { aiMlArticles } from "@/data/articles";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -14,7 +14,7 @@ export default function AIMLPage() {
   return (
     <main className="mx-auto min-h-screen max-w-7xl bg-gray-50 px-6 py-16 text-gray-800 lg:px-20">
       {/* 🟣 HERO */}
-      <section className="text-center py-10 mb-24">
+      <section className="mb-24 py-10 text-center">
         <motion.h1
           variants={fadeIn}
           initial="hidden"
@@ -39,7 +39,7 @@ export default function AIMLPage() {
       </section>
 
       {/* 🧠 OUR EXPERTISE */}
-      <section className="grid items-center gap-12 md:grid-cols-2 mb-24">
+      <section className="mb-24 grid items-center gap-12 md:grid-cols-2">
         <div>
           <h2 className="mb-4 text-3xl font-bold text-gray-900">
             Our Expertise in AI & Machine Learning
@@ -72,7 +72,7 @@ export default function AIMLPage() {
       </section>
 
       {/* ⚙️ WHY WE USE AI/ML */}
-      <section className="text-center mb-24">
+      <section className="mb-24 text-center">
         <h2 className="mb-8 text-3xl font-bold text-gray-900">Why AI/ML Matters</h2>
         <div className="mx-auto max-w-4xl space-y-6 text-gray-600">
           <p>
@@ -88,7 +88,7 @@ export default function AIMLPage() {
       </section>
 
       {/* 🧩 TOOLS & ECOSYSTEM */}
-      <section className="text-center mb-24">
+      <section className="mb-24 text-center">
         <h2 className="mb-10 text-3xl font-bold text-gray-900">Tools and Ecosystem We Use</h2>
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {[
@@ -113,7 +113,7 @@ export default function AIMLPage() {
       </section>
 
       {/* 🔗 TECH STACK INTEGRATION */}
-      <section className="text-center mb-24">
+      <section className="mb-24 text-center">
         <h2 className="mb-10 text-3xl font-bold text-gray-900">
           How AI/ML Fits Into Your Tech Stack
         </h2>
@@ -145,13 +145,13 @@ export default function AIMLPage() {
       </section>
 
       {/* ⚖️ WHEN TO USE / NOT USE */}
-      <section className="text-center mb-24">
+      <section className="mb-24 text-center">
         <h2 className="mb-10 text-3xl font-bold text-gray-900">
           When to Use AI/ML (and When Not To)
         </h2>
         <p className="mx-auto mb-8 max-w-3xl text-gray-600">
-          AI and ML can drive incredible results — but it&apos;s crucial to apply them where they create
-          real value.
+          AI and ML can drive incredible results — but it&apos;s crucial to apply them where they
+          create real value.
         </p>
         <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-2">
           <div className="rounded-xl border border-green-100 bg-white p-8 shadow-md">
@@ -176,7 +176,7 @@ export default function AIMLPage() {
       </section>
 
       {/* 📰 BLOG / ARTICLES */}
-      <section className="text-center mb-24">
+      <section className="mb-24 text-center">
         <h2 className="mb-10 text-3xl font-bold text-gray-900">Insights from Our Team</h2>
         <p className="mx-auto mb-10 max-w-2xl text-gray-600">
           Articles and research from our AI engineers — covering model design, MLOps, and the future
@@ -212,12 +212,11 @@ export default function AIMLPage() {
       </section>
 
       {/* 🚀 CTA */}
-      <section className="rounded-xl bg-purple-600 py-16 text-center text-white px-4 mb-24">
-        <h3 className="mb-4 text-3xl font-bold md:text-4xl">
-          Ready to bring AI to your product?
-        </h3>
+      <section className="mb-24 rounded-xl bg-purple-600 px-4 py-16 text-center text-white">
+        <h3 className="mb-4 text-3xl font-bold md:text-4xl">Ready to bring AI to your product?</h3>
         <p className="mb-6 px-4 text-lg md:text-xl">
-          Let&apos;s design intelligent, data-driven systems that give your business a competitive edge.
+          Let&apos;s design intelligent, data-driven systems that give your business a competitive
+          edge.
         </p>
         <div className="flex items-center justify-center gap-3">
           <Link

@@ -1,3 +1,5 @@
+"use client"; 
+
 import { __UNSAFE } from "@/types/utils.types";
 
 export const gtmEvent = (eventData: { event: string; [key: string]: __UNSAFE }) => {
