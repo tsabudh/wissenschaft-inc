@@ -5,20 +5,20 @@ import Link from "next/link";
 
 export default function ProductDevPage() {
   return (
-    <div className="min-h-screen bg-gray-50 px-6 py-16 lg:px-20 max-w-7xl mx-auto">
+    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12 bg-gray-50 px-6 py-16 lg:px-20">
       {/* Hero Section */}
-      <section className="mb-16 text-center">
+      <section className="mb-20 text-center">
         <h1 className="mb-4 text-5xl font-bold text-gray-800 md:text-6xl">
           Product Development Services
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-gray-600 md:text-xl">
-          From idea to launch, we help you build innovative digital products that delight users
-          and scale with your vision. Turn your concept into a market-ready solution.
+          From idea to launch, we help you build innovative digital products that delight users and
+          scale with your vision. Turn your concept into a market-ready solution.
         </p>
       </section>
 
       {/* Features / Services Section */}
-      <section className="mb-16 grid grid-cols-1 gap-10 md:grid-cols-3">
+      <section className="grid grid-cols-1 gap-10 md:grid-cols-3">
         <div className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
           <h3 className="mb-2 text-2xl font-semibold">Product Strategy</h3>
           <p className="text-gray-600">
@@ -45,11 +45,9 @@ export default function ProductDevPage() {
       </section>
 
       {/* About Our Process */}
-      <section className="mb-16 flex flex-col items-center gap-10 md:flex-row">
+      <section className="flex flex-col items-center gap-10 md:flex-row">
         <div className="md:w-1/2">
-          <h2 className="mb-4 text-4xl font-bold text-gray-800">
-            Our Product Development Process
-          </h2>
+          <h2 className="mb-4 text-4xl font-bold text-gray-800">Our Product Development Process</h2>
           <p className="mb-4 text-gray-600">
             We combine agile development, modern tech stacks, and user-centered design to deliver
             meaningful digital products:
@@ -74,9 +72,9 @@ export default function ProductDevPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="rounded-xl bg-purple-600 py-16 text-center text-white">
+      <section className="rounded-xl bg-purple-600 py-16 px-2 text-center text-white">
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">
-          Let’s bring your product idea to life
+          Let&apos;s bring your product idea to life
         </h3>
         <p className="mb-6 text-lg md:text-xl">
           Partner with us to turn your vision into a successful, scalable digital product.
@@ -88,6 +86,6 @@ export default function ProductDevPage() {
           Get Started
         </Link>
       </section>
-    </div>
+    </main>
   );
 }

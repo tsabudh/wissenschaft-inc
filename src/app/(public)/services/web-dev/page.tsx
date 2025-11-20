@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function WebDevPage() {
   return (
-    <main className="mx-auto min-h-screen max-w-7xl bg-gray-50 px-6 py-16 text-gray-800 lg:px-20">
+    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12 bg-gray-50 px-6 py-16 text-gray-800 lg:px-20">
       {/* HERO */}
       <section className="mb-20 text-center">
         <h1 className="mb-4 text-4xl leading-tight font-extrabold md:text-5xl lg:text-6xl">
@@ -35,7 +35,7 @@ export default function WebDevPage() {
       </section>
 
       {/* WHO WE BUILD FOR */}
-      <section id="who-we-build-for" className="mb-16">
+      <section id="who-we-build-for">
         <header className="mb-6">
           <h2 className="text-2xl font-bold">Who we build for</h2>
           <p className="text-gray-600">
@@ -102,7 +102,7 @@ export default function WebDevPage() {
       </section>
 
       {/* CORE SERVICES */}
-      <section id="services" className="mb-16">
+      <section id="services">
         <header className="mb-8">
           <h2 className="text-2xl font-bold">Core services</h2>
           <p className="text-gray-600">Below is a quick overview of services that we provide.</p>
@@ -196,7 +196,7 @@ export default function WebDevPage() {
       </section>
 
       {/* PROCESS */}
-      <section id="process" className="mb-16">
+      <section id="process">
         <header className="mb-6">
           <h2 className="text-2xl font-bold">Our process</h2>
           <p className="text-gray-600">
@@ -261,7 +261,7 @@ export default function WebDevPage() {
       </section>
 
       {/* TECHNOLOGY STACK */}
-      <section id="stack" className="mb-16">
+      <section id="stack">
         <header className="mb-6">
           <h2 className="text-2xl font-bold">Technology we typically use</h2>
           <p className="text-gray-600">
@@ -316,7 +316,7 @@ export default function WebDevPage() {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section id="why" className="mb-16">
+      <section id="why">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <div className="rounded-xl bg-white p-8 shadow-sm">
             <h3 className="mb-3 text-2xl font-bold">Why choose us</h3>
@@ -365,7 +365,7 @@ export default function WebDevPage() {
       </section>
 
       {/* CASE STUDIES */}
-      <section id="case-studies" className="mb-16">
+      <section id="case-studies">
         <header className="mb-6">
           <h2 className="text-2xl font-bold">Case studies</h2>
           <p className="text-gray-600">
@@ -399,9 +399,9 @@ export default function WebDevPage() {
       </section>
 
       {/* CONTACT / CTA */}
-      <section id="contact" className="rounded-xl bg-purple-600 py-16 text-center text-white">
+      <section id="contact" className="rounded-xl bg-purple-600 px-2 py-16 text-center text-white">
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">Ready to build your web product?</h3>
-        <p className="mb-6 text-lg md:text-xl px-4">
+        <p className="mb-6 px-4 text-lg md:text-xl">
           Tell us about your project and we&apos;ll recommend the fastest path to results.
         </p>
         <div className="flex items-center justify-center gap-3">
@@ -411,18 +411,8 @@ export default function WebDevPage() {
           >
             Get Started
           </Link>
-          <Link
-            href="/contact#brief"
-            className="rounded-lg border border-white/30 px-6 py-3 text-white hover:bg-white/5"
-          >
-            Send brief
-          </Link>
         </div>
       </section>
-
-      <footer className="text-md mt-12 text-center text-gray-500">
-        <p>© {new Date().getFullYear()} Wissenschaft Inc. Crafted with care.</p>
-      </footer>
     </main>
   );
 }

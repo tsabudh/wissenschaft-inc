@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function GenerativeAIPage() {
   return (
-    <div className="mx-auto min-h-screen max-w-7xl bg-gray-50 px-6 py-16 lg:px-20">
+    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12 bg-gray-50 px-6 py-16 lg:px-20">
       {/* Hero Section */}
       <section className="mb-20 text-center">
         <h1 className="mb-4 text-5xl font-bold text-gray-800 md:text-6xl">
@@ -18,11 +18,11 @@ export default function GenerativeAIPage() {
       </section>
 
       {/* Who We Build For */}
-      <section className="mb-20 text-center">
+      <section className="text-center">
         <h2 className="mb-6 text-4xl font-bold text-gray-800">Who We Build For</h2>
         <p className="mx-auto mb-10 max-w-3xl text-gray-600">
-          Whether you&apos;re experimenting with AI or scaling enterprise-grade automation — we design,
-          build, and deploy solutions tailored to your context.
+          Whether you&apos;re experimenting with AI or scaling enterprise-grade automation — we
+          design, build, and deploy solutions tailored to your context.
         </p>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {[
@@ -48,7 +48,7 @@ export default function GenerativeAIPage() {
       </section>
 
       {/* Core AI Capabilities */}
-      <section className="mb-20">
+      <section className="">
         <h2 className="mb-6 text-center text-4xl font-bold text-gray-800">Core AI Capabilities</h2>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           {[
@@ -82,14 +82,14 @@ export default function GenerativeAIPage() {
       </section>
 
       {/* Educational Section: What Generative AI Means */}
-      <section className="mb-20">
+      <section className="">
         <div className="mb-10 text-center">
           <h2 className="mb-4 text-4xl font-bold text-gray-800">
             What Generative AI Can Do For You
           </h2>
           <p className="mx-auto max-w-3xl text-gray-600">
-            Generative AI isn&apos;t just about automation — it&apos;s about extending creativity, decision
-            making, and efficiency. Here&apos;s what it enables across industries:
+            Generative AI isn&apos;t just about automation — it&apos;s about extending creativity,
+            decision making, and efficiency. Here&apos;s what it enables across industries:
           </p>
         </div>
 
@@ -121,7 +121,7 @@ export default function GenerativeAIPage() {
       </section>
 
       {/* Our AI Process */}
-      <section className="mb-20 flex flex-col items-center gap-10 md:flex-row">
+      <section className="flex flex-col items-center gap-10 md:flex-row">
         <div className="md:w-1/2">
           <h2 className="mb-4 text-4xl font-bold text-gray-800">Our AI Integration Process</h2>
           <p className="mb-4 text-gray-600">
@@ -148,7 +148,7 @@ export default function GenerativeAIPage() {
       </section>
 
       {/* Technology Stack */}
-      <section className="mb-20 text-center">
+      <section className="text-center">
         <h2 className="mb-6 text-4xl font-bold text-gray-800">Technology Stack</h2>
         <p className="mx-auto mb-10 max-w-3xl text-gray-600">
           Our go-to technologies for production-grade AI — flexible enough to integrate with your
@@ -178,7 +178,7 @@ export default function GenerativeAIPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="mb-20 text-center">
+      <section className="text-center">
         <h2 className="mb-6 text-4xl font-bold text-gray-800">Why Choose Us</h2>
         <p className="mx-auto mb-10 max-w-3xl text-gray-600">
           We blend AI research with real-world engineering, delivering results that go beyond
@@ -201,13 +201,13 @@ export default function GenerativeAIPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="rounded-xl bg-purple-600 py-16 text-center text-white">
+      <section className="rounded-xl bg-purple-600 py-16 px-2 text-center text-white">
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">
           Build your next AI-powered product with us
         </h3>
         <p className="mb-6 text-lg md:text-xl">
-          From idea to production — we&apos;ll help you design, train, and deploy intelligent systems
-          that innovate and inspire.
+          From idea to production — we&apos;ll help you design, train, and deploy intelligent
+          systems that innovate and inspire.
         </p>
         <Link
           href="/contact"
@@ -216,6 +216,6 @@ export default function GenerativeAIPage() {
           Get Started
         </Link>
       </section>
-    </div>
+    </main>
   );
 }

@@ -10,9 +10,9 @@ export const metadata = {
 
 export default function MobileAppPage() {
   return (
-    <main className="mx-auto min-h-screen max-w-7xl bg-gray-50 px-6 py-16 text-gray-800 lg:px-20">
+    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12 bg-gray-50 px-6 py-16 text-gray-800 lg:px-20">
       {/* HERO */}
-      <section className="mb-14 text-center">
+      <section className="mb-20 text-center">
         <h1 className="mb-4 text-4xl leading-tight font-extrabold md:text-5xl lg:text-6xl">
           Mobile apps people love to use
         </h1>
@@ -39,24 +39,23 @@ export default function MobileAppPage() {
       </section>
 
       {/* WHO WE BUILD FOR + "you already have website?" */}
-      <section id="who-we-build-for" className="mb-16">
+      <section id="who-we-build-for">
         <header className="mb-6 text-center">
           <h2 className="text-2xl font-bold">Who we build for</h2>
           <p className="text-gray-600">
-            From first-time founders to global enterprises — whether you&apos;re launching an app from
-            scratch or extending an existing website to mobile.
+            From first-time founders to global enterprises — whether you&apos;re launching an app
+            from scratch or extending an existing website to mobile.
           </p>
         </header>
 
         <div className="mb-8 flex flex-col items-center gap-6">
           <div className="w-full rounded-2xl bg-white p-6 shadow-md">
-                <p className="text-md text-gray-500">
-                  Already have a website and want a mobile application? Or building a mobile-first
-                  product? We adapt our approach to fit your starting point and business priorities.
-                </p>
+            <p className="text-md text-gray-500">
+              Already have a website and want a mobile application? Or building a mobile-first
+              product? We adapt our approach to fit your starting point and business priorities.
+            </p>
             <div className="flex flex-col gap-6 xl:flex-row xl:items-center xl:justify-between xl:gap-4">
               <div className="w-full">
-
                 <div className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-3">
                   <div className="rounded-md border border-gray-100 bg-white p-3 text-center shadow-sm">
                     <strong className="block">Startups</strong>
@@ -73,7 +72,7 @@ export default function MobileAppPage() {
                 </div>
               </div>
 
-              <div className="mt-4 w-full  md:mt-0">
+              <div className="mt-4 w-full md:mt-0">
                 <div className="flex items-center justify-between text-sm text-gray-500">
                   <span>Website-first → Mobile-first</span>
                   <span>Simple companion app → Full native product</span>
@@ -119,7 +118,7 @@ export default function MobileAppPage() {
       </section>
 
       {/* CORE SERVICES (Mobile-focused + Educational) */}
-      <section id="services" className="mb-16">
+      <section id="services">
         <header className="mb-8">
           <h2 className="text-2xl font-bold">
             What we build <span className="italic">and</span> what it means
@@ -134,9 +133,9 @@ export default function MobileAppPage() {
           <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Native apps</h3>
             <p className="mb-3 text-sm text-gray-600">
-              Built specifically for each platform using the platform&apos;s official languages. Native
-              apps provide the best performance, smoothest animations, and the deepest access to
-              device features such as sensors and cameras. Ideal when reliability, battery
+              Built specifically for each platform using the platform&apos;s official languages.
+              Native apps provide the best performance, smoothest animations, and the deepest access
+              to device features such as sensors and cameras. Ideal when reliability, battery
               efficiency, and platform-consistent UI are priorities.
             </p>
             <ul className="mt-2 space-y-1 text-xs text-gray-500">
@@ -223,7 +222,7 @@ export default function MobileAppPage() {
       </section>
 
       {/* PROCESS */}
-      <section id="process" className="mb-16">
+      <section id="process">
         <header className="mb-6">
           <h2 className="text-2xl font-bold">Our process</h2>
           <p className="text-gray-600">
@@ -285,7 +284,7 @@ export default function MobileAppPage() {
       </section>
 
       {/* TECHNOLOGY STACK (mobile-flavored) */}
-      <section id="stack" className="mb-16">
+      <section id="stack">
         <header className="mb-6">
           <h2 className="text-2xl font-bold">Technology we typically use</h2>
           <p className="text-gray-600">
@@ -339,7 +338,7 @@ export default function MobileAppPage() {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section id="why" className="mb-16">
+      <section id="why">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           <div className="rounded-xl bg-white p-8 shadow-sm">
             <h3 className="mb-3 text-2xl font-bold">Why choose us</h3>
@@ -370,8 +369,8 @@ export default function MobileAppPage() {
           <div className="rounded-xl bg-white p-8 shadow-sm">
             <h4 className="mb-3 text-lg font-semibold">Still unsure which approach fits?</h4>
             <p className="mb-4 text-sm text-gray-600">
-              We&apos;ll help you choose: native for performance and device features, cross-platform for
-              speed and efficiency, or a PWA to extend a web presence quickly. Book a short
+              We&apos;ll help you choose: native for performance and device features, cross-platform
+              for speed and efficiency, or a PWA to extend a web presence quickly. Book a short
               consultation and we&apos;ll suggest the best path for your goals and budget.
             </p>
 
@@ -386,11 +385,11 @@ export default function MobileAppPage() {
       </section>
 
       {/* CONTACT / CTA */}
-      <section id="contact" className="rounded-xl bg-purple-600 py-16 text-center text-white">
+      <section id="contact" className="rounded-xl bg-purple-600 px-2 py-16 text-center text-white">
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">Ready to go mobile?</h3>
-        <p className="mb-6 text-lg md:text-xl px-4">
-          Tell us about your idea or existing product and we&apos;ll recommend the fastest, most cost
-          effective way to reach your users.
+        <p className="mb-6 px-4 text-lg md:text-xl">
+          Tell us about your idea or existing product and we&apos;ll recommend the fastest, most
+          cost effective way to reach your users.
         </p>
         <div className="flex items-center justify-center gap-3">
           <Link
@@ -399,18 +398,8 @@ export default function MobileAppPage() {
           >
             Get Started
           </Link>
-          <Link
-            href="/contact#brief"
-            className="rounded-lg border border-white/30 px-6 py-3 text-white hover:bg-white/5"
-          >
-            Send brief
-          </Link>
         </div>
       </section>
-
-      <footer className="text-md mt-12 text-center text-gray-500">
-        <p>© {new Date().getFullYear()} Wissenschaft Inc. Crafted with care.</p>
-      </footer>
     </main>
   );
 }

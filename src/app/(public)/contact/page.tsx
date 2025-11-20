@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import { Mail, Briefcase, Phone, MapPin, ArrowRight, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 import clsx from "clsx";
+import { gtmEvent } from "@/components/gtm/GTMEvent";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -11,6 +12,13 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    //
+    gtmEvent({
+      event: "form_submit",
+      button: "submit",
+      destination: "google_form",
+    });
+    
     const form = formRef.current;
     if (!form) return;
 

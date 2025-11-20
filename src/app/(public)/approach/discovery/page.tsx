@@ -3,21 +3,21 @@ import Link from "next/link";
 
 export default function DiscoveryApproachPage() {
   return (
-    <main className="mx-auto min-h-screen max-w-7xl bg-gray-50 text-gray-800">
+    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12 bg-gray-50 px-6 py-16 text-gray-800">
       {/* Hero Section */}
-      <section className="relative px-6 py-20 text-center md:px-10">
+      <section className="relative mb-20 px-6 py-20 text-center md:px-10">
         <h1 className="mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl">
           Discovery Approach — Building Confidence Before We Build Code
         </h1>
         <p className="mx-auto max-w-3xl text-lg text-gray-600">
           Every successful digital product begins with clarity. Our Discovery phase helps you move
           from ideas and uncertainty to a validated, actionable roadmap — designed to align your
-          business goals, user needs, and technical realities. We don&apos;t just plan software — we plan
-          success.
+          business goals, user needs, and technical realities. We don&apos;t just plan software — we
+          plan success.
         </p>
         <div className="mt-12 flex justify-center">
           <Image
-            src="/images/discovery-session.jpg"
+            src="/images/discovery_process.png"
             alt="Discovery workshop"
             width={700}
             height={400}
@@ -27,7 +27,7 @@ export default function DiscoveryApproachPage() {
       </section>
 
       {/* What We Need From You */}
-      <section className="my-10 rounded-3xl bg-white px-6 py-20 shadow-sm md:px-10">
+      <section className="rounded-3xl bg-white px-6 py-20 shadow-sm md:px-10">
         <div className="mb-10 text-center">
           <h2 className="mb-3 text-3xl font-bold text-gray-900">What We Need From You</h2>
           <p className="mx-auto max-w-2xl text-gray-600">
@@ -100,7 +100,7 @@ export default function DiscoveryApproachPage() {
           </div>
           <div className="relative h-80">
             <Image
-              src="/images/discovery-process.jpg"
+              src="/images/discovery_discuss.png"
               alt="Discovery process visualization"
               fill
               className="rounded-2xl object-cover shadow-lg"
@@ -110,11 +110,11 @@ export default function DiscoveryApproachPage() {
       </section>
 
       {/* Feedback & Prototyping Section */}
-      <section className="my-10 rounded-3xl bg-white px-6 py-20 shadow-sm md:px-10">
+      <section className="rounded-3xl bg-white px-6 py-20 shadow-sm md:px-10">
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div className="relative h-72 md:h-96">
             <Image
-              src="/images/prototype-feedback.jpg"
+              src="/images/discovery_path.png"
               alt="Prototyping and feedback"
               fill
               className="rounded-2xl object-cover"
@@ -131,8 +131,8 @@ export default function DiscoveryApproachPage() {
               expectations exactly.
             </p>
             <p className="text-gray-600">
-              This phase isn&apos;t just about design — it&apos;s about validating assumptions, mitigating
-              risks, and giving you complete confidence in what comes next.
+              This phase isn&apos;t just about design — it&apos;s about validating assumptions,
+              mitigating risks, and giving you complete confidence in what comes next.
             </p>
           </div>
         </div>
@@ -153,12 +153,13 @@ export default function DiscoveryApproachPage() {
             </p>
             <p className="text-gray-600">
               Whether you continue with us for development or use our documentation with your
-              in-house team, you&apos;ll walk away with everything you need to move forward confidently.
+              in-house team, you&apos;ll walk away with everything you need to move forward
+              confidently.
             </p>
           </div>
           <div className="relative h-80">
             <Image
-              src="/images/mvp-handoff.jpg"
+              src="/images/discovery_mvp.png"
               alt="MVP handoff"
               fill
               className="rounded-2xl object-cover shadow-lg"
@@ -168,13 +169,13 @@ export default function DiscoveryApproachPage() {
       </section>
 
       {/* CTA */}
-      <section className="my-10 rounded-3xl bg-purple-700 py-16 text-center text-white shadow-md">
+      <section className="rounded-3xl bg-purple-700 px-2 py-16 text-center text-white shadow-md">
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">
           Start Your Product Discovery With a Trusted Partner
         </h3>
         <p className="mx-auto mb-6 max-w-2xl text-lg text-purple-100 md:text-xl">
-          Let&apos;s turn your vision into a clear, validated, and measurable product plan. Together,
-          we&apos;ll define success before development begins.
+          Let&apos;s turn your vision into a clear, validated, and measurable product plan.
+          Together, we&apos;ll define success before development begins.
         </p>
         <Link
           href="/contact"

@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function AgileApproachPage() {
   return (
-    <main className="mx-auto min-h-screen max-w-7xl bg-gray-50 text-gray-800">
+    <main className="mx-auto min-h-screen max-w-7xl bg-gray-50 text-gray-800 px-6 py-16 flex flex-col gap-12">
       {/* Hero Section */}
-      <section className="relative px-6 py-20 text-center md:px-10">
+      <section className="relative px-6 mb-20 text-center md:px-10">
         <h1 className="mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl">
           Agile Delivery — Turning Strategy Into Predictable, Continuous Progress
         </h1>
@@ -28,7 +28,7 @@ export default function AgileApproachPage() {
       </section>
 
       {/* What Agile Means for Your Business */}
-      <section className="my-10 rounded-3xl bg-white px-6 py-20 shadow-sm md:px-10">
+      <section className=" rounded-3xl bg-white px-6 py-20 shadow-sm md:px-10">
         <div className="mb-12 text-center">
           <h2 className="mb-3 text-3xl font-bold text-gray-900">
             What Agile Means for Your Business
@@ -115,11 +115,11 @@ export default function AgileApproachPage() {
       </section>
 
       {/* Collaboration & Transparency */}
-      <section className="my-10 rounded-3xl bg-white px-6 py-20 shadow-sm md:px-10">
+      <section className=" rounded-3xl bg-white px-6 py-20 shadow-sm md:px-10">
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div className="relative h-72 md:h-96">
             <Image
-              src="/images/agile-collaboration.jpg"
+              src="/images/agile_trans.png"
               alt="Agile collaboration"
               fill
               className="rounded-2xl object-cover"
@@ -161,7 +161,7 @@ export default function AgileApproachPage() {
 
           <div className="relative h-80">
             <Image
-              src="/images/agile-outcome.jpg"
+              src="/images/agile_risk.png"
               alt="Agile outcomes"
               fill
               className="rounded-2xl object-cover shadow-lg"
@@ -171,7 +171,7 @@ export default function AgileApproachPage() {
       </section>
 
       {/* CTA */}
-      <section className="my-10 rounded-3xl bg-green-700 py-16 text-center text-white shadow-md">
+      <section className=" rounded-3xl bg-green-700 py-16 px-2 text-center text-white shadow-md">
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">
           Build With a Team That Delivers Value — Every Sprint
         </h3>
