@@ -1,14 +1,15 @@
-// app/services/generative-ai/page.tsx
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { metadataMap } from "@/lib/metadataMap";
+import { Metadata } from "next";
 
 export default function GenerativeAIPage() {
   return (
-    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12 bg-gray-50 px-6 py-16 lg:px-20">
+    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12 px-6 py-16 lg:px-20">
       {/* Hero Section */}
       <section className="mb-20 text-center">
-        <h1 className="mb-4 text-5xl font-bold text-gray-800 md:text-6xl">
+        <h1 className="mb-4 text-5xl font-bold text-gray-800 dark:text-gray-300 md:text-6xl">
           Generative AI Solutions
         </h1>
         <p className="mx-auto max-w-3xl text-lg text-gray-600 md:text-xl">
@@ -19,7 +20,7 @@ export default function GenerativeAIPage() {
 
       {/* Who We Build For */}
       <section className="text-center">
-        <h2 className="mb-6 text-4xl font-bold text-gray-800">Who We Build For</h2>
+        <h2 className="mb-6 text-4xl font-bold text-gray-800 dark:text-gray-300">Who We Build For</h2>
         <p className="mx-auto mb-10 max-w-3xl text-gray-600">
           Whether you&apos;re experimenting with AI or scaling enterprise-grade automation — we
           design, build, and deploy solutions tailored to your context.
@@ -39,7 +40,10 @@ export default function GenerativeAIPage() {
               desc: "Deploy secure, compliant, and scalable AI systems integrated into complex infrastructure.",
             },
           ].map((card, idx) => (
-            <div key={idx} className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+            <div
+              key={idx}
+              className="bg-background rounded-xl p-6 shadow-md dark:shadow-gray-600 transition hover:shadow-xl"
+            >
               <h3 className="mb-2 text-2xl font-semibold">{card.title}</h3>
               <p className="text-gray-600">{card.desc}</p>
             </div>
@@ -49,7 +53,7 @@ export default function GenerativeAIPage() {
 
       {/* Core AI Capabilities */}
       <section className="">
-        <h2 className="mb-6 text-center text-4xl font-bold text-gray-800">Core AI Capabilities</h2>
+        <h2 className="mb-6 text-center text-4xl font-bold text-gray-800 dark:text-gray-300">Core AI Capabilities</h2>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           {[
             {
@@ -73,7 +77,10 @@ export default function GenerativeAIPage() {
               desc: "Create or analyze text, images, and audio in unified experiences — enabling new creative and operational workflows.",
             },
           ].map((card, idx) => (
-            <div key={idx} className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+            <div
+              key={idx}
+              className="bg-background rounded-xl p-6 shadow-md dark:shadow-gray-600 transition hover:shadow-xl"
+            >
               <h3 className="mb-2 text-2xl font-semibold">{card.title}</h3>
               <p className="text-gray-600">{card.desc}</p>
             </div>
@@ -84,7 +91,7 @@ export default function GenerativeAIPage() {
       {/* Educational Section: What Generative AI Means */}
       <section className="">
         <div className="mb-10 text-center">
-          <h2 className="mb-4 text-4xl font-bold text-gray-800">
+          <h2 className="mb-4 text-4xl font-bold text-gray-800 dark:text-gray-300">
             What Generative AI Can Do For You
           </h2>
           <p className="mx-auto max-w-3xl text-gray-600">
@@ -112,7 +119,10 @@ export default function GenerativeAIPage() {
               desc: "Accelerate development with AI-assisted tools for prototyping, testing, and documentation.",
             },
           ].map((item, idx) => (
-            <div key={idx} className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+            <div
+              key={idx}
+              className="bg-background rounded-xl p-6 shadow-md dark:shadow-gray-600 transition hover:shadow-xl"
+            >
               <h3 className="mb-2 text-2xl font-semibold">{item.title}</h3>
               <p className="text-gray-600">{item.desc}</p>
             </div>
@@ -123,7 +133,7 @@ export default function GenerativeAIPage() {
       {/* Our AI Process */}
       <section className="flex flex-col items-center gap-10 md:flex-row">
         <div className="md:w-1/2">
-          <h2 className="mb-4 text-4xl font-bold text-gray-800">Our AI Integration Process</h2>
+          <h2 className="mb-4 text-4xl font-bold text-gray-800 dark:text-gray-300">Our AI Integration Process</h2>
           <p className="mb-4 text-gray-600">
             Our workflow blends research, design thinking, and engineering rigor — ensuring that
             every AI integration delivers measurable results.
@@ -149,7 +159,7 @@ export default function GenerativeAIPage() {
 
       {/* Technology Stack */}
       <section className="text-center">
-        <h2 className="mb-6 text-4xl font-bold text-gray-800">Technology Stack</h2>
+        <h2 className="mb-6 text-4xl font-bold text-gray-800 dark:text-gray-300">Technology Stack</h2>
         <p className="mx-auto mb-10 max-w-3xl text-gray-600">
           Our go-to technologies for production-grade AI — flexible enough to integrate with your
           current systems or modernize legacy infrastructure.
@@ -157,19 +167,19 @@ export default function GenerativeAIPage() {
 
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
           <div>
-            <h3 className="mb-3 text-2xl font-semibold text-gray-800">AI Frameworks</h3>
+            <h3 className="mb-3 text-2xl font-semibold text-gray-800 dark:text-gray-300">AI Frameworks</h3>
             <p className="text-gray-600">
               PyTorch, TensorFlow, HuggingFace, LangChain, OpenAI, Ollama
             </p>
           </div>
           <div>
-            <h3 className="mb-3 text-2xl font-semibold text-gray-800">Backend</h3>
+            <h3 className="mb-3 text-2xl font-semibold text-gray-800 dark:text-gray-300">Backend</h3>
             <p className="text-gray-600">
               Node.js, NestJS, Redis, PostgreSQL, FastAPI, GraphQL, gRPC
             </p>
           </div>
           <div>
-            <h3 className="mb-3 text-2xl font-semibold text-gray-800">Infrastructure</h3>
+            <h3 className="mb-3 text-2xl font-semibold text-gray-800 dark:text-gray-300">Infrastructure</h3>
             <p className="text-gray-600">
               Docker, Kubernetes, Vector DBs (Pinecone, Milvus), AWS, GCP, Azure
             </p>
@@ -179,7 +189,7 @@ export default function GenerativeAIPage() {
 
       {/* Why Choose Us */}
       <section className="text-center">
-        <h2 className="mb-6 text-4xl font-bold text-gray-800">Why Choose Us</h2>
+        <h2 className="mb-6 text-4xl font-bold text-gray-800 dark:text-gray-300">Why Choose Us</h2>
         <p className="mx-auto mb-10 max-w-3xl text-gray-600">
           We blend AI research with real-world engineering, delivering results that go beyond
           prototypes — helping teams deploy intelligent systems safely and effectively.
@@ -193,7 +203,10 @@ export default function GenerativeAIPage() {
             "Experience with secure and compliant enterprise systems",
             "Focused on long-term business impact — not just AI hype",
           ].map((point, idx) => (
-            <div key={idx} className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+            <div
+              key={idx}
+              className="bg-background rounded-xl p-6 shadow-md dark:shadow-gray-600 transition hover:shadow-xl"
+            >
               <p className="text-gray-700">{point}</p>
             </div>
           ))}
@@ -201,7 +214,7 @@ export default function GenerativeAIPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="rounded-xl bg-purple-600 py-16 px-2 text-center text-white">
+      <section className="text-foreground rounded-xl bg-purple-600 px-2 py-16 text-center">
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">
           Build your next AI-powered product with us
         </h3>
@@ -211,11 +224,20 @@ export default function GenerativeAIPage() {
         </p>
         <Link
           href="/contact"
-          className="inline-block rounded-lg bg-white px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
+          className="bg-background inline-block rounded-lg px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
         >
           Get Started
         </Link>
       </section>
     </main>
+  );
+}
+
+export async function generateMetadata({ pathname }: { pathname: string }): Promise<Metadata> {
+  return (
+    metadataMap[pathname] ?? {
+      title: "Wissenschaft Inc",
+      description: "Engineering Excellence",
+    }
   );
 }

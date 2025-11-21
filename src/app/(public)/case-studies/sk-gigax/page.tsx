@@ -49,7 +49,7 @@ const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 
 export default function GigaXPage() {
   return (
-    <main className="min-h-screen bg-gray-50 px-6 py-12 text-slate-900 md:px-12 lg:px-24">
+    <main className="min-h-screen px-6 py-12 text-gray-800 md:px-12 lg:px-24 dark:text-gray-300">
       <div className="mx-auto max-w-7xl">
         {/* Hero */}
         <section className="mb-12">
@@ -67,13 +67,13 @@ export default function GigaXPage() {
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <span className="inline-flex items-center rounded-md border border-slate-200 bg-white/60 px-3 py-1 text-sm">
+                  <span className="bg-background/60 inline-flex items-center rounded-md border border-slate-200 px-3 py-1 text-sm">
                     <strong className="mr-2">Client:</strong> {caseStudy.client}
                   </span>
-                  <span className="inline-flex items-center rounded-md border border-slate-200 bg-white/60 px-3 py-1 text-sm">
+                  <span className="bg-background/60 inline-flex items-center rounded-md border border-slate-200 px-3 py-1 text-sm">
                     <strong className="mr-2">Timeline:</strong> {caseStudy.timeline}
                   </span>
-                  <span className="inline-flex items-center rounded-md border border-slate-200 bg-white/60 px-3 py-1 text-sm">
+                  <span className="bg-background/60 inline-flex items-center rounded-md border border-slate-200 px-3 py-1 text-sm">
                     <strong className="mr-2">Tech:</strong> {caseStudy.tech.join(", ")}
                   </span>
                 </div>
@@ -97,7 +97,7 @@ export default function GigaXPage() {
 
             <div className="order-first lg:order-last">
               <FadeIn>
-                <div className="overflow-hidden rounded-2xl bg-white shadow-lg">
+                <div className="bg-background overflow-hidden rounded-2xl shadow-lg">
                   <div className="relative h-64 w-full">
                     <Image
                       src={caseStudy.gallery[0].src}
@@ -116,7 +116,7 @@ export default function GigaXPage() {
         {/* Challenge & Approach */}
         <section className="mb-12 grid gap-8 lg:grid-cols-2">
           <FadeIn>
-            <article className="h-full rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
+            <article className="bg-background h-full rounded-2xl border border-slate-100 p-6 shadow-sm">
               <h3 className="text-xl font-semibold">The challenge</h3>
               <p className="mt-3 text-slate-600">{caseStudy.challenge}</p>
 
@@ -138,7 +138,7 @@ export default function GigaXPage() {
           </FadeIn>
 
           <FadeIn>
-            <article className="h-full rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
+            <article className="bg-background h-full rounded-2xl border border-slate-100 p-6 shadow-sm">
               <h3 className="text-xl font-semibold">Our approach</h3>
               <ul className="mt-4 list-inside list-disc space-y-3 text-slate-700">
                 {caseStudy.approach.map((a, i) => (
@@ -152,25 +152,25 @@ export default function GigaXPage() {
         {/* Results */}
         <section id="results" className="mb-12">
           <FadeIn>
-            <div className="rounded-2xl border border-slate-100 bg-gradient-to-r from-white to-slate-50 p-8 shadow-sm">
+            <div className="rounded-2xl border border-slate-100 bg-gradient-to-r p-8 shadow-sm">
               <h2 className="text-2xl font-semibold">Results</h2>
               <p className="mt-3 max-w-2xl text-slate-600">
-                Delivered a scalable CMS-backed website that highlights GigaX&apos;s European offerings
-                and reduced content dependency on developers.
+                Delivered a scalable CMS-backed website that highlights GigaX&apos;s European
+                offerings and reduced content dependency on developers.
               </p>
 
               <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
-                <div className="rounded-xl border border-slate-100 bg-white p-5 shadow-sm">
+                <div className="bg-background rounded-xl border border-slate-100 p-5 shadow-sm">
                   <p className="text-3xl font-semibold">90%</p>
                   <p className="mt-1 text-sm text-slate-500">Reduced developer-dependent updates</p>
                 </div>
 
-                <div className="rounded-xl border border-slate-100 bg-white p-5 shadow-sm">
+                <div className="bg-background rounded-xl border border-slate-100 p-5 shadow-sm">
                   <p className="text-3xl font-semibold">30%</p>
                   <p className="mt-1 text-sm text-slate-500">Traffic / engagement increment</p>
                 </div>
 
-                <div className="rounded-xl border border-slate-100 bg-white p-5 shadow-sm">
+                <div className="bg-background rounded-xl border border-slate-100 p-5 shadow-sm">
                   <p className="text-3xl font-semibold">Flexible</p>
                   <p className="mt-1 text-sm text-slate-500">
                     Multiple design variants per section
@@ -184,7 +184,7 @@ export default function GigaXPage() {
                   {caseStudy.services.map((s) => (
                     <li
                       key={s}
-                      className="rounded-full border border-slate-200 bg-white px-3 py-1 text-sm"
+                      className="bg-background rounded-full border border-slate-200 px-3 py-1 text-sm"
                     >
                       {s}
                     </li>
@@ -205,7 +205,7 @@ export default function GigaXPage() {
           <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {caseStudy.gallery.map((g, i) => (
               <FadeIn key={i}>
-                <div className="overflow-hidden rounded-xl border border-slate-100 bg-white shadow-sm">
+                <div className="bg-background overflow-hidden rounded-xl border border-slate-100 shadow-sm">
                   <div className="relative h-44 w-full">
                     <Image src={g.src} alt={g.alt} fill className="object-cover" />
                   </div>
@@ -217,7 +217,7 @@ export default function GigaXPage() {
 
         {/* Testimonial + Team */}
         <section className="mb-12 grid gap-8 lg:grid-cols-2">
-          <article className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
+          <article className="bg-background rounded-2xl border border-slate-100 p-6 shadow-sm">
             <h3 className="text-xl font-semibold">Client testimonial</h3>
             <blockquote className="mt-4 text-slate-700 italic">
               “{caseStudy.testimonial.quote}”
@@ -225,7 +225,7 @@ export default function GigaXPage() {
             <p className="mt-4 text-sm font-medium">— {caseStudy.testimonial.author}</p>
           </article>
 
-          <article className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
+          <article className="bg-background rounded-2xl border border-slate-100 p-6 shadow-sm">
             <h3 className="text-xl font-semibold">Team & Role</h3>
             <p className="mt-3 text-slate-600">
               Designers, Frontend, CMS Specialist, Project Manager.
@@ -240,7 +240,7 @@ export default function GigaXPage() {
 
         {/* CTA */}
         <section id="contact" className="mb-12">
-          <div className="rounded-2xl bg-slate-900 p-8 text-white shadow-lg">
+          <div className="rounded-2xl bg-slate-900 p-8 text-gray-300 shadow-lg">
             <div className="max-w-3xl">
               <h3 className="text-2xl font-semibold">Want a website like this?</h3>
               <p className="mt-3 text-slate-200">
@@ -250,20 +250,9 @@ export default function GigaXPage() {
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link
                   href="/contact"
-                  className="inline-block rounded-lg bg-white px-5 py-2 font-medium text-slate-900"
+                  className="bg-background inline-block rounded-lg px-5 py-2 font-medium text-gray-800 dark:text-gray-300"
                 >
                   Get in touch
-                </Link>
-
-                <Link
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-                  }}
-                  className="inline-block rounded-lg border border-white/30 px-5 py-2 text-sm text-white"
-                >
-                  Request a demo
                 </Link>
               </div>
             </div>

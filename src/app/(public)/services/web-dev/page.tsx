@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { metadataMap } from "@/lib/metadataMap";
+import { Metadata } from "next";
 
 export default function WebDevPage() {
   return (
-    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12 bg-gray-50 px-6 py-16 text-gray-800 lg:px-20">
+    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12  px-6 py-16 text-gray-800 dark:text-gray-300 lg:px-20">
       {/* HERO */}
       <section className="mb-20 text-center">
         <h1 className="mb-4 text-4xl leading-tight font-extrabold md:text-5xl lg:text-6xl">
@@ -21,13 +23,13 @@ export default function WebDevPage() {
         <div className="mt-8 flex justify-center gap-4">
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-lg bg-purple-600 px-6 py-3 font-semibold text-white shadow-lg transition-transform hover:scale-[1.02]"
+            className="text-foreground inline-flex items-center gap-2 rounded-lg bg-purple-600 px-6 py-3 font-semibold shadow-lg transition-transform hover:scale-[1.02]"
           >
             Start a project
           </Link>
           <Link
             href="#who-we-build-for"
-            className="text-md inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 font-medium shadow-sm"
+            className="text-md bg-background inline-flex items-center gap-2 rounded-lg border border-gray-200 px-6 py-3 font-medium shadow-sm"
           >
             Learn more
           </Link>
@@ -45,7 +47,7 @@ export default function WebDevPage() {
 
         {/* Spectrum visual */}
         <div className="mb-8 flex flex-col items-center gap-6">
-          <div className="w-full rounded-2xl bg-white p-6 shadow-md">
+          <div className="bg-background w-full rounded-2xl p-6 shadow-md">
             <div className="flex flex-col gap-6 xl:flex-row xl:items-center xl:justify-between xl:gap-4">
               <p className="text-md text-gray-500 md:max-w-xl">
                 We adapt our process to your stage and needs — shipping fast for startups and
@@ -74,21 +76,21 @@ export default function WebDevPage() {
                 </div>
 
                 <div className="text-md grid grid-cols-2 gap-3 pt-2 text-gray-600 md:grid-cols-4">
-                  <div className="rounded-md border border-gray-100 bg-white p-3 text-center shadow-sm">
+                  <div className="bg-background rounded-md border border-gray-100 p-3 text-center shadow-sm">
                     <strong className="block">FinTech</strong>
                     <span className="block text-sm text-gray-500">Payments, KYC, Compliance</span>
                   </div>
-                  <div className="rounded-md border border-gray-100 bg-white p-3 text-center shadow-sm">
+                  <div className="bg-background rounded-md border border-gray-100 p-3 text-center shadow-sm">
                     <strong className="block">Health</strong>
                     <span className="block text-sm text-gray-500">
                       PHI-safe apps & integrations
                     </span>
                   </div>
-                  <div className="rounded-md border border-gray-100 bg-white p-3 text-center shadow-sm">
+                  <div className="bg-background rounded-md border border-gray-100 p-3 text-center shadow-sm">
                     <strong className="block">Retail</strong>
                     <span className="block text-sm text-gray-500">B2C platforms & storefronts</span>
                   </div>
-                  <div className="rounded-md border border-gray-100 bg-white p-3 text-center shadow-sm">
+                  <div className="bg-background rounded-md border border-gray-100 p-3 text-center shadow-sm">
                     <strong className="block">SaaS</strong>
                     <span className="block text-sm text-gray-500">
                       Productized services & dashboards
@@ -110,7 +112,7 @@ export default function WebDevPage() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {/** Card: Frontend Engineering */}
-          <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Frontend engineering</h3>
             <p className="text-md mb-3 text-gray-600">
               Pixel-perfect, accessible interfaces with strong performance. React, Next.js,
@@ -124,7 +126,7 @@ export default function WebDevPage() {
           </article>
 
           {/** Card: Backend Systems */}
-          <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Backend systems</h3>
             <p className="text-md mb-3 text-gray-600">
               Robust APIs and event-driven architectures for scale. Node.js, NestJS, PostgreSQL,
@@ -138,7 +140,7 @@ export default function WebDevPage() {
           </article>
 
           {/** Card: UX / Product Design */}
-          <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">UX & product design</h3>
             <p className="text-md mb-3 text-gray-600">
               User research, information architecture, interactive prototypes, and high-fidelity UI
@@ -152,7 +154,7 @@ export default function WebDevPage() {
           </article>
 
           {/** Card: Performance & Scalability */}
-          <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Performance & scalability</h3>
             <p className="text-md mb-3 text-gray-600">
               Engineering for real-world scale — load testing, caching strategies, horizontal
@@ -166,7 +168,7 @@ export default function WebDevPage() {
           </article>
 
           {/** Card: Cloud, DevOps & Observability */}
-          <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Cloud, DevOps & observability</h3>
             <p className="text-md mb-3 text-gray-600">
               CI/CD, containerization, deployments, and end-to-end observability so you can rely on
@@ -180,7 +182,7 @@ export default function WebDevPage() {
           </article>
 
           {/** Card: Support & Modernization */}
-          <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Support, maintenance & modernization</h3>
             <p className="text-md mb-3 text-gray-600">
               Long-term partnerships for feature growth, security patches, and modernizing legacy
@@ -205,7 +207,7 @@ export default function WebDevPage() {
         </header>
 
         <ol className="grid grid-cols-1 gap-6 md:grid-cols-3 xl:grid-cols-5">
-          <li className="rounded-lg bg-white p-6 shadow-sm">
+          <li className="bg-background rounded-lg p-6 shadow-sm">
             <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-purple-50 font-semibold text-purple-700">
               1
             </div>
@@ -216,7 +218,7 @@ export default function WebDevPage() {
             </p>
           </li>
 
-          <li className="rounded-lg bg-white p-6 shadow-sm">
+          <li className="bg-background rounded-lg p-6 shadow-sm">
             <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-purple-50 font-semibold text-purple-700">
               2
             </div>
@@ -226,7 +228,7 @@ export default function WebDevPage() {
             </p>
           </li>
 
-          <li className="rounded-lg bg-white p-6 shadow-sm">
+          <li className="bg-background rounded-lg p-6 shadow-sm">
             <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-purple-50 font-semibold text-purple-700">
               3
             </div>
@@ -237,7 +239,7 @@ export default function WebDevPage() {
             </p>
           </li>
 
-          <li className="rounded-lg bg-white p-6 shadow-sm">
+          <li className="bg-background rounded-lg p-6 shadow-sm">
             <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-purple-50 font-semibold text-purple-700">
               4
             </div>
@@ -247,7 +249,7 @@ export default function WebDevPage() {
             </p>
           </li>
 
-          <li className="rounded-lg bg-white p-6 shadow-sm">
+          <li className="bg-background rounded-lg p-6 shadow-sm">
             <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-purple-50 font-semibold text-purple-700">
               5
             </div>
@@ -271,7 +273,7 @@ export default function WebDevPage() {
         </header>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          <div className="rounded-xl bg-white p-6 shadow-sm">
+          <div className="bg-background rounded-xl p-6 shadow-sm">
             <h4 className="mb-2 font-semibold">Frontend</h4>
             <p className="text-md mb-3 text-gray-600">
               React, Next.js, TypeScript, Tailwind CSS, design systems, accessibility.
@@ -283,7 +285,7 @@ export default function WebDevPage() {
             </ul>
           </div>
 
-          <div className="rounded-xl bg-white p-6 shadow-sm">
+          <div className="bg-background rounded-xl p-6 shadow-sm">
             <h4 className="mb-2 font-semibold">Backend</h4>
             <p className="text-md mb-3 text-gray-600">
               Node.js, NestJS, TypeScript, PostgreSQL, Redis, Kafka and event-driven services.
@@ -295,7 +297,7 @@ export default function WebDevPage() {
             </ul>
           </div>
 
-          <div className="rounded-xl bg-white p-6 shadow-sm">
+          <div className="bg-background rounded-xl p-6 shadow-sm">
             <h4 className="mb-2 font-semibold">Infrastructure</h4>
             <p className="text-md mb-3 text-gray-600">
               Docker, Kubernetes, CI/CD, observability (Prometheus, Grafana, OpenTelemetry), and
@@ -318,7 +320,7 @@ export default function WebDevPage() {
       {/* WHY CHOOSE US */}
       <section id="why">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <div className="rounded-xl bg-white p-8 shadow-sm">
+          <div className="bg-background rounded-xl p-8 shadow-sm">
             <h3 className="mb-3 text-2xl font-bold">Why choose us</h3>
             <p className="mb-4 text-gray-600">
               We help startups move fast and help enterprises move decisively. Our approach is
@@ -345,7 +347,7 @@ export default function WebDevPage() {
             </ul>
           </div>
 
-          <div className="rounded-xl bg-white p-8 shadow-sm">
+          <div className="bg-background rounded-xl p-8 shadow-sm">
             <h4 className="mb-3 text-lg font-semibold">Clients we partner with</h4>
             <p className="text-md mb-4 text-gray-600">
               From seed-stage startups to multinational enterprises including large OEMs and
@@ -374,7 +376,7 @@ export default function WebDevPage() {
         </header>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          <article className="rounded-lg bg-white p-4 shadow-sm">
+          <article className="bg-background rounded-lg p-4 shadow-sm">
             <div className="mb-3 h-36 w-full overflow-hidden rounded-md bg-gray-100">
               {/* replace with Image when you have a thumbnail */}
               <div className="flex h-full items-center justify-center text-gray-400">
@@ -399,7 +401,10 @@ export default function WebDevPage() {
       </section>
 
       {/* CONTACT / CTA */}
-      <section id="contact" className="rounded-xl bg-purple-600 px-2 py-16 text-center text-white">
+      <section
+        id="contact"
+        className="text-foreground rounded-xl bg-purple-600 px-2 py-16 text-center"
+      >
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">Ready to build your web product?</h3>
         <p className="mb-6 px-4 text-lg md:text-xl">
           Tell us about your project and we&apos;ll recommend the fastest path to results.
@@ -407,12 +412,21 @@ export default function WebDevPage() {
         <div className="flex items-center justify-center gap-3">
           <Link
             href="/contact"
-            className="rounded-lg bg-white px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
+            className="bg-background rounded-lg px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
           >
             Get Started
           </Link>
         </div>
       </section>
     </main>
+  );
+}
+
+export async function generateMetadata({ pathname }: { pathname: string }): Promise<Metadata> {
+  return (
+    metadataMap[pathname] ?? {
+      title: "Wissenschaft Inc",
+      description: "Engineering Excellence",
+    }
   );
 }

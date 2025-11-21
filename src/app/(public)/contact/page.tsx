@@ -18,7 +18,7 @@ export default function ContactPage() {
       button: "submit",
       destination: "google_form",
     });
-    
+
     const form = formRef.current;
     if (!form) return;
 
@@ -31,7 +31,7 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-blue-50 px-6 py-20 md:px-16">
+    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 py-20 md:px-16">
       {/* Background gradient glow */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(37,99,235,0.15),transparent_50%)]" />
 
@@ -97,7 +97,7 @@ export default function ContactPage() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.4 }}
-          className="flex-1 rounded-3xl bg-white/70 p-8 shadow-xl ring-1 ring-gray-100 backdrop-blur-md"
+          className="bg-background/50 flex-1 rounded-3xl p-8 shadow-xl ring-1 ring-gray-100 backdrop-blur-md"
         >
           <h3 className="mb-2 text-2xl font-semibold text-gray-900">
             {submitted ? "Send another inquiry" : "Send an inquiry"}
@@ -122,7 +122,7 @@ export default function ContactPage() {
                 name="entry.30473038"
                 placeholder="e.g. John Doe"
                 required
-                className="w-full rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-gray-800 shadow-sm transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                className="bg-background w-full rounded-lg border border-gray-200 px-4 py-2.5 text-gray-500 shadow-sm transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
             </div>
 
@@ -134,7 +134,7 @@ export default function ContactPage() {
                 name="entry.428163587"
                 placeholder="e.g. you@example.com"
                 required
-                className="w-full rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-gray-800 shadow-sm transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                className="bg-background w-full rounded-lg border border-gray-200 px-4 py-2.5 text-gray-500 shadow-sm transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
             </div>
 
@@ -175,7 +175,7 @@ export default function ContactPage() {
                 placeholder="Write your message..."
                 rows={4}
                 required
-                className="w-full rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-gray-800 shadow-sm transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                className="bg-background w-full rounded-lg border border-gray-200 px-4 py-2.5 text-gray-500 shadow-sm transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               ></textarea>
             </div>
 
@@ -184,7 +184,7 @@ export default function ContactPage() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               type="submit"
-              className="flex w-full items-center justify-center gap-2 rounded-lg bg-blue-600 py-3 font-semibold text-white shadow-md transition hover:bg-blue-700"
+              className="text-white dark:text-gray-300 flex w-full items-center justify-center gap-2 rounded-lg bg-blue-600 py-3 font-semibold shadow-md transition hover:bg-blue-700"
             >
               {submitted ? (
                 <>

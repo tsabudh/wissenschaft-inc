@@ -1,9 +1,9 @@
-"use client";
-
 import React from "react";
 import IconBrand from "@/components/ui/icons/brand-logo";
 import ServiceCard from "@/components/ui/cards/card-a";
 import Link from "next/link";
+import { metadataMap } from "@/lib/metadataMap";
+import { Metadata } from "next";
 
 export default function ServiceSection() {
   return (
@@ -43,7 +43,7 @@ export default function ServiceSection() {
         </div>
       </section>
 
-      <section className="rounded-xl bg-emerald-600 py-16 text-center text-white">
+      <section className="text-foreground rounded-xl bg-emerald-600 py-16 text-center">
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">
           Can&apos;t find what you are looking for?
         </h3>
@@ -52,11 +52,20 @@ export default function ServiceSection() {
         </p>
         <Link
           href="/contact"
-          className="inline-block rounded-lg bg-white px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
+          className="bg-background inline-block rounded-lg px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
         >
           Get Started
         </Link>
       </section>
     </main>
+  );
+}
+
+export async function generateMetadata({ pathname }: { pathname: string }): Promise<Metadata> {
+  return (
+    metadataMap[pathname] ?? {
+      title: "Wissenschaft Inc",
+      description: "Engineering Excellence",
+    }
   );
 }

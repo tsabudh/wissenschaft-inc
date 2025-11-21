@@ -2,13 +2,15 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { metadataMap } from "@/lib/metadataMap";
+import { Metadata } from "next";
 
 export default function ProductDevPage() {
   return (
-    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12 bg-gray-50 px-6 py-16 lg:px-20">
+    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12 px-6 py-16 lg:px-20">
       {/* Hero Section */}
       <section className="mb-20 text-center">
-        <h1 className="mb-4 text-5xl font-bold text-gray-800 md:text-6xl">
+        <h1 className="mb-4 text-5xl font-bold text-gray-800 dark:text-gray-300 md:text-6xl">
           Product Development Services
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-gray-600 md:text-xl">
@@ -19,7 +21,7 @@ export default function ProductDevPage() {
 
       {/* Features / Services Section */}
       <section className="grid grid-cols-1 gap-10 md:grid-cols-3">
-        <div className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+        <div className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
           <h3 className="mb-2 text-2xl font-semibold">Product Strategy</h3>
           <p className="text-gray-600">
             We collaborate with you to define goals, validate ideas, and design a roadmap that
@@ -27,7 +29,7 @@ export default function ProductDevPage() {
           </p>
         </div>
 
-        <div className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+        <div className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
           <h3 className="mb-2 text-2xl font-semibold">MVP Development</h3>
           <p className="text-gray-600">
             Rapidly build, test, and launch a Minimum Viable Product to validate your market fit and
@@ -35,7 +37,7 @@ export default function ProductDevPage() {
           </p>
         </div>
 
-        <div className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+        <div className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
           <h3 className="mb-2 text-2xl font-semibold">Scalable Architecture</h3>
           <p className="text-gray-600">
             We design robust, maintainable, and scalable systems that evolve seamlessly as your user
@@ -47,7 +49,7 @@ export default function ProductDevPage() {
       {/* About Our Process */}
       <section className="flex flex-col items-center gap-10 md:flex-row">
         <div className="md:w-1/2">
-          <h2 className="mb-4 text-4xl font-bold text-gray-800">Our Product Development Process</h2>
+          <h2 className="mb-4 text-4xl font-bold text-gray-800 dark:text-gray-300">Our Product Development Process</h2>
           <p className="mb-4 text-gray-600">
             We combine agile development, modern tech stacks, and user-centered design to deliver
             meaningful digital products:
@@ -72,7 +74,7 @@ export default function ProductDevPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="rounded-xl bg-purple-600 py-16 px-2 text-center text-white">
+      <section className="text-foreground rounded-xl bg-purple-600 px-2 py-16 text-center">
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">
           Let&apos;s bring your product idea to life
         </h3>
@@ -81,11 +83,20 @@ export default function ProductDevPage() {
         </p>
         <Link
           href="/contact"
-          className="inline-block rounded-lg bg-white px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
+          className="bg-background inline-block rounded-lg px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
         >
           Get Started
         </Link>
       </section>
     </main>
+  );
+}
+
+export async function generateMetadata({ pathname }: { pathname: string }): Promise<Metadata> {
+  return (
+    metadataMap[pathname] ?? {
+      title: "Wissenschaft Inc",
+      description: "Engineering Excellence",
+    }
   );
 }

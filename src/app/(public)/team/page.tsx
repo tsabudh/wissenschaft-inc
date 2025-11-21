@@ -9,7 +9,7 @@ export default function TeamPage() {
       <section className="mb-16 px-6 text-center">
         <h1 className="mb-4 text-4xl font-bold text-gray-800 md:text-5xl">Meet the Team</h1>
         <p className="mx-auto max-w-2xl text-lg text-gray-600">
-          The minds driving Wissenschaft’s excellence, innovation, and global impact.
+          The minds driving Wissenschaft&apos;s excellence, innovation, and global impact.
         </p>
       </section>
 
@@ -27,7 +27,7 @@ export default function TeamPage() {
       </section>
 
       {/* Culture Section */}
-      <section className="mt-24 bg-white py-16">
+      <section className="bg-background mt-24 py-16">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <h2 className="mb-6 text-3xl font-semibold text-gray-800">Our Culture</h2>
           <p className="text-lg leading-relaxed text-gray-600">
@@ -39,15 +39,15 @@ export default function TeamPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="mt-20 bg-indigo-600 py-16 text-center text-white">
+      <section className="text-foreground mt-20 bg-indigo-600 py-16 text-center">
         <h2 className="mb-4 text-3xl font-semibold">Join Our Team</h2>
         <p className="mx-auto mb-6 max-w-xl text-indigo-100">
-          We’re always looking for curious and passionate minds to help us redefine software
+          We&apos;re always looking for curious and passionate minds to help us redefine software
           innovation.
         </p>
         <a
           href="/careers"
-          className="inline-block rounded-full bg-white px-6 py-3 font-semibold text-indigo-600 shadow transition hover:bg-indigo-50"
+          className="bg-background inline-block rounded-full px-6 py-3 font-semibold text-indigo-600 shadow transition hover:bg-indigo-50"
         >
           View Open Positions
         </a>

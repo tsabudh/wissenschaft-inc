@@ -1,16 +1,11 @@
-// app/services/mobile-app/page.tsx
 import React from "react";
 import Link from "next/link";
-
-export const metadata = {
-  title: "Mobile App Development Services | Wissenschaft Inc.",
-  description:
-    "We design and build native, cross-platform, and progressive web apps (PWA). From MVPs to enterprise mobility, we deliver delightful, scalable mobile experiences.",
-};
+import { Metadata } from "next";
+import { metadataMap } from "@/lib/metadataMap";
 
 export default function MobileAppPage() {
   return (
-    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12 bg-gray-50 px-6 py-16 text-gray-800 lg:px-20">
+    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12 px-6 py-16 text-gray-800 lg:px-20 dark:text-gray-300">
       {/* HERO */}
       <section className="mb-20 text-center">
         <h1 className="mb-4 text-4xl leading-tight font-extrabold md:text-5xl lg:text-6xl">
@@ -25,13 +20,13 @@ export default function MobileAppPage() {
         <div className="mt-8 flex justify-center gap-4">
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-lg bg-purple-600 px-6 py-3 font-semibold text-white shadow-lg transition-transform hover:scale-[1.02]"
+            className="text-foreground inline-flex items-center gap-2 rounded-lg bg-purple-600 px-6 py-3 font-semibold shadow-lg transition-transform hover:scale-[1.02]"
           >
             Start your app project
           </Link>
           <Link
             href="#who-we-build-for"
-            className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 font-medium shadow-sm"
+            className="bg-background inline-flex items-center gap-2 rounded-lg border border-gray-200 px-6 py-3 font-medium shadow-sm"
           >
             Learn more
           </Link>
@@ -49,7 +44,7 @@ export default function MobileAppPage() {
         </header>
 
         <div className="mb-8 flex flex-col items-center gap-6">
-          <div className="w-full rounded-2xl bg-white p-6 shadow-md">
+          <div className="bg-background w-full rounded-2xl p-6 shadow-md">
             <p className="text-md text-gray-500">
               Already have a website and want a mobile application? Or building a mobile-first
               product? We adapt our approach to fit your starting point and business priorities.
@@ -57,15 +52,15 @@ export default function MobileAppPage() {
             <div className="flex flex-col gap-6 xl:flex-row xl:items-center xl:justify-between xl:gap-4">
               <div className="w-full">
                 <div className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-3">
-                  <div className="rounded-md border border-gray-100 bg-white p-3 text-center shadow-sm">
+                  <div className="bg-background rounded-md border border-gray-100 p-3 text-center shadow-sm">
                     <strong className="block">Startups</strong>
                     <span className="block text-sm text-gray-500">MVPs, rapid validation</span>
                   </div>
-                  <div className="rounded-md border border-gray-100 bg-white p-3 text-center shadow-sm">
+                  <div className="bg-background rounded-md border border-gray-100 p-3 text-center shadow-sm">
                     <strong className="block">Growing businesses</strong>
                     <span className="block text-sm text-gray-500">Customer apps & retention</span>
                   </div>
-                  <div className="rounded-md border border-gray-100 bg-white p-3 text-center shadow-sm">
+                  <div className="bg-background rounded-md border border-gray-100 p-3 text-center shadow-sm">
                     <strong className="block">Enterprises</strong>
                     <span className="block text-sm text-gray-500">Secure, compliant mobility</span>
                   </div>
@@ -130,7 +125,7 @@ export default function MobileAppPage() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {/* Native */}
-          <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Native apps</h3>
             <p className="mb-3 text-sm text-gray-600">
               Built specifically for each platform using the platform&apos;s official languages.
@@ -146,7 +141,7 @@ export default function MobileAppPage() {
           </article>
 
           {/* Cross-platform */}
-          <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Cross-platform</h3>
             <p className="mb-3 text-sm text-gray-600">
               A single codebase that runs on both iOS and Android. Cross-platform apps let you
@@ -162,7 +157,7 @@ export default function MobileAppPage() {
           </article>
 
           {/* PWA */}
-          <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Progressive Web Apps (PWA)</h3>
             <p className="mb-3 text-sm text-gray-600">
               PWAs are websites that behave like apps. Installable from the browser, work offline,
@@ -178,7 +173,7 @@ export default function MobileAppPage() {
           </article>
 
           {/* UI/UX & Prototyping */}
-          <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Design & prototyping</h3>
             <p className="mb-3 text-sm text-gray-600">
               We validate ideas with sketches and interactive prototypes, then refine visual and
@@ -192,7 +187,7 @@ export default function MobileAppPage() {
           </article>
 
           {/* Backend & Integrations */}
-          <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">APIs, sync & offline</h3>
             <p className="mb-3 text-sm text-gray-600">
               Mobile experiences depend on reliable APIs, sync strategies, and offline support. We
@@ -206,7 +201,7 @@ export default function MobileAppPage() {
           </article>
 
           {/* Maintenance & Store Launch */}
-          <article className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Launch & ongoing support</h3>
             <p className="mb-3 text-sm text-gray-600">
               We manage app store submissions, CI/CD, beta distribution, crash reporting, and post-
@@ -231,7 +226,7 @@ export default function MobileAppPage() {
         </header>
 
         <ol className="grid grid-cols-1 gap-6 md:grid-cols-3 xl:grid-cols-5">
-          <li className="rounded-lg bg-white p-6 shadow-sm">
+          <li className="bg-background rounded-lg p-6 shadow-sm">
             <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-purple-50 font-semibold text-purple-700">
               1
             </div>
@@ -241,7 +236,7 @@ export default function MobileAppPage() {
             </p>
           </li>
 
-          <li className="rounded-lg bg-white p-6 shadow-sm">
+          <li className="bg-background rounded-lg p-6 shadow-sm">
             <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-purple-50 font-semibold text-purple-700">
               2
             </div>
@@ -251,7 +246,7 @@ export default function MobileAppPage() {
             </p>
           </li>
 
-          <li className="rounded-lg bg-white p-6 shadow-sm">
+          <li className="bg-background rounded-lg p-6 shadow-sm">
             <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-purple-50 font-semibold text-purple-700">
               3
             </div>
@@ -261,7 +256,7 @@ export default function MobileAppPage() {
             </p>
           </li>
 
-          <li className="rounded-lg bg-white p-6 shadow-sm">
+          <li className="bg-background rounded-lg p-6 shadow-sm">
             <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-purple-50 font-semibold text-purple-700">
               4
             </div>
@@ -271,7 +266,7 @@ export default function MobileAppPage() {
             </p>
           </li>
 
-          <li className="rounded-lg bg-white p-6 shadow-sm">
+          <li className="bg-background rounded-lg p-6 shadow-sm">
             <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-purple-50 font-semibold text-purple-700">
               5
             </div>
@@ -294,7 +289,7 @@ export default function MobileAppPage() {
         </header>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          <div className="rounded-xl bg-white p-6 shadow-sm">
+          <div className="bg-background rounded-xl p-6 shadow-sm">
             <h4 className="mb-2 font-semibold">Mobile (UI)</h4>
             <p className="mb-2 text-sm text-gray-600">
               Swift (iOS), Kotlin (Android), React Native, Flutter, and PWA technologies.
@@ -306,7 +301,7 @@ export default function MobileAppPage() {
             </ul>
           </div>
 
-          <div className="rounded-xl bg-white p-6 shadow-sm">
+          <div className="bg-background rounded-xl p-6 shadow-sm">
             <h4 className="mb-2 font-semibold">Backend & APIs</h4>
             <p className="mb-2 text-sm text-gray-600">
               NestJS, Node.js, GraphQL, REST, Firebase, PostgreSQL.
@@ -318,7 +313,7 @@ export default function MobileAppPage() {
             </ul>
           </div>
 
-          <div className="rounded-xl bg-white p-6 shadow-sm">
+          <div className="bg-background rounded-xl p-6 shadow-sm">
             <h4 className="mb-2 font-semibold">Infra & CI</h4>
             <p className="mb-2 text-sm text-gray-600">
               Docker, Kubernetes, Fastlane, Firebase App Distribution, and cloud CI/CD.
@@ -340,7 +335,7 @@ export default function MobileAppPage() {
       {/* WHY CHOOSE US */}
       <section id="why">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <div className="rounded-xl bg-white p-8 shadow-sm">
+          <div className="bg-background rounded-xl p-8 shadow-sm">
             <h3 className="mb-3 text-2xl font-bold">Why choose us</h3>
             <p className="mb-4 text-gray-600">
               We focus on product outcomes: usability, performance, and measurable growth. Our
@@ -366,7 +361,7 @@ export default function MobileAppPage() {
             </ul>
           </div>
 
-          <div className="rounded-xl bg-white p-8 shadow-sm">
+          <div className="bg-background rounded-xl p-8 shadow-sm">
             <h4 className="mb-3 text-lg font-semibold">Still unsure which approach fits?</h4>
             <p className="mb-4 text-sm text-gray-600">
               We&apos;ll help you choose: native for performance and device features, cross-platform
@@ -376,7 +371,7 @@ export default function MobileAppPage() {
 
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-lg bg-purple-600 px-6 py-3 font-semibold text-white shadow-lg transition-transform hover:scale-[1.02]"
+              className="text-foreground inline-flex items-center gap-2 rounded-lg bg-purple-600 px-6 py-3 font-semibold shadow-lg transition-transform hover:scale-[1.02]"
             >
               Schedule consultation
             </Link>
@@ -385,7 +380,10 @@ export default function MobileAppPage() {
       </section>
 
       {/* CONTACT / CTA */}
-      <section id="contact" className="rounded-xl bg-purple-600 px-2 py-16 text-center text-white">
+      <section
+        id="contact"
+        className="text-foreground rounded-xl bg-purple-600 px-2 py-16 text-center"
+      >
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">Ready to go mobile?</h3>
         <p className="mb-6 px-4 text-lg md:text-xl">
           Tell us about your idea or existing product and we&apos;ll recommend the fastest, most
@@ -394,12 +392,20 @@ export default function MobileAppPage() {
         <div className="flex items-center justify-center gap-3">
           <Link
             href="/contact"
-            className="rounded-lg bg-white px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
+            className="bg-background rounded-lg px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
           >
             Get Started
           </Link>
         </div>
       </section>
     </main>
+  );
+}
+export async function generateMetadata({ pathname }: { pathname: string }): Promise<Metadata> {
+  return (
+    metadataMap[pathname] ?? {
+      title: "Wissenschaft Inc",
+      description: "Engineering Excellence",
+    }
   );
 }

@@ -56,14 +56,14 @@ export default function AwsPage() {
         </p>
 
         <div className="grid grid-cols-2 gap-6 font-medium text-gray-700 md:grid-cols-4">
-          <div className="rounded-lg bg-white py-6 shadow-sm">EC2</div>
-          <div className="rounded-lg bg-white py-6 shadow-sm">ECS & Fargate</div>
-          <div className="rounded-lg bg-white py-6 shadow-sm">Lambda</div>
-          <div className="rounded-lg bg-white py-6 shadow-sm">S3 & CloudFront</div>
-          <div className="rounded-lg bg-white py-6 shadow-sm">RDS</div>
-          <div className="rounded-lg bg-white py-6 shadow-sm">DynamoDB</div>
-          <div className="rounded-lg bg-white py-6 shadow-sm">CloudWatch</div>
-          <div className="rounded-lg bg-white py-6 shadow-sm">CDK / Terraform</div>
+          <div className="bg-background rounded-lg py-6 shadow-sm">EC2</div>
+          <div className="bg-background rounded-lg py-6 shadow-sm">ECS & Fargate</div>
+          <div className="bg-background rounded-lg py-6 shadow-sm">Lambda</div>
+          <div className="bg-background rounded-lg py-6 shadow-sm">S3 & CloudFront</div>
+          <div className="bg-background rounded-lg py-6 shadow-sm">RDS</div>
+          <div className="bg-background rounded-lg py-6 shadow-sm">DynamoDB</div>
+          <div className="bg-background rounded-lg py-6 shadow-sm">CloudWatch</div>
+          <div className="bg-background rounded-lg py-6 shadow-sm">CDK / Terraform</div>
         </div>
       </section>
 
@@ -84,7 +84,7 @@ export default function AwsPage() {
             <motion.div
               key={item.title}
               whileHover={{ scale: 1.03 }}
-              className={`rounded-xl bg-gradient-to-br ${item.color} p-6 text-white shadow-lg`}
+              className={`rounded-xl bg-gradient-to-br ${item.color} text-foreground p-6 shadow-lg`}
             >
               <h3 className="text-lg font-semibold">{item.title}</h3>
             </motion.div>
@@ -128,7 +128,7 @@ export default function AwsPage() {
             <motion.div
               key={article.name}
               whileHover={{ scale: 1.03 }}
-              className="rounded-xl bg-white p-6 text-left shadow-md transition-shadow hover:shadow-lg"
+              className="bg-background rounded-xl p-6 text-left shadow-md transition-shadow hover:shadow-lg"
             >
               <Link href={article.link}>
                 <div className="mb-4 h-40 w-full overflow-hidden rounded-lg bg-gray-200">
@@ -153,7 +153,10 @@ export default function AwsPage() {
       </section>
 
       {/* 🚀 CTA */}
-      <section id="contact" className="rounded-xl bg-yellow-600 px-4 py-16 text-center text-white">
+      <section
+        id="contact"
+        className="text-foreground rounded-xl bg-yellow-600 px-4 py-16 text-center"
+      >
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">
           Ready to build your next cloud solution?
         </h3>
@@ -164,13 +167,13 @@ export default function AwsPage() {
         <div className="flex items-center justify-center gap-3">
           <Link
             href="/contact"
-            className="rounded-lg bg-white px-8 py-3 font-semibold text-yellow-700 shadow-lg transition hover:scale-105 hover:bg-gray-100"
+            className="bg-background rounded-lg px-8 py-3 font-semibold text-yellow-700 shadow-lg transition hover:scale-105 hover:bg-gray-100"
           >
             Get Started
           </Link>
           <Link
             href="/contact#brief"
-            className="rounded-lg border border-white/30 px-6 py-3 text-white hover:bg-white/5"
+            className="text-foreground hover:bg-background/5 rounded-lg border border-white/30 px-6 py-3"
           >
             Send Brief
           </Link>

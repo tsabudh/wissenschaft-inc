@@ -104,7 +104,7 @@ export default function AIMLPage() {
             <motion.div
               key={tool}
               whileHover={{ scale: 1.05 }}
-              className="rounded-xl bg-white p-6 shadow-md transition-shadow hover:shadow-lg"
+              className="bg-background rounded-xl p-6 shadow-md transition-shadow hover:shadow-lg"
             >
               <p className="font-semibold text-gray-700">{tool}</p>
             </motion.div>
@@ -154,7 +154,7 @@ export default function AIMLPage() {
           create real value.
         </p>
         <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-2">
-          <div className="rounded-xl border border-green-100 bg-white p-8 shadow-md">
+          <div className="bg-background rounded-xl border border-green-100 p-8 shadow-md">
             <h3 className="mb-3 text-2xl font-semibold text-emerald-600">When to Use AI/ML</h3>
             <ul className="list-inside list-disc space-y-3 text-left text-gray-600 marker:text-emerald-600">
               <li>Personalization, recommendations, and predictive analytics</li>
@@ -163,7 +163,7 @@ export default function AIMLPage() {
               <li>Complex decision-making and adaptive systems</li>
             </ul>
           </div>
-          <div className="rounded-xl border border-red-100 bg-white p-8 shadow-md">
+          <div className="bg-background rounded-xl border border-red-100 p-8 shadow-md">
             <h3 className="mb-3 text-2xl font-semibold text-orange-600">When Not to Use AI/ML</h3>
             <ul className="list-inside list-disc space-y-3 text-left text-gray-600 marker:text-orange-600">
               <li>Simple logic-based systems that don&apos;t require learning</li>
@@ -187,7 +187,7 @@ export default function AIMLPage() {
             <motion.div
               key={article.name}
               whileHover={{ scale: 1.03 }}
-              className="rounded-xl bg-white p-6 text-left shadow-md transition-shadow hover:shadow-lg"
+              className="bg-background rounded-xl p-6 text-left shadow-md transition-shadow hover:shadow-lg"
             >
               <Link href={article.link}>
                 <div className="mb-4 h-40 w-full overflow-hidden rounded-lg bg-gray-200">
@@ -212,7 +212,7 @@ export default function AIMLPage() {
       </section>
 
       {/* 🚀 CTA */}
-      <section className="mb-24 rounded-xl bg-purple-600 px-4 py-16 text-center text-white">
+      <section className="text-foreground mb-24 rounded-xl bg-purple-600 px-4 py-16 text-center">
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">Ready to bring AI to your product?</h3>
         <p className="mb-6 px-4 text-lg md:text-xl">
           Let&apos;s design intelligent, data-driven systems that give your business a competitive
@@ -221,13 +221,13 @@ export default function AIMLPage() {
         <div className="flex items-center justify-center gap-3">
           <Link
             href="/contact"
-            className="rounded-lg bg-white px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
+            className="bg-background rounded-lg px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
           >
             Get Started
           </Link>
           <Link
             href="/contact#brief"
-            className="rounded-lg border border-white/30 px-6 py-3 text-white hover:bg-white/5"
+            className="text-foreground hover:bg-background/5 rounded-lg border border-white/30 px-6 py-3"
           >
             Send Brief
           </Link>

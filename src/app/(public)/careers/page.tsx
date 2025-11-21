@@ -1,6 +1,6 @@
-"use client";
-
 import careers from "@/data/careers.json";
+import { metadataMap } from "@/lib/metadataMap";
+import { Metadata } from "next";
 
 export default function CareersPage() {
   return (
@@ -27,7 +27,7 @@ export default function CareersPage() {
           }) => (
             <div
               key={job.id}
-              className="flex flex-col rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition hover:shadow-md"
+              className="bg-background flex flex-col rounded-2xl border border-gray-100 p-6 shadow-sm transition hover:shadow-md"
             >
               <div className="mb-4">
                 <h2 className="text-2xl font-semibold text-gray-800">{job.title}</h2>
@@ -47,7 +47,7 @@ export default function CareersPage() {
                 </ul>
               </div>
 
-              <button className="mt-auto rounded-full bg-indigo-600 px-5 py-2 font-medium text-white transition hover:bg-indigo-700">
+              <button className="text-foreground mt-auto rounded-full bg-indigo-600 px-5 py-2 font-medium transition hover:bg-indigo-700">
                 Apply Now
               </button>
             </div>
@@ -65,11 +65,20 @@ export default function CareersPage() {
         </p>
         <a
           href="mailto:careers@wissenschaft-inc.com"
-          className="inline-block rounded-full bg-indigo-600 px-6 py-3 font-semibold text-white shadow transition hover:bg-indigo-700"
+          className="text-foreground inline-block rounded-full bg-indigo-600 px-6 py-3 font-semibold shadow transition hover:bg-indigo-700"
         >
           Send Resume
         </a>
       </section>
     </main>
+  );
+}
+
+export async function generateMetadata({ pathname }: { pathname: string }): Promise<Metadata> {
+  return (
+    metadataMap[pathname] ?? {
+      title: "Wissenschaft Inc",
+      description: "Engineering Excellence",
+    }
   );
 }
