@@ -10,7 +10,7 @@ export default function HeroSection() {
       <section className="flex min-h-[100dvh] items-center py-20">
         <div className="mx-auto max-w-5xl text-left">
           {/* Headline */}
-          <h1 className="text-4xl leading-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+          <h1 className="text-4xl leading-tight font-extrabold text-slate-900 dark:text-slate-600 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
             Turn your ideas into <span className="text-blue-600">profits</span>, where innovation
             meets <span className="text-blue-600">success</span>.
           </h1>

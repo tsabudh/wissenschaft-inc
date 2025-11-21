@@ -49,7 +49,7 @@ export default function ContactPage() {
             transition={{ delay: 0.1 }}
             className="text-5xl leading-tight font-extrabold text-gray-900 md:text-6xl"
           >
-            Let’s build <br />
+            Let&apos;s build <br />
             <span className="text-blue-600">something remarkable</span>
           </motion.h1>
 
@@ -59,7 +59,7 @@ export default function ContactPage() {
             transition={{ delay: 0.2 }}
             className="max-w-lg text-lg text-gray-600"
           >
-            Get in touch with our expert team — we’ll take care of the technical complexities so you
+            Get in touch with our expert team — we&apos;ll take care of the technical complexities so you
             can focus on what truly matters.
           </motion.p>
 
@@ -99,11 +99,11 @@ export default function ContactPage() {
           transition={{ delay: 0.3, duration: 0.4 }}
           className="bg-background/50 flex-1 rounded-3xl p-8 shadow-xl ring-1 ring-gray-100 backdrop-blur-md"
         >
-          <h3 className="mb-2 text-2xl font-semibold text-gray-900">
+          <h3 className="mb-2 text-2xl font-semibold text-gray-900 dark:text-gray-300">
             {submitted ? "Send another inquiry" : "Send an inquiry"}
           </h3>
           <p className="mb-8 text-gray-600">
-            We’d love to hear from you — fill in your details below.
+            We&apos;d love to hear from you — fill in your details below.
           </p>
 
           <form
@@ -116,7 +116,7 @@ export default function ContactPage() {
           >
             {/* Name */}
             <div>
-              <label className="mb-1 block text-sm font-medium text-gray-700">Full name</label>
+              <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-400">Full name</label>
               <input
                 type="text"
                 name="entry.30473038"
@@ -128,7 +128,7 @@ export default function ContactPage() {
 
             {/* Email */}
             <div>
-              <label className="mb-1 block text-sm font-medium text-gray-700">Email address</label>
+              <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-400">Email address</label>
               <input
                 type="email"
                 name="entry.428163587"
@@ -140,8 +140,8 @@ export default function ContactPage() {
 
             {/* Purpose */}
             <fieldset>
-              <legend className="mb-2 block text-sm font-medium text-gray-700">
-                What’s your inquiry about?
+              <legend className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-400">
+                What&apos;s your inquiry about?
               </legend>
               <div className="flex flex-wrap gap-3">
                 {["Product", "Partnership", "Others"].map((label) => (
@@ -169,7 +169,7 @@ export default function ContactPage() {
 
             {/* Message */}
             <div>
-              <label className="mb-1 block text-sm font-medium text-gray-700">Your message</label>
+              <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-400">Your message</label>
               <textarea
                 name="entry.1966928524"
                 placeholder="Write your message..."

@@ -7,7 +7,7 @@ import { Metadata } from "next";
 
 export default function ServiceSection() {
   return (
-    <main className="mx-auto min-h-screen max-w-7xl bg-gray-50 px-6 py-16 lg:px-20">
+    <main className="mx-auto min-h-screen max-w-7xl  px-6 py-16 lg:px-20">
       <section className="py-20">
         {/* Intro Section */}
         <h2 className="mb-10 text-5xl font-medium text-blue-400">Our services</h2>
@@ -43,11 +43,11 @@ export default function ServiceSection() {
         </div>
       </section>
 
-      <section className="text-foreground rounded-xl bg-emerald-600 py-16 text-center">
+      <section className="text-white dark:text-gray-700 rounded-xl bg-emerald-600 py-16 text-center">
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">
           Can&apos;t find what you are looking for?
         </h3>
-        <p className="mb-6 text-lg md:text-xl">
+        <p className="mb-6 text-lg md:text-xl text-gray-100 dark:text-gray-600">
           Contact us for solutions tailored to your specific needs.
         </p>
         <Link

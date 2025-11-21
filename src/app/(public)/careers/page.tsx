@@ -4,10 +4,10 @@ import { Metadata } from "next";
 
 export default function CareersPage() {
   return (
-    <main className="min-h-screen bg-gray-50 px-6 py-20">
+    <main className="min-h-screen px-6 py-20">
       {/* Hero Section */}
       <section className="mb-16 text-center">
-        <h1 className="mb-4 text-4xl font-bold text-gray-800 md:text-5xl">Join Our Team</h1>
+        <h1 className="mb-4 text-4xl font-bold text-gray-600 dark:text-gray-300 md:text-5xl">Join Our Team</h1>
         <p className="mx-auto max-w-2xl text-lg text-gray-600">
           Be part of a culture that values creativity, technical excellence, and meaningful impact.
         </p>
@@ -30,7 +30,7 @@ export default function CareersPage() {
               className="bg-background flex flex-col rounded-2xl border border-gray-100 p-6 shadow-sm transition hover:shadow-md"
             >
               <div className="mb-4">
-                <h2 className="text-2xl font-semibold text-gray-800">{job.title}</h2>
+                <h2 className="text-2xl font-semibold text-gray-600 dark:text-gray-300">{job.title}</h2>
                 <p className="text-sm text-gray-500">
                   {job.department} • {job.location} • {job.type}
                 </p>
@@ -39,7 +39,7 @@ export default function CareersPage() {
               <p className="mb-4 flex-1 text-gray-600">{job.description}</p>
 
               <div>
-                <h3 className="mb-2 font-medium text-gray-800">Requirements:</h3>
+                <h3 className="mb-2 font-medium text-gray-600 dark:text-gray-300">Requirements:</h3>
                 <ul className="mb-4 list-inside list-disc space-y-1 text-sm text-gray-600">
                   {job.requirements.map((req, i) => (
                     <li key={i}>{req}</li>
@@ -58,7 +58,7 @@ export default function CareersPage() {
 
       {/* Footer Section */}
       <section className="mt-24 text-center">
-        <h2 className="mb-4 text-3xl font-semibold text-gray-800">Don&apos;t See Your Role?</h2>
+        <h2 className="mb-4 text-3xl font-semibold text-gray-600 dark:text-gray-300">Don&apos;t See Your Role?</h2>
         <p className="mx-auto mb-6 max-w-xl text-gray-600">
           We&apos;re always looking for passionate individuals to join our growing team. Send us
           your CV — we&apos;d love to hear from you.

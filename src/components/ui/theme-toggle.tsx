@@ -43,7 +43,7 @@ export default function ThemeToggle() {
       className="
         inline-flex items-center gap-2 rounded-full border
         border-zinc-300 dark:border-zinc-700
-        bg-white/80 dark:bg-zinc-900/80
+        bg-white/80 dark:bg-zinc-700/80
         px-3 py-1 text-xs font-medium
         shadow-sm hover:shadow-md
         transition-all duration-200
