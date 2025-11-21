@@ -42,7 +42,7 @@ export default function ServiceSection() {
         <div className="mt-20 flex justify-center">
           <a
             href="/services"
-            className="rounded-lg bg-blue-400 px-6 py-3 text-xl font-medium text-white transition-colors duration-300 hover:bg-blue-500"
+            className="text-foreground rounded-lg bg-blue-400 px-6 py-3 text-xl font-medium transition-colors duration-300 hover:bg-blue-500"
           >
             View All Services
           </a>

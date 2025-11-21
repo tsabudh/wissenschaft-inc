@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="mb-10">
           <Link
             href="/"
-            className="font-lexend block max-w-xs text-2xl font-semibold text-white uppercase"
+            className="font-lexend text-secondary block max-w-xs text-2xl font-semibold uppercase"
           >
             <BrandLogo />
           </Link>
@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="mx-auto grid max-w-7xl grid-cols-4 gap-10 max-md:grid-cols-1">
           {/* Services */}
           <div>
-            <h3 className="mb-4 font-semibold text-white">Services</h3>
+            <h3 className="text-secondary mb-4 font-semibold">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <LinkFooter href="/services/web-dev">Web Development</LinkFooter>
@@ -38,7 +38,7 @@ export default function Footer() {
 
           {/* Technologies */}
           <div>
-            <h3 className="mb-4 font-semibold text-white">Technologies</h3>
+            <h3 className="text-secondary mb-4 font-semibold">Technologies</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <LinkFooter href="/technologies/ai-ml">AI/ML</LinkFooter>
@@ -63,7 +63,7 @@ export default function Footer() {
 
           {/* Case Studies */}
           <div>
-            <h3 className="mb-4 font-semibold text-white">Case Studies</h3>
+            <h3 className="text-secondary mb-4 font-semibold">Case Studies</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <LinkFooter href="/case-studies/skax">SK AX</LinkFooter>
@@ -76,8 +76,11 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="mb-4 font-semibold text-white">Company</h3>
+            <h3 className="text-secondary  mb-4 font-semibold">Company</h3>
             <ul className="space-y-2 text-sm">
+              <li>
+                <LinkFooter href="/about">About us</LinkFooter>
+              </li>
               <li>
                 <LinkFooter href="/approach">How We Work</LinkFooter>
               </li>

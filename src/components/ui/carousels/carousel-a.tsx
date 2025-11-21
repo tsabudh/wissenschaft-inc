@@ -13,7 +13,7 @@ interface CarouselAProps {
 
 export default function CarouselA({ data }: CarouselAProps) {
   return (
-    <div className="relative w-full max-w-4xl mx-auto">
+    <div className="relative mx-auto w-full max-w-4xl">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={30}
@@ -37,8 +37,8 @@ export default function CarouselA({ data }: CarouselAProps) {
       >
         {data.map((item, idx) => (
           <SwiperSlide key={idx}>
-            <div className="flex items-center justify-center min-h-[220px] md:min-h-[280px] px-6 py-10 bg-gray-50 rounded-xl shadow-sm">
-              <p className="text-lg md:text-xl text-gray-700 text-center max-w-2xl leading-relaxed">
+            <div className="flex min-h-[220px] items-center justify-center rounded-xl bg-gray-50 px-6 py-10 shadow-sm md:min-h-[280px]">
+              <p className="max-w-2xl text-center text-lg leading-relaxed text-gray-700 md:text-xl">
                 {item.textContent}
               </p>
             </div>
@@ -47,17 +47,17 @@ export default function CarouselA({ data }: CarouselAProps) {
 
         {/* Navigation buttons */}
         <button
-          className="prev-btn absolute left-2 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow hover:bg-gray-100"
+          className="prev-btn bg-background absolute top-1/2 left-2 z-10 -translate-y-1/2 rounded-full p-2 shadow hover:bg-gray-100"
           aria-label="Previous slide"
         >
-          <ChevronLeft className="w-5 h-5 text-gray-700" />
+          <ChevronLeft className="h-5 w-5 text-gray-700" />
         </button>
 
         <button
-          className="next-btn absolute right-2 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow hover:bg-gray-100"
+          className="next-btn bg-background absolute top-1/2 right-2 z-10 -translate-y-1/2 rounded-full p-2 shadow hover:bg-gray-100"
           aria-label="Next slide"
         >
-          <ChevronRight className="w-5 h-5 text-gray-700" />
+          <ChevronRight className="h-5 w-5 text-gray-700" />
         </button>
       </Swiper>
     </div>

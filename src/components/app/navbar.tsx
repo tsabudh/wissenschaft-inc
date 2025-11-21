@@ -14,12 +14,13 @@ import BrandLogoColorful from "../ui/icons/brand-logo-colorful";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import ThemeToggle from "../ui/theme-toggle";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-[1000] w-full bg-zinc-200 text-slate-500">
+    <header className="sticky top-0 z-[1000] w-full bg-zinc-200 dark:bg-zinc-300 text-slate-500">
       <div className="mx-auto flex h-16 items-center justify-between px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center justify-center text-xl font-bold">
@@ -73,9 +74,10 @@ export default function Navbar() {
           </NavigationMenu>
 
           {/* Contact Button */}
-          <Button asChild className="border border-blue-500 bg-slate-950 text-white">
+          <Button asChild className="text-white border border-blue-500 bg-blue-700">
             <Link href="/contact">Contact Us</Link>
           </Button>
+          <ThemeToggle />
         </div>
         {/* Mobile Menu Button */}
         <button
@@ -109,7 +111,7 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", stiffness: 350, damping: 30 }}
-              className="fixed top-0 right-0 z-[1000] h-full w-4/5 max-w-sm bg-white px-6 py-6 shadow-2xl md:hidden"
+              className="bg-background fixed top-0 right-0 z-[1000] h-full w-4/5 max-w-sm px-6 py-6 shadow-2xl md:hidden"
             >
               <div className="mb-6 flex items-center justify-between">
                 <div className="w-32">
@@ -173,7 +175,7 @@ export default function Navbar() {
                 <div className="pt-4">
                   <Button
                     asChild
-                    className="w-full rounded-lg bg-blue-600 text-white hover:bg-blue-700"
+                    className="text-foreground w-full rounded-lg bg-blue-600 hover:bg-blue-700"
                     onClick={() => setOpen(false)}
                   >
                     <Link href="/contact">Contact Us</Link>

@@ -10,20 +10,20 @@ interface CardProfileAProps {
 
 export default function CardProfileA({ name, position, bio, image }: CardProfileAProps) {
   return (
-    <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-6 flex flex-col items-center text-center">
+    <div className="bg-background flex flex-col items-center rounded-2xl p-6 text-center shadow-md transition hover:shadow-lg">
       {/* Circular Image */}
-      <div className="w-32 h-32 relative rounded-full overflow-hidden mb-4">
+      <div className="relative mb-4 h-32 w-32 overflow-hidden rounded-full">
         <Image src={image} alt={name} fill className="object-cover" />
       </div>
 
       {/* Name */}
-      <h3 className="text-xl font-semibold text-gray-800 mb-1">{name}</h3>
+      <h3 className="mb-1 text-xl font-semibold text-gray-800">{name}</h3>
 
       {/* Position */}
-      <p className="text-indigo-600 font-medium mb-3">{position}</p>
+      <p className="mb-3 font-medium text-indigo-600">{position}</p>
 
       {/* Bio */}
-      <p className="text-gray-600 text-sm leading-relaxed">{bio}</p>
+      <p className="text-sm leading-relaxed text-gray-600">{bio}</p>
     </div>
   );
 }

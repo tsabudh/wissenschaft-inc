@@ -55,7 +55,7 @@ function NavigationMenuItem({
 }
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium focus:text-accent-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=open]:text-slate-400 focus-visible:ring-ring/50 outline-none transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1"
+  "group inline-flex w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium focus:text-accent-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=open]:text-slate-400 dark:data-[state=open]:text-slate-600 focus-visible:ring-ring/50 outline-none transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1"
 );
 
 function NavigationMenuTrigger({
@@ -104,7 +104,7 @@ function NavigationMenuViewport({
       <NavigationMenuPrimitive.Viewport
         className={cn(
           "relative mt-2 h-[var(--radix-navigation-menu-viewport-height)] w-full " +
-            "overflow-hidden rounded-md border bg-white shadow-md" +
+            "bg-background overflow-hidden rounded-md border shadow-md" +
             "data-[state=open]:animate-in data-[state=closed]:animate-out" +
             "data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90",
           className
@@ -123,7 +123,7 @@ function NavigationMenuLink({
     <NavigationMenuPrimitive.Link
       data-slot="navigation-menu-link"
       className={cn(
-        "data-[active=true]:focus:bg-accent data-[active=true]:bg-accent/50 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus-visible:ring-ring/50 [&_svg:not([class*='text-'])]:text-muted-foreground flex flex-col gap-1 rounded-sm p-2 text-sm text-zinc-500 transition-all outline-none hover:bg-slate-200 focus-visible:ring-[3px] focus-visible:outline-1 data-[active=true]:text-slate-100 [&_svg:not([class*='size-'])]:size-4",
+        "data-[active=true]:focus:bg-accent data-[active=true]:bg-accent/50 hover:text-accent-foreground dark:hover:text-secondary-foreground focus:bg-accent focus:text-accent-foreground focus-visible:ring-ring/50 [&_svg:not([class*='text-'])]:text-muted-foreground flex flex-col gap-1 rounded-sm p-2 text-sm text-zinc-500 transition-all outline-none hover:bg-slate-200 focus-visible:ring-[3px] focus-visible:outline-1 data-[active=true]:text-slate-100 [&_svg:not([class*='size-'])]:size-4",
         className
       )}
       asChild

@@ -25,7 +25,7 @@ export default function HeroSection() {
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link
               href="/about"
-              className="dark:hover:bg-blue/50 rounded-lg px-4 py-2 font-medium hover:bg-blue-600 hover:text-white"
+              className="hover:text-primary-foreground rounded-lg px-4 py-2 font-medium hover:bg-blue-600"
               onClick={() => {
                 gtmEvent({
                   event: "cta_click",
@@ -39,7 +39,7 @@ export default function HeroSection() {
 
             <Link
               href="/contact"
-              className="text-md rounded-lg bg-blue-600 px-4 py-2 font-medium text-white shadow-md transition hover:bg-blue-700"
+              className="text-md text-muted rounded-lg bg-blue-600 px-4 py-2 font-medium shadow-md transition hover:bg-blue-700"
               onClick={() => {
                 gtmEvent({
                   event: "cta_click",
