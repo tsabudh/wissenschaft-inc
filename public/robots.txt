@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://wissenschaft-inc.com
+
+# Sitemaps
+Sitemap: https://wissenschaft-inc.com/sitemap.xml
