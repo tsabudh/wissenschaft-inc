@@ -20,7 +20,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-[1000] w-full bg-zinc-200 dark:bg-zinc-300 text-slate-500">
+    <header className="sticky top-0 z-[1000] w-full bg-blue-950 text-gray-400 dark:bg-slate-800">
       <div className="mx-auto flex h-16 items-center justify-between px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center justify-center text-xl font-bold">
@@ -35,7 +35,7 @@ export default function Navbar() {
             <NavigationMenuList className="">
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/about" className="font-semibold text-slate-500">
+                  <Link href="/about" className="font-semibold text-gray-400">
                     About
                   </Link>
                 </NavigationMenuLink>
@@ -74,7 +74,7 @@ export default function Navbar() {
           </NavigationMenu>
 
           {/* Contact Button */}
-          <Button asChild className="text-white border border-blue-500 bg-blue-700">
+          <Button asChild className=" bg-blue-700 text-white">
             <Link href="/contact">Contact Us</Link>
           </Button>
           <ThemeToggle />
@@ -126,13 +126,13 @@ export default function Navbar() {
                 </button>
               </div>
 
-              <nav className="flex flex-col space-y-6 text-lg font-medium text-slate-700">
+              <nav className="flex flex-col space-y-6 text-lg font-medium text-gray-400">
                 <Link href="/about" onClick={() => setOpen(false)} className="hover:text-blue-600">
                   About
                 </Link>
 
                 <div className="space-y-2">
-                  <p className="text-sm font-semibold tracking-wide text-slate-400 uppercase">
+                  <p className="text-sm font-semibold tracking-wide text-gray-400 uppercase">
                     Services
                   </p>
                   {[

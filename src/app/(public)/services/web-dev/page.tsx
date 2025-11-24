@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export default function WebDevPage() {
   return (
-    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12  px-6 py-16 text-gray-800 dark:text-gray-300 lg:px-20">
+    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12 px-6 py-16 text-gray-800 lg:px-20 dark:text-gray-300">
       {/* HERO */}
       <section className="mb-20 text-center">
         <h1 className="mb-4 text-4xl leading-tight font-extrabold md:text-5xl lg:text-6xl">
@@ -403,7 +403,7 @@ export default function WebDevPage() {
       {/* CONTACT / CTA */}
       <section
         id="contact"
-        className="text-foreground rounded-xl bg-purple-600 px-2 py-16 text-center"
+        className="rounded-xl bg-purple-600 px-2 py-16 text-center text-white dark:bg-gray-700 dark:text-gray-300"
       >
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">Ready to build your web product?</h3>
         <p className="mb-6 px-4 text-lg md:text-xl">
@@ -412,7 +412,7 @@ export default function WebDevPage() {
         <div className="flex items-center justify-center gap-3">
           <Link
             href="/contact"
-            className="bg-background rounded-lg px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
+            className="bg-background rounded-lg px-8 py-3 font-semibold shadow-lg transition hover:scale-105 text-blue-600 dark:hover:bg-gray-800 dark:text-purple-200 dark:hover:text-purple-400"
           >
             Get Started
           </Link>

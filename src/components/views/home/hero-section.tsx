@@ -16,7 +16,7 @@ export default function HeroSection() {
           </h1>
 
           {/* Subheading */}
-          <h2 className="mt-6 max-w-3xl text-lg font-medium text-slate-600 sm:text-xl md:text-2xl">
+          <h2 className="mt-6 max-w-3xl text-lg font-medium text-slate-600 dark:text-gray-500 sm:text-xl md:text-2xl">
             We craft software that&apos;s tailored to your business, easy to adopt, and built to
             last.
           </h2>
@@ -39,7 +39,7 @@ export default function HeroSection() {
 
             <Link
               href="/contact"
-              className="text-md text-muted rounded-lg bg-blue-600 px-4 py-2 font-medium shadow-md transition hover:bg-blue-700"
+              className="text-md text-muted dark:text-gray-100 rounded-lg bg-blue-600 px-4 py-2 font-medium shadow-md transition hover:bg-blue-700"
               onClick={() => {
                 gtmEvent({
                   event: "cta_click",

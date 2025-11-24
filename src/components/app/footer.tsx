@@ -4,7 +4,7 @@ import LinkFooter from "../ui/link-footer";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-800 px-6 py-20 text-gray-200 lg:px-20">
+    <footer className="bg-blue-950 px-6 py-20 text-gray-200 lg:px-20 dark:bg-slate-800">
       <div>
         <div className="mb-10">
           <Link
@@ -76,7 +76,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="text-secondary  mb-4 font-semibold">Company</h3>
+            <h3 className="text-secondary mb-4 font-semibold">Company</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <LinkFooter href="/about">About us</LinkFooter>

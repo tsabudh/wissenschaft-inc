@@ -5,7 +5,7 @@ const TestimonialSection: React.FC = () => {
   return (
     <main className="px-6 lg:px-20">
       <section className="mb-10 py-10">
-        <h2 className="mb-10 text-5xl font-medium text-blue-400">What our clients say</h2>
+        <h2 className="mb-10 text-5xl font-medium text-blue-400  dark:text-blue-800">What our clients say</h2>
 
         <div className="grid grid-cols-3 gap-10 max-lg:grid-cols-1">
           <TestimonialCard
