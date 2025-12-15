@@ -20,10 +20,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-[1000] w-full bg-blue-950 text-gray-400 dark:bg-slate-800">
+    <header className="sticky top-0 z-[1000] w-full bg-blue-950 text-gray-200 dark:bg-slate-800">
       <div className="mx-auto flex h-16 items-center justify-between px-6">
         {/* Logo */}
-        <Link href="/" className="flex items-center justify-center text-xl font-bold">
+        <Link href="/" className="flex items-center justify-center text-xl font-semibold">
           <div className="_wrapper mx-4 w-50">
             <BrandLogoColorful />
           </div>
@@ -35,14 +35,21 @@ export default function Navbar() {
             <NavigationMenuList className="">
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/about" className="font-semibold text-gray-400">
+                  <Link href="/" className="font-semibold">
+                    Home
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link href="/about" className="font-semibold">
                     About
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Services</NavigationMenuTrigger>
+                <NavigationMenuTrigger href="/services">Services</NavigationMenuTrigger>
                 <NavigationMenuContent className="p-4">
                   <NavigationMenuLink asChild>
                     <Link href="/services/web-dev">Web Development</Link>
@@ -60,7 +67,19 @@ export default function Navbar() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>How we work</NavigationMenuTrigger>
+                <NavigationMenuTrigger>Portfolio</NavigationMenuTrigger>
+                <NavigationMenuContent className="p-4">
+                  <NavigationMenuLink asChild>
+                    <Link href="/portfolio/sk-gigax">SK GigaX</Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link href="/portfolio/skax">SK AX</Link>
+                  </NavigationMenuLink>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Our Process</NavigationMenuTrigger>
                 <NavigationMenuContent className="p-4">
                   <NavigationMenuLink asChild>
                     <Link href="/approach/agile">Agile</Link>
@@ -74,7 +93,7 @@ export default function Navbar() {
           </NavigationMenu>
 
           {/* Contact Button */}
-          <Button asChild className=" bg-blue-700 text-white">
+          <Button asChild className="bg-blue-700 text-white">
             <Link href="/contact">Contact Us</Link>
           </Button>
           <ThemeToggle />
@@ -126,13 +145,13 @@ export default function Navbar() {
                 </button>
               </div>
 
-              <nav className="flex flex-col space-y-6 text-lg font-medium text-gray-400">
+              <nav className="flex flex-col space-y-6 text-lg font-semibold text-gray-200">
                 <Link href="/about" onClick={() => setOpen(false)} className="hover:text-blue-600">
                   About
                 </Link>
 
                 <div className="space-y-2">
-                  <p className="text-sm font-semibold tracking-wide text-gray-400 uppercase">
+                  <p className="text-sm font-semibold tracking-wide text-gray-200 uppercase">
                     Services
                   </p>
                   {[

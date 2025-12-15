@@ -8,11 +8,11 @@ export default function CompanySection() {
         <div className="relative mx-auto mb-40 flex w-full justify-center">
           <div className="grid grid-cols-2 [grid-template-rows:auto_1fr] gap-x-10 max-lg:!grid-cols-1 max-lg:[grid-template-rows:auto_1fr_auto]">
             <div className="col-span-1 col-start-1 col-end-2">
-              <h2 className="text-5xl">Get the best product on the market</h2>
+              <h2 className="text-5xl font-medium">Get the best product on the market</h2>
             </div>
 
             <div className="col-start-1 col-end-2 py-4 max-lg:col-end-2 max-lg:row-start-3 max-lg:row-end-4">
-              <h2 className="text-3xl text-gray-500">
+              <h2 className="text-3xl text-text-quaternary">
                 We provide product development, custom mobile application, web application and
                 generative AI solutions for clients &amp; organizations of all sizes.
               </h2>

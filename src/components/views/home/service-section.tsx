@@ -6,7 +6,7 @@ export default function ServiceSection() {
     <main className="px-6 lg:px-20">
       <section className="py-20">
         {/* Intro Section */}
-        <h2 className="mb-10 text-5xl font-medium text-blue-400 dark:text-blue-800">What we do</h2>
+        <h2 className="text-text-brand mb-10 text-5xl font-medium">What we do</h2>
 
         <div className="grid grid-cols-2 gap-10 max-lg:grid-cols-1">
           <ServiceCard
@@ -41,7 +41,7 @@ export default function ServiceSection() {
         <div className="mt-20 flex justify-center">
           <a
             href="/services"
-            className="rounded-md bg-blue-500 px-4 py-2 text-lg font-medium text-white transition-colors duration-300 hover:bg-blue-700 dark:bg-blue-700 dark:text-gray-400 dark:hover:bg-blue-800"
+            className="bg-primary hover:bg-accent rounded-md px-4 py-2 text-lg font-medium text-white transition-colors duration-300"
           >
             View All Services
           </a>
