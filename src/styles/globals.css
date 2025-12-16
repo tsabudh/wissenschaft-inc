@@ -160,7 +160,7 @@
 /* ─────────────────────────────── */
 /* AUTOMATIC DARK MODE via prefers-color-scheme */
 /* ─────────────────────────────── */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --text-primary: oklch(92% 0 0);
     --text-secondary: oklch(82% 0 0);
@@ -184,7 +184,6 @@
     --border-quaternary: oklch(56% 0 0);
 
     --background: #22242b;
-    /* --background: #e2a727; */
     --foreground: #e5e7eb;
 
     --card: #020617;
@@ -226,11 +225,12 @@
     --sidebar-border: #ffffff1a;
     --sidebar-ring: #4f46e5;
   }
-}
+} */
 
 /* ─────────────────────────────── */
 /* MANUAL DARK OVERRIDE (.dark class) */
 /* ─────────────────────────────── */
+
 .dark {
   --text-primary: oklch(92% 0 0);
   --text-secondary: oklch(82% 0 0);

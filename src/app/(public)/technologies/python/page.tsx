@@ -16,14 +16,14 @@ function Section({ children, className = "" }: { children: React.ReactNode; clas
 
 export default function PythonPage() {
   return (
-    <main className="mx-auto min-h-screen max-w-7xl bg-gray-50 px-6 py-16 text-gray-800 lg:px-20">
+    <main className="text-text-primary mx-auto min-h-screen max-w-7xl px-6 py-16 lg:px-20">
       {/* 🟣 HERO */}
       <Section className="py-10 text-center">
         <motion.h1
           variants={fadeIn}
           initial="hidden"
           animate="show"
-          className="mb-6 text-4xl font-bold text-purple-700 md:text-6xl"
+          className="text-heading-primary mb-6 text-4xl font-bold md:text-6xl"
         >
           Build Scalable, Data-Driven Solutions with Python
         </motion.h1>
@@ -32,7 +32,7 @@ export default function PythonPage() {
           initial="hidden"
           animate="show"
           transition={{ delay: 0.2 }}
-          className="mx-auto max-w-3xl text-lg text-gray-600"
+          className="text-text-tertiary mx-auto max-w-3xl text-lg"
         >
           We use Python to power intelligent automation, data-intensive applications, and
           high-performance backends — delivering measurable results that scale with your business.
@@ -45,15 +45,15 @@ export default function PythonPage() {
       {/* 🧠 OUR EXPERTISE */}
       <Section className="grid items-center gap-12 md:grid-cols-2">
         <div>
-          <h2 className="mb-4 text-3xl font-bold text-gray-900">
+          <h2 className="text-heading-secondary mb-4 text-3xl font-bold">
             Our Expertise in Python Development
           </h2>
-          <p className="leading-relaxed text-gray-600">
+          <p className="text-text-tertiary leading-relaxed">
             Our engineers craft robust backend systems, analytics pipelines, and AI-enabled
-            architectures using Python’s vast ecosystem. We combine deep technical precision with
-            real-world business context to deliver software that scales and evolves with you.
+            architectures using Python&apos;s vast ecosystem. We combine deep technical precision
+            with real-world business context to deliver software that scales and evolves with you.
           </p>
-          <ul className="mt-4 list-inside list-disc text-gray-600">
+          <ul className="text-text-tertiary mt-4 list-inside list-disc">
             <li>High-performance APIs built on FastAPI or Django</li>
             <li>Analytics and data processing workflows</li>
             <li>AI-ready foundations for machine learning pipelines</li>
@@ -77,33 +77,35 @@ export default function PythonPage() {
 
       {/* ⚙️ WHY WE USE PYTHON */}
       <Section className="text-center">
-        <h2 className="mb-8 text-3xl font-bold text-gray-900">Why We Use Python</h2>
-        <div className="mx-auto max-w-4xl space-y-6 text-gray-600">
+        <h2 className="text-heading-secondary mb-8 text-3xl font-bold">Why We Use Python</h2>
+        <div className="text-text-tertiary mx-auto max-w-4xl space-y-6">
           <p>
-            Python’s versatility and ecosystem make it a natural fit for data-intensive platforms,
-            automation tools, and scalable backend systems. It’s open source, battle-tested, and
-            supported by one of the largest developer communities in the world.
+            Python&apos;s versatility and ecosystem make it a natural fit for data-intensive
+            platforms, automation tools, and scalable backend systems. It&apos;s open source,
+            battle-tested, and supported by one of the largest developer communities in the world.
           </p>
           <p>
-            Whether we’re building analytics dashboards, processing data streams, or orchestrating
-            AI workflows, Python provides the flexibility to move fast without compromising
-            stability or performance.
+            Whether we&apos;re building analytics dashboards, processing data streams, or
+            orchestrating AI workflows, Python provides the flexibility to move fast without
+            compromising stability or performance.
           </p>
         </div>
       </Section>
 
       {/* 🧩 TOOLS & ECOSYSTEM */}
       <Section className="text-center">
-        <h2 className="mb-10 text-3xl font-bold text-gray-900">Tools and Ecosystem We Love</h2>
+        <h2 className="text-heading-secondary mb-10 text-3xl font-bold">
+          Tools and Ecosystem We Love
+        </h2>
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {["Django", "FastAPI", "Flask", "Celery", "Pandas", "NumPy", "TensorFlow", "PyTorch"].map(
             (tool) => (
               <motion.div
                 key={tool}
                 whileHover={{ scale: 1.05 }}
-                className="bg-background rounded-xl p-6 shadow-md transition-shadow hover:shadow-lg"
+                className="bg-surface-primary rounded-xl p-6 shadow-md transition-shadow hover:shadow-lg"
               >
-                <p className="font-semibold text-gray-700">{tool}</p>
+                <p className="text-text-secondary font-semibold">{tool}</p>
               </motion.div>
             )
           )}
@@ -112,14 +114,14 @@ export default function PythonPage() {
 
       {/* 🔗 TECH STACK INTEGRATION */}
       <Section className="text-center">
-        <h2 className="mb-10 text-3xl font-bold text-gray-900">
+        <h2 className="text-heading-secondary mb-10 text-3xl font-bold">
           How Python Fits Into Your Tech Stack
         </h2>
-        <div className="mx-auto grid max-w-5xl items-start gap-8 md:grid-cols-3">
+        <div className="mx-auto grid max-w-5xl items-start justify-stretch gap-8 md:grid-cols-3">
           {[
             {
               title: "React / Next.js Frontend",
-              desc: "We integrate Python APIs seamlessly with modern frontends for smooth, high-performance user experiences.",
+              desc: "We integrate Python APIs seamlessly with modern frontend for smooth, high-performance user experiences.",
             },
             {
               title: "Python Microservices",
@@ -133,10 +135,10 @@ export default function PythonPage() {
             <motion.div
               key={i}
               whileHover={{ y: -4 }}
-              className="rounded-xl border border-gray-100 bg-gradient-to-br from-white to-gray-50 p-6 shadow-md transition-shadow hover:shadow-lg"
+              className="bg-surface-secondary h-full rounded-xl border p-6 shadow-md transition-shadow hover:shadow-lg"
             >
-              <h3 className="mb-2 text-xl font-semibold text-purple-700">{block.title}</h3>
-              <p className="text-sm text-gray-600">{block.desc}</p>
+              <h3 className="text-text-secondary mb-2 text-xl font-semibold">{block.title}</h3>
+              <p className="text-text-tertiary text-sm">{block.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -144,25 +146,25 @@ export default function PythonPage() {
 
       {/* ⚖️ WHEN TO USE / NOT USE */}
       <Section className="text-center">
-        <h2 className="mb-10 text-3xl font-bold text-gray-900">
+        <h2 className="text-heading-secondary mb-10 text-3xl font-bold">
           When to Use Python (and When Not To)
         </h2>
-        <p className="mx-auto mb-8 max-w-3xl text-gray-600">
+        <p className="text-text-tertiary mx-auto mb-8 max-w-3xl">
           Python is powerful — but like any tool, it shines brightest in the right context.
         </p>
         <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-2">
-          <div className="bg-background rounded-xl border border-green-100 p-8 shadow-md">
+          <div className="bg-surface-primary rounded-xl border p-8 shadow-md">
             <h3 className="mb-3 text-2xl font-semibold text-emerald-600">When to Use Python</h3>
-            <ul className="list-inside list-disc space-y-3 text-left text-gray-600 marker:text-emerald-600">
+            <ul className="text-text-tertiary list-inside list-disc space-y-3 text-left marker:text-emerald-600">
               <li>Data-intensive platforms and analytics dashboards</li>
               <li>Machine learning and AI-powered systems</li>
               <li>Backend APIs and automation workflows</li>
               <li>Internal tools or MVPs needing rapid iteration</li>
             </ul>
           </div>
-          <div className="bg-background rounded-xl border border-red-100 p-8 shadow-md">
+          <div className="bg-surface-primary rounded-xl border p-8 shadow-md">
             <h3 className="mb-3 text-2xl font-semibold text-orange-600">When Not to Use Python</h3>
-            <ul className="list-inside list-disc space-y-3 text-left text-gray-600 marker:text-orange-600">
+            <ul className="text-text-tertiary list-inside list-disc space-y-3 text-left marker:text-orange-600">
               <li>Low-latency, real-time systems (e.g. games, trading engines)</li>
               <li>Mobile apps requiring native performance</li>
               <li>Frontend development (web or mobile)</li>
@@ -173,48 +175,52 @@ export default function PythonPage() {
       </Section>
 
       {/* 📰 BLOG / ARTICLES */}
-      <Section className="text-center">
-        <h2 className="mb-10 text-3xl font-bold text-gray-900">Insights from Our Team</h2>
-        <p className="mx-auto mb-10 max-w-2xl text-gray-600">
-          Articles and case studies from our engineers — exploring Python, backend performance, and
-          data engineering best practices.
-        </p>
-        <div className="grid gap-8 md:grid-cols-3">
-          {pythonArticles.map((article) => (
-            <motion.div
-              key={article.name}
-              whileHover={{ scale: 1.03 }}
-              className="bg-background rounded-xl p-6 text-left shadow-md transition-shadow hover:shadow-lg"
-            >
-              <Link href={article.link}>
-                <div className="mb-4 h-40 w-full overflow-hidden rounded-lg bg-gray-200">
-                  {article.imageUrl ? (
-                    <Image
-                      src={article.imageUrl}
-                      alt={article.name}
-                      width={400}
-                      height={160}
-                      className="h-full w-full object-cover"
-                    />
-                  ) : (
-                    <div className="h-full w-full bg-gradient-to-br from-sky-500 to-indigo-500"></div>
-                  )}
-                </div>
-                <h3 className="mb-2 text-lg font-semibold">{article.name}</h3>
-                <p className="text-sm text-gray-600">{article.description}</p>
-              </Link>
-            </motion.div>
-          ))}
-        </div>
-      </Section>
+      {pythonArticles.length > 0 && (
+        <Section className="text-center">
+          <h2 className="text-heading-secondary mb-10 text-3xl font-bold">
+            Insights from Our Team
+          </h2>
+          <p className="text-text-tertiary mx-auto mb-10 max-w-2xl">
+            Articles and case studies from our engineers — exploring Python, backend performance,
+            and data engineering best practices.
+          </p>
+          <div className="grid gap-8 md:grid-cols-3">
+            {pythonArticles.map((article) => (
+              <motion.div
+                key={article.name}
+                whileHover={{ scale: 1.03 }}
+                className="bg-background rounded-xl p-6 text-left shadow-md transition-shadow hover:shadow-lg"
+              >
+                <Link href={article.link}>
+                  <div className="mb-4 h-40 w-full overflow-hidden rounded-lg bg-gray-200">
+                    {article.imageUrl ? (
+                      <Image
+                        src={article.imageUrl}
+                        alt={article.name}
+                        width={400}
+                        height={160}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      <div className="h-full w-full bg-gradient-to-br from-sky-500 to-indigo-500"></div>
+                    )}
+                  </div>
+                  <h3 className="mb-2 text-lg font-semibold">{article.name}</h3>
+                  <p className="text-text-tertiary text-sm">{article.description}</p>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </Section>
+      )}
 
       {/* 🚀 CTA */}
-      <Section className="text-foreground rounded-xl bg-purple-600 px-4 py-16 text-center">
+      <Section className="text-foreground rounded-xl bg-purple-400 dark:bg-purple-600 px-4 py-16 text-center">
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">
           Ready to build your next data-driven product?
         </h3>
         <p className="mb-6 px-4 text-lg md:text-xl">
-          Tell us about your project and we’ll recommend the fastest path to results.
+          Tell us about your project and we&apos;ll recommend the fastest path to results.
         </p>
         <div className="flex items-center justify-center gap-3">
           <Link
@@ -222,12 +228,6 @@ export default function PythonPage() {
             className="bg-background rounded-lg px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
           >
             Get Started
-          </Link>
-          <Link
-            href="/contact#brief"
-            className="text-foreground hover:bg-background/5 rounded-lg border border-white/30 px-6 py-3"
-          >
-            Send Brief
           </Link>
         </div>
       </Section>

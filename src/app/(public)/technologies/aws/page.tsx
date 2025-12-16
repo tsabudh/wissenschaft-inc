@@ -7,13 +7,13 @@ import { awsArticles } from "@/data/articles";
 
 export default function AwsPage() {
   return (
-    <main className="mx-auto min-h-screen max-w-7xl bg-gray-50 px-6 py-16 text-gray-800 lg:px-20">
+    <main className="text-primary mx-auto min-h-screen max-w-7xl px-6 py-16 lg:px-20">
       {/* 🟣 HERO */}
       <section className="py-10 text-center">
-        <h1 className="mb-6 text-4xl font-bold text-amber-500 md:text-6xl">
+        <h1 className="text-heading-primary mb-6 text-4xl font-bold md:text-6xl">
           AWS Development & Cloud Solutions
         </h1>
-        <p className="mx-auto max-w-3xl text-lg text-gray-600">
+        <p className="text-text-tertiary mx-auto max-w-3xl text-lg">
           Build, scale, and secure your applications on the world&apos;s most trusted cloud
           platform. We help teams harness AWS to achieve operational excellence, cost efficiency,
           and rapid scalability.
@@ -22,10 +22,10 @@ export default function AwsPage() {
 
       {/* 💡 OUR EXPERTISE */}
       <section className="mb-24 text-center">
-        <h2 className="mb-8 text-3xl font-bold text-gray-900">
+        <h2 className="text-heading-secondary mb-8 text-3xl font-bold">
           Our Expertise in AWS Cloud Development
         </h2>
-        <p className="mx-auto mb-10 max-w-3xl text-gray-600">
+        <p className="text-text-tertiary mx-auto mb-10 max-w-3xl">
           From modern serverless APIs to globally distributed infrastructures, our engineers design
           AWS solutions optimized for reliability, automation, and scale. We&apos;ve deployed
           production systems leveraging EC2, ECS, Lambda, S3, CloudFront, and more.
@@ -49,44 +49,54 @@ export default function AwsPage() {
 
       {/* 🔧 TOOLS & ECOSYSTEM */}
       <section className="mb-24 text-center">
-        <h2 className="mb-8 text-3xl font-bold text-gray-900">Tools & Ecosystem</h2>
-        <p className="mx-auto mb-12 max-w-2xl text-gray-600">
+        <h2 className="text-heading-secondary mb-8 text-3xl font-bold">Tools & Ecosystem</h2>
+        <p className="text-text-tertiary mx-auto mb-12 max-w-2xl">
           Our AWS implementations integrate seamlessly with modern DevOps pipelines, CI/CD, and
           observability tools to ensure continuous delivery and system health.
         </p>
 
-        <div className="grid grid-cols-2 gap-6 font-medium text-gray-700 md:grid-cols-4">
-          <div className="bg-background rounded-lg py-6 shadow-sm">EC2</div>
-          <div className="bg-background rounded-lg py-6 shadow-sm">ECS & Fargate</div>
-          <div className="bg-background rounded-lg py-6 shadow-sm">Lambda</div>
-          <div className="bg-background rounded-lg py-6 shadow-sm">S3 & CloudFront</div>
-          <div className="bg-background rounded-lg py-6 shadow-sm">RDS</div>
-          <div className="bg-background rounded-lg py-6 shadow-sm">DynamoDB</div>
-          <div className="bg-background rounded-lg py-6 shadow-sm">CloudWatch</div>
-          <div className="bg-background rounded-lg py-6 shadow-sm">CDK / Terraform</div>
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+          {[
+            "EC2",
+            "ECS & Fargate",
+            "Lambda",
+            "S3 & CloudFront",
+            "RDS",
+            "DynamoDB",
+            "CloudWatch",
+            "CDK / Terraform",
+          ].map((tool) => (
+            <motion.div
+              key={tool}
+              whileHover={{ scale: 1.05 }}
+              className="bg-surface-primary rounded-xl p-6 shadow-md transition-shadow hover:shadow-lg"
+            >
+              <p className="text-text-secondary font-medium">{tool}</p>
+            </motion.div>
+          ))}
         </div>
       </section>
 
       {/* 🔌 TECH STACK INTEGRATION */}
       <section className="mb-24 text-center">
-        <h2 className="mb-8 text-3xl font-bold text-gray-900">Tech Stack Integration</h2>
-        <p className="mx-auto mb-10 max-w-2xl text-gray-600">
+        <h2 className="text-heading-secondary mb-8 text-3xl font-bold">Tech Stack Integration</h2>
+        <p className="text-text-tertiary mx-auto mb-10 max-w-2xl">
           AWS works harmoniously with your existing stack — whether it&apos;s Node.js, Python, or
           Rust — providing infrastructure primitives to support every layer of your product.
         </p>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {[
-            { title: "Frontend on React / Next.js", color: "from-yellow-400 to-orange-500" },
-            { title: "Backend APIs on AWS Lambda", color: "from-blue-500 to-green-500" },
-            { title: "Storage & Queues on S3 / SQS", color: "from-indigo-500 to-purple-500" },
+            { title: "Frontend on React / Next.js" },
+            { title: "Backend APIs on AWS Lambda" },
+            { title: "Storage & Queues on S3 / SQS" },
           ].map((item) => (
             <motion.div
               key={item.title}
               whileHover={{ scale: 1.03 }}
-              className={`rounded-xl bg-gradient-to-br ${item.color} text-foreground p-6 shadow-lg`}
+              className="bg-surface-secondary rounded-xl border p-6 shadow-md transition-shadow hover:shadow-lg"
             >
-              <h3 className="text-lg font-semibold">{item.title}</h3>
+              <h3 className="text-text-secondary mb-2 text-xl font-semibold">{item.title}</h3>
             </motion.div>
           ))}
         </div>
@@ -94,7 +104,9 @@ export default function AwsPage() {
 
       {/* ⚙️ WHEN TO USE / NOT USE AWS */}
       <section className="mb-24 text-center">
-        <h2 className="mb-8 text-3xl font-bold text-gray-900">When to Use AWS — and When Not To</h2>
+        <h2 className="text-heading-secondary mb-8 text-3xl font-bold">
+          When to Use AWS — and When Not To
+        </h2>
         <div className="grid gap-8 text-left md:grid-cols-2">
           <div className="rounded-xl bg-green-50 p-8 shadow-sm">
             <h3 className="mb-4 text-xl font-semibold text-green-700">When AWS Shines</h3>
@@ -117,40 +129,44 @@ export default function AwsPage() {
       </section>
 
       {/* 📰 BLOG SECTION */}
-      <section className="mb-24 text-center">
-        <h2 className="mb-10 text-3xl font-bold text-gray-900">Insights from Our Team</h2>
-        <p className="mx-auto mb-10 max-w-2xl text-gray-600">
-          Learn how we leverage AWS to build resilient, cost-efficient, and high-performance cloud
-          systems through real engineering case studies and insights.
-        </p>
-        <div className="grid gap-8 md:grid-cols-3">
-          {awsArticles.map((article) => (
-            <motion.div
-              key={article.name}
-              whileHover={{ scale: 1.03 }}
-              className="bg-background rounded-xl p-6 text-left shadow-md transition-shadow hover:shadow-lg"
-            >
-              <Link href={article.link}>
-                <div className="mb-4 h-40 w-full overflow-hidden rounded-lg bg-gray-200">
-                  {article.imageUrl ? (
-                    <Image
-                      src={article.imageUrl}
-                      alt={article.name}
-                      width={400}
-                      height={160}
-                      className="h-full w-full object-cover"
-                    />
-                  ) : (
-                    <div className="h-full w-full bg-gradient-to-br from-yellow-500 to-orange-600"></div>
-                  )}
-                </div>
-                <h3 className="mb-2 text-lg font-semibold">{article.name}</h3>
-                <p className="text-sm text-gray-600">{article.description}</p>
-              </Link>
-            </motion.div>
-          ))}
-        </div>
-      </section>
+      {awsArticles.length > 0 && (
+        <section className="mb-24 text-center">
+          <h2 className="text-heading-secondary mb-10 text-3xl font-bold">
+            Insights from Our Team
+          </h2>
+          <p className="text-text-tertiary mx-auto mb-10 max-w-2xl">
+            Learn how we leverage AWS to build resilient, cost-efficient, and high-performance cloud
+            systems through real engineering case studies and insights.
+          </p>
+          <div className="grid gap-8 md:grid-cols-3">
+            {awsArticles.map((article) => (
+              <motion.div
+                key={article.name}
+                whileHover={{ scale: 1.03 }}
+                className="bg-background rounded-xl p-6 text-left shadow-md transition-shadow hover:shadow-lg"
+              >
+                <Link href={article.link}>
+                  <div className="mb-4 h-40 w-full overflow-hidden rounded-lg bg-gray-200">
+                    {article.imageUrl ? (
+                      <Image
+                        src={article.imageUrl}
+                        alt={article.name}
+                        width={400}
+                        height={160}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      <div className="h-full w-full bg-gradient-to-br from-yellow-500 to-orange-600"></div>
+                    )}
+                  </div>
+                  <h3 className="mb-2 text-lg font-semibold">{article.name}</h3>
+                  <p className="text-text-tertiary text-sm">{article.description}</p>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* 🚀 CTA */}
       <section
@@ -171,12 +187,7 @@ export default function AwsPage() {
           >
             Get Started
           </Link>
-          <Link
-            href="/contact#brief"
-            className="text-foreground hover:bg-background/5 rounded-lg border border-white/30 px-6 py-3"
-          >
-            Send Brief
-          </Link>
+          
         </div>
       </section>
     </main>

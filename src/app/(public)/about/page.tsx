@@ -4,14 +4,14 @@ import { Metadata } from "next";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen px-6 py-12 text-slate-900 md:px-12 lg:px-24">
+    <main className="text-text- min-h-screen px-6 py-12 md:px-12 lg:px-24">
       <div className="mx-auto max-w-7xl">
         <section className="py-20">
-          <h1 className="dark:text-primary-foreground mb-6 text-center text-4xl font-bold">
+          <h1 className="text-text- mb-6 text-center text-4xl font-bold">
             Elevating Business Excellence through Innovative Solutions
           </h1>
 
-          <p className="mx-auto mb-12 max-w-5xl text-center text-lg leading-relaxed text-gray-600">
+          <p className="text-text-secondary mx-auto mb-12 max-w-5xl text-center text-lg leading-relaxed">
             Wissenschaft is a distinguished software company renowned for its exceptional services
             in data science, market research software, business process optimization, cost
             optimization, and product development. With a steadfast commitment to excellence and
@@ -20,30 +20,26 @@ export default function AboutPage() {
           </p>
 
           <div className="mt-16 grid gap-8 md:grid-cols-2">
-            <div className="bg-background dark:bg-muted rounded-2xl p-8 shadow-sm transition-shadow hover:shadow-md">
-              <h2 className="dark:text-primary-foreground mb-3 text-2xl font-semibold">
-                Our Mission
-              </h2>
-              <p className="text-gray-600">
+            <div className="bg-surface-secondary rounded-lg p-8 shadow-sm transition-shadow hover:shadow-md">
+              <h2 className="mb-3 text-2xl font-semibold">Our Mission</h2>
+              <p className="text-text-tertiary">
                 To empower businesses through intelligent, data-driven, and cost-efficient software
                 solutions that enable sustainable growth and competitive advantage.
               </p>
             </div>
 
-            <div className="bg-background dark:bg-muted rounded-2xl p-8 shadow-sm transition-shadow hover:shadow-md">
-              <h2 className="dark:text-primary-foreground mb-3 text-2xl font-semibold">
-                Our Vision
-              </h2>
-              <p className="text-gray-600">
+            <div className="bg-surface-secondary rounded-lg p-8 shadow-sm transition-shadow hover:shadow-md">
+              <h2 className="mb-3 text-2xl font-semibold">Our Vision</h2>
+              <p className="text-text-tertiary">
                 To become a global leader in business innovation by blending technology, research,
                 and human insight to redefine enterprise excellence.
               </p>
             </div>
           </div>
         </section>
-        <section className="bg-background dark:bg-muted py-16">
+        <section className="bg-surface-secondary py-16 rounded-lg">
           <div className="mx-auto">
-            <h2 className="text-primary mb-10 text-center text-3xl font-semibold md:text-4xl">
+            <h2 className="text-text-primary mb-10 text-center text-3xl font-semibold md:text-4xl">
               What Defines Wissenschaft
             </h2>
 
@@ -51,12 +47,12 @@ export default function AboutPage() {
               {aboutData.slides.map((item, index) => (
                 <div key={index} className="group mb-10 ml-6">
                   {/* Dot */}
-                  <div className="absolute -left-3.5 flex h-7 w-7 items-center justify-center rounded-full bg-blue-100 group-hover:bg-blue-600">
-                    <span className="group-hover:bg-background dark:bg-muted h-3 w-3 rounded-full bg-blue-600 transition" />
+                  <div className="group-hover:bg-primary absolute -left-3.5 flex h-7 w-7 items-center justify-center rounded-full bg-blue-100">
+                    <span className="group-hover:bg-surface-secondary bg-primary h-3 w-3 rounded-full transition" />
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-primary mb-2 text-xl font-semibold transition group-hover:text-blue-600">
+                  <h3 className="text- mb-2 text-xl font-semibold transition">
                     {item.indicatorText}
                   </h3>
                   <p className="leading-relaxed text-gray-600">{item.textContent}</p>

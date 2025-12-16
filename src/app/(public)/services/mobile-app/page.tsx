@@ -5,13 +5,13 @@ import { metadataMap } from "@/lib/metadataMap";
 
 export default function MobileAppPage() {
   return (
-    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12 px-6 py-16 text-gray-800 lg:px-20 dark:text-gray-300">
+    <main className="text-text-primary mx-auto flex min-h-screen max-w-7xl flex-col gap-12 px-6 py-16 lg:px-20">
       {/* HERO */}
       <section className="mb-20 text-center">
         <h1 className="mb-4 text-4xl leading-tight font-extrabold md:text-5xl lg:text-6xl">
           Mobile apps people love to use
         </h1>
-        <p className="mx-auto max-w-3xl text-lg text-gray-600 md:text-xl">
+        <p className="text-text-tertiary mx-auto max-w-3xl text-lg md:text-xl">
           We design and build native, cross-platform, and Progressive Web Apps (PWA) that perform
           beautifully, scale reliably, and match your business goals — from MVPs to enterprise
           mobility.
@@ -20,13 +20,13 @@ export default function MobileAppPage() {
         <div className="mt-8 flex justify-center gap-4">
           <Link
             href="/contact"
-            className="text-foreground inline-flex items-center gap-2 rounded-lg bg-purple-600 px-6 py-3 font-semibold shadow-lg transition-transform hover:scale-[1.02]"
+            className="text-md text-primary-foreground bg-primary hover:bg-accent inline-flex items-center rounded-lg px-4 py-2 font-medium shadow-md transition dark:text-gray-100"
           >
             Start your app project
           </Link>
           <Link
             href="#who-we-build-for"
-            className="bg-background inline-flex items-center gap-2 rounded-lg border border-gray-200 px-6 py-3 font-medium shadow-sm"
+            className="text-md bg-surface-secondary hover:bg-surface-quaternary inline-flex items-center gap-2 rounded-lg border border-gray-200 px-6 py-2 font-medium shadow-sm"
           >
             Learn more
           </Link>
@@ -37,38 +37,44 @@ export default function MobileAppPage() {
       <section id="who-we-build-for">
         <header className="mb-6 text-center">
           <h2 className="text-2xl font-bold">Who we build for</h2>
-          <p className="text-gray-600">
+          <p className="text-text-tertiary">
             From first-time founders to global enterprises — whether you&apos;re launching an app
             from scratch or extending an existing website to mobile.
           </p>
         </header>
 
         <div className="mb-8 flex flex-col items-center gap-6">
-          <div className="bg-background w-full rounded-2xl p-6 shadow-md">
-            <p className="text-md text-gray-500">
+          <div className="bg-surface-secondary w-full rounded-2xl p-6 shadow-md">
+            <p className="text-md text-text-quaternary">
               Already have a website and want a mobile application? Or building a mobile-first
               product? We adapt our approach to fit your starting point and business priorities.
             </p>
             <div className="flex flex-col gap-6 xl:flex-row xl:items-center xl:justify-between xl:gap-4">
               <div className="w-full">
                 <div className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-3">
-                  <div className="bg-background rounded-md border border-gray-100 p-3 text-center shadow-sm">
+                  <div className="bg-surface-primary rounded-md border border-gray-100 p-3 text-center shadow-sm">
                     <strong className="block">Startups</strong>
-                    <span className="block text-sm text-gray-500">MVPs, rapid validation</span>
+                    <span className="text-text-quaternary block text-sm">
+                      MVPs, rapid validation
+                    </span>
                   </div>
-                  <div className="bg-background rounded-md border border-gray-100 p-3 text-center shadow-sm">
+                  <div className="bg-surface-primary rounded-md border border-gray-100 p-3 text-center shadow-sm">
                     <strong className="block">Growing businesses</strong>
-                    <span className="block text-sm text-gray-500">Customer apps & retention</span>
+                    <span className="text-text-quaternary block text-sm">
+                      Customer apps & retention
+                    </span>
                   </div>
-                  <div className="bg-background rounded-md border border-gray-100 p-3 text-center shadow-sm">
+                  <div className="bg-surface-primary rounded-md border border-gray-100 p-3 text-center shadow-sm">
                     <strong className="block">Enterprises</strong>
-                    <span className="block text-sm text-gray-500">Secure, compliant mobility</span>
+                    <span className="text-text-quaternary block text-sm">
+                      Secure, compliant mobility
+                    </span>
                   </div>
                 </div>
               </div>
 
               <div className="mt-4 w-full md:mt-0">
-                <div className="flex items-center justify-between text-sm text-gray-500">
+                <div className="text-text-quaternary flex items-center justify-between text-sm">
                   <span>Website-first → Mobile-first</span>
                   <span>Simple companion app → Full native product</span>
                 </div>
@@ -88,7 +94,7 @@ export default function MobileAppPage() {
                   />
                 </div>
 
-                <div className="mt-3 flex items-center justify-between gap-4 text-sm text-gray-600">
+                <div className="text-text-tertiary mt-3 flex items-center justify-between gap-4 text-sm">
                   <span className="inline-flex items-center gap-2">
                     <span className="rounded-full bg-purple-100 px-2 py-0.5 text-purple-700">
                       📱
@@ -118,22 +124,22 @@ export default function MobileAppPage() {
           <h2 className="text-2xl font-bold">
             What we build <span className="italic">and</span> what it means
           </h2>
-          <p className="text-gray-600">
+          <p className="text-text-tertiary">
             Practical explanations so decision-makers understand trade-offs and outcomes.
           </p>
         </header>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {/* Native */}
-          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-surface-secondary rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Native apps</h3>
-            <p className="mb-3 text-sm text-gray-600">
+            <p className="text-text-tertiary mb-3 text-sm">
               Built specifically for each platform using the platform&apos;s official languages.
               Native apps provide the best performance, smoothest animations, and the deepest access
               to device features such as sensors and cameras. Ideal when reliability, battery
               efficiency, and platform-consistent UI are priorities.
             </p>
-            <ul className="mt-2 space-y-1 text-xs text-gray-500">
+            <ul className="text-text-quaternary mt-2 space-y-1 text-xs">
               <li>Best performance & UX fidelity</li>
               <li>Full access to device APIs</li>
               <li>Preferred for high-performance or hardware-heavy apps</li>
@@ -141,15 +147,15 @@ export default function MobileAppPage() {
           </article>
 
           {/* Cross-platform */}
-          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-surface-secondary rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Cross-platform</h3>
-            <p className="mb-3 text-sm text-gray-600">
+            <p className="text-text-tertiary mb-3 text-sm">
               A single codebase that runs on both iOS and Android. Cross-platform apps let you
               launch faster and lower maintenance costs while still delivering near-native
               performance for most product needs. Great for startups and products that prioritize
               time-to-market.
             </p>
-            <ul className="mt-2 space-y-1 text-xs text-gray-500">
+            <ul className="text-text-quaternary mt-2 space-y-1 text-xs">
               <li>Faster time-to-market</li>
               <li>Shared engineering effort across platforms</li>
               <li>Good trade-off between cost and native feel</li>
@@ -157,15 +163,15 @@ export default function MobileAppPage() {
           </article>
 
           {/* PWA */}
-          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-surface-secondary rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Progressive Web Apps (PWA)</h3>
-            <p className="mb-3 text-sm text-gray-600">
+            <p className="text-text-tertiary mb-3 text-sm">
               PWAs are websites that behave like apps. Installable from the browser, work offline,
               and update automatically. If you already have a website, a PWA can often deliver
               mobile-like experiences without full native development, and it&apos;s perfect for
               broad reach and quick iterations.
             </p>
-            <ul className="mt-2 space-y-1 text-xs text-gray-500">
+            <ul className="text-text-quaternary mt-2 space-y-1 text-xs">
               <li>Fast to deploy, easy to update</li>
               <li>Works on almost any device via the browser</li>
               <li>Great for testing product-market fit before native investment</li>
@@ -173,13 +179,13 @@ export default function MobileAppPage() {
           </article>
 
           {/* UI/UX & Prototyping */}
-          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-surface-secondary rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Design & prototyping</h3>
-            <p className="mb-3 text-sm text-gray-600">
+            <p className="text-text-tertiary mb-3 text-sm">
               We validate ideas with sketches and interactive prototypes, then refine visual and
               interaction design for touch — prioritizing clarity, accessibility, and conversion.
             </p>
-            <ul className="mt-2 space-y-1 text-xs text-gray-500">
+            <ul className="text-text-quaternary mt-2 space-y-1 text-xs">
               <li>Interactive prototypes for user testing</li>
               <li>Design systems for consistency</li>
               <li>Accessibility and localized UX</li>
@@ -187,13 +193,13 @@ export default function MobileAppPage() {
           </article>
 
           {/* Backend & Integrations */}
-          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-surface-secondary rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">APIs, sync & offline</h3>
-            <p className="mb-3 text-sm text-gray-600">
+            <p className="text-text-tertiary mb-3 text-sm">
               Mobile experiences depend on reliable APIs, sync strategies, and offline support. We
               design backends and sync layers to keep your app responsive and resilient.
             </p>
-            <ul className="mt-2 space-y-1 text-xs text-gray-500">
+            <ul className="text-text-quaternary mt-2 space-y-1 text-xs">
               <li>Realtime sync & background sync</li>
               <li>Optimistic UI & conflict resolution</li>
               <li>Secure authentication & data privacy</li>
@@ -201,13 +207,13 @@ export default function MobileAppPage() {
           </article>
 
           {/* Maintenance & Store Launch */}
-          <article className="bg-background rounded-xl p-6 shadow-md transition hover:shadow-xl">
+          <article className="bg-surface-secondary rounded-xl p-6 shadow-md transition hover:shadow-xl">
             <h3 className="mb-2 text-lg font-semibold">Launch & ongoing support</h3>
-            <p className="mb-3 text-sm text-gray-600">
+            <p className="text-text-tertiary mb-3 text-sm">
               We manage app store submissions, CI/CD, beta distribution, crash reporting, and post-
               launch improvements so your app keeps getting better after release.
             </p>
-            <ul className="mt-2 space-y-1 text-xs text-gray-500">
+            <ul className="text-text-quaternary mt-2 space-y-1 text-xs">
               <li>App Store & Play Store submission support</li>
               <li>CI, Fastlane, beta distribution</li>
               <li>Crash monitoring, analytics, and SLAs</li>
@@ -220,58 +226,58 @@ export default function MobileAppPage() {
       <section id="process">
         <header className="mb-6">
           <h2 className="text-2xl font-bold">Our process</h2>
-          <p className="text-gray-600">
+          <p className="text-text-tertiary">
             A mobile-first, iterative process focusing on user outcomes.
           </p>
         </header>
 
         <ol className="grid grid-cols-1 gap-6 md:grid-cols-3 xl:grid-cols-5">
-          <li className="bg-background rounded-lg p-6 shadow-sm">
+          <li className="bg-surface-secondary rounded-lg p-6 shadow-sm">
             <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-purple-50 font-semibold text-purple-700">
               1
             </div>
             <h4 className="mb-1 font-medium">Discovery & priorities</h4>
-            <p className="text-sm text-gray-500">
+            <p className="text-text-quaternary text-sm">
               Goals, metrics, user journeys, and a prioritized roadmap.
             </p>
           </li>
 
-          <li className="bg-background rounded-lg p-6 shadow-sm">
+          <li className="bg-surface-secondary rounded-lg p-6 shadow-sm">
             <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-purple-50 font-semibold text-purple-700">
               2
             </div>
             <h4 className="mb-1 font-medium">Design & prototype</h4>
-            <p className="text-sm text-gray-500">
+            <p className="text-text-quaternary text-sm">
               Clickable prototypes and user testing before development.
             </p>
           </li>
 
-          <li className="bg-background rounded-lg p-6 shadow-sm">
+          <li className="bg-surface-secondary rounded-lg p-6 shadow-sm">
             <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-purple-50 font-semibold text-purple-700">
               3
             </div>
             <h4 className="mb-1 font-medium">Build & integrate</h4>
-            <p className="text-sm text-gray-500">
+            <p className="text-text-quaternary text-sm">
               Native / cross-platform development and backend integration.
             </p>
           </li>
 
-          <li className="bg-background rounded-lg p-6 shadow-sm">
+          <li className="bg-surface-secondary rounded-lg p-6 shadow-sm">
             <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-purple-50 font-semibold text-purple-700">
               4
             </div>
             <h4 className="mb-1 font-medium">Test on devices</h4>
-            <p className="text-sm text-gray-500">
+            <p className="text-text-quaternary text-sm">
               Real-device QA, performance testing, and accessibility checks.
             </p>
           </li>
 
-          <li className="bg-background rounded-lg p-6 shadow-sm">
+          <li className="bg-surface-secondary rounded-lg p-6 shadow-sm">
             <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-purple-50 font-semibold text-purple-700">
               5
             </div>
             <h4 className="mb-1 font-medium">Launch & iterate</h4>
-            <p className="text-sm text-gray-500">
+            <p className="text-text-quaternary text-sm">
               Store release, monitoring, and continuous improvements based on metrics.
             </p>
           </li>
@@ -282,43 +288,43 @@ export default function MobileAppPage() {
       <section id="stack">
         <header className="mb-6">
           <h2 className="text-2xl font-bold">Technology we typically use</h2>
-          <p className="text-gray-600">
+          <p className="text-text-tertiary">
             Our go-to tools for mobile, backend and infrastructure. We adapt to your existing
             systems and can modernize legacy platforms when needed.
           </p>
         </header>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          <div className="bg-background rounded-xl p-6 shadow-sm">
+          <div className="bg-surface-secondary rounded-xl p-6 shadow-sm">
             <h4 className="mb-2 font-semibold">Mobile (UI)</h4>
-            <p className="mb-2 text-sm text-gray-600">
+            <p className="text-text-tertiary mb-2 text-sm">
               Swift (iOS), Kotlin (Android), React Native, Flutter, and PWA technologies.
             </p>
-            <ul className="text-xs text-gray-500">
+            <ul className="text-text-quaternary text-xs">
               <li>Platform-native SDKs for best UX</li>
               <li>Cross-platform for faster launches</li>
               <li>Progressive Web Apps for broad reach</li>
             </ul>
           </div>
 
-          <div className="bg-background rounded-xl p-6 shadow-sm">
+          <div className="bg-surface-secondary rounded-xl p-6 shadow-sm">
             <h4 className="mb-2 font-semibold">Backend & APIs</h4>
-            <p className="mb-2 text-sm text-gray-600">
+            <p className="text-text-tertiary mb-2 text-sm">
               NestJS, Node.js, GraphQL, REST, Firebase, PostgreSQL.
             </p>
-            <ul className="text-xs text-gray-500">
+            <ul className="text-text-quaternary text-xs">
               <li>Realtime & offline sync</li>
               <li>Secure auth & data handling</li>
               <li>Scalable API design</li>
             </ul>
           </div>
 
-          <div className="bg-background rounded-xl p-6 shadow-sm">
+          <div className="bg-surface-secondary rounded-xl p-6 shadow-sm">
             <h4 className="mb-2 font-semibold">Infra & CI</h4>
-            <p className="mb-2 text-sm text-gray-600">
+            <p className="text-text-tertiary mb-2 text-sm">
               Docker, Kubernetes, Fastlane, Firebase App Distribution, and cloud CI/CD.
             </p>
-            <ul className="text-xs text-gray-500">
+            <ul className="text-text-quaternary text-xs">
               <li>Automated builds & distribution</li>
               <li>Crash reporting & analytics</li>
               <li>Secure, compliant deployments</li>
@@ -326,7 +332,7 @@ export default function MobileAppPage() {
           </div>
         </div>
 
-        <p className="mt-6 text-sm text-gray-500">
+        <p className="text-text-quaternary mt-6 text-sm">
           We favor pragmatic, well-supported technologies — but we’ll work with your platform of
           choice and integrate with existing enterprise systems where required.
         </p>
@@ -335,9 +341,9 @@ export default function MobileAppPage() {
       {/* WHY CHOOSE US */}
       <section id="why">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <div className="bg-background rounded-xl p-8 shadow-sm">
+          <div className="bg-surface-secondary rounded-xl p-8 shadow-sm">
             <h3 className="mb-3 text-2xl font-bold">Why choose us</h3>
-            <p className="mb-4 text-gray-600">
+            <p className="text-text-tertiary mb-4">
               We focus on product outcomes: usability, performance, and measurable growth. Our
               cross-functional teams deliver end-to-end apps — from idea validation to long-term
               support.
@@ -361,9 +367,9 @@ export default function MobileAppPage() {
             </ul>
           </div>
 
-          <div className="bg-background rounded-xl p-8 shadow-sm">
+          <div className="bg-surface-secondary rounded-xl p-8 shadow-sm">
             <h4 className="mb-3 text-lg font-semibold">Still unsure which approach fits?</h4>
-            <p className="mb-4 text-sm text-gray-600">
+            <p className="text-text-tertiary mb-4 text-sm">
               We&apos;ll help you choose: native for performance and device features, cross-platform
               for speed and efficiency, or a PWA to extend a web presence quickly. Book a short
               consultation and we&apos;ll suggest the best path for your goals and budget.
@@ -371,7 +377,7 @@ export default function MobileAppPage() {
 
             <Link
               href="/contact"
-              className="text-foreground inline-flex items-center gap-2 rounded-lg bg-purple-600 px-6 py-3 font-semibold shadow-lg transition-transform hover:scale-[1.02]"
+              className="text-md text-primary-foreground bg-primary hover:bg-accent inline-flex items-center rounded-lg px-4 py-2 font-medium shadow-md transition dark:text-gray-100"
             >
               Schedule consultation
             </Link>
@@ -380,19 +386,18 @@ export default function MobileAppPage() {
       </section>
 
       {/* CONTACT / CTA */}
-      <section
-        id="contact"
-        className="text-foreground rounded-xl bg-purple-600 px-2 py-16 text-center"
-      >
-        <h3 className="mb-4 text-3xl font-bold md:text-4xl">Ready to go mobile?</h3>
-        <p className="mb-6 px-4 text-lg md:text-xl">
+      <section id="contact" className="rounded-3xl bg-purple-700 px-2 py-16 text-center shadow-md">
+        <h3 className="mb-4 text-3xl font-bold text-white md:text-4xl dark:text-gray-200">
+          Ready to go mobile?
+        </h3>
+        <p className="mx-auto mb-6 max-w-2xl text-lg text-purple-100 md:text-xl">
           Tell us about your idea or existing product and we&apos;ll recommend the fastest, most
           cost effective way to reach your users.
         </p>
         <div className="flex items-center justify-center gap-3">
           <Link
             href="/contact"
-            className="bg-background rounded-lg px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
+            className="bg-background inline-block rounded-lg px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-300 hover:text-purple-700"
           >
             Get Started
           </Link>

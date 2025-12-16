@@ -12,14 +12,14 @@ const fadeIn = {
 
 export default function AIMLPage() {
   return (
-    <main className="mx-auto min-h-screen max-w-7xl bg-gray-50 px-6 py-16 text-gray-800 lg:px-20">
+    <main className="text-text-primary mx-auto min-h-screen max-w-7xl px-6 py-16 lg:px-20">
       {/* 🟣 HERO */}
       <section className="mb-24 py-10 text-center">
         <motion.h1
           variants={fadeIn}
           initial="hidden"
           animate="show"
-          className="mb-6 text-4xl font-bold text-purple-700 md:text-6xl"
+          className="text-text-primary mb-6 text-4xl font-bold md:text-6xl"
         >
           Unlock the Power of Artificial Intelligence & Machine Learning
         </motion.h1>
@@ -28,7 +28,7 @@ export default function AIMLPage() {
           initial="hidden"
           animate="show"
           transition={{ delay: 0.2 }}
-          className="mx-auto max-w-3xl text-lg text-gray-600"
+          className="text-text-tertiary mx-auto max-w-3xl text-lg"
         >
           We help teams design and deploy AI-driven systems that turn data into intelligence — from
           predictive models to real-time decision automation.
@@ -41,15 +41,15 @@ export default function AIMLPage() {
       {/* 🧠 OUR EXPERTISE */}
       <section className="mb-24 grid items-center gap-12 md:grid-cols-2">
         <div>
-          <h2 className="mb-4 text-3xl font-bold text-gray-900">
+          <h2 className="text-text-primary mb-4 text-3xl font-bold">
             Our Expertise in AI & Machine Learning
           </h2>
-          <p className="leading-relaxed text-gray-600">
+          <p className="text-text-tertiary leading-relaxed">
             Our team builds intelligent systems using modern AI frameworks, enabling organizations
             to automate decisions, detect patterns, and predict outcomes with accuracy and
             confidence. We focus on solving real-world problems with data.
           </p>
-          <ul className="mt-4 list-inside list-disc text-gray-600">
+          <ul className="text-text-tertiary mt-4 list-inside list-disc">
             <li>Custom ML model development and deployment</li>
             <li>Data pipeline engineering for large-scale training</li>
             <li>Real-time inference with scalable APIs</li>
@@ -73,8 +73,8 @@ export default function AIMLPage() {
 
       {/* ⚙️ WHY WE USE AI/ML */}
       <section className="mb-24 text-center">
-        <h2 className="mb-8 text-3xl font-bold text-gray-900">Why AI/ML Matters</h2>
-        <div className="mx-auto max-w-4xl space-y-6 text-gray-600">
+        <h2 className="text-text-primary mb-8 text-3xl font-bold">Why AI/ML Matters</h2>
+        <div className="text-text-tertiary mx-auto max-w-4xl space-y-6">
           <p>
             AI and ML are at the heart of digital transformation — driving personalization,
             automation, and intelligent decision-making across industries. Our solutions empower
@@ -89,7 +89,7 @@ export default function AIMLPage() {
 
       {/* 🧩 TOOLS & ECOSYSTEM */}
       <section className="mb-24 text-center">
-        <h2 className="mb-10 text-3xl font-bold text-gray-900">Tools and Ecosystem We Use</h2>
+        <h2 className="text-text-primary mb-10 text-3xl font-bold">Tools and Ecosystem We Use</h2>
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {[
             "TensorFlow",
@@ -104,9 +104,9 @@ export default function AIMLPage() {
             <motion.div
               key={tool}
               whileHover={{ scale: 1.05 }}
-              className="bg-background rounded-xl p-6 shadow-md transition-shadow hover:shadow-lg"
+              className="bg-surface-primary rounded-xl p-6 shadow-md transition-shadow hover:shadow-lg"
             >
-              <p className="font-semibold text-gray-700">{tool}</p>
+              <p className="text-text-secondary font-semibold">{tool}</p>
             </motion.div>
           ))}
         </div>
@@ -114,7 +114,7 @@ export default function AIMLPage() {
 
       {/* 🔗 TECH STACK INTEGRATION */}
       <section className="mb-24 text-center">
-        <h2 className="mb-10 text-3xl font-bold text-gray-900">
+        <h2 className="text-text-primary mb-10 text-3xl font-bold">
           How AI/ML Fits Into Your Tech Stack
         </h2>
         <div className="mx-auto grid max-w-5xl items-start gap-8 md:grid-cols-3">
@@ -135,10 +135,10 @@ export default function AIMLPage() {
             <motion.div
               key={i}
               whileHover={{ y: -4 }}
-              className="rounded-xl border border-gray-100 bg-gradient-to-br from-white to-gray-50 p-6 shadow-md transition-shadow hover:shadow-lg"
+              className="bg-surface-secondary rounded-xl border p-6 shadow-md transition-shadow hover:shadow-lg"
             >
-              <h3 className="mb-2 text-xl font-semibold text-purple-700">{block.title}</h3>
-              <p className="text-sm text-gray-600">{block.desc}</p>
+              <h3 className="text-text-secondary mb-2 text-xl font-semibold">{block.title}</h3>
+              <p className="text-text-tertiary text-sm">{block.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -146,26 +146,26 @@ export default function AIMLPage() {
 
       {/* ⚖️ WHEN TO USE / NOT USE */}
       <section className="mb-24 text-center">
-        <h2 className="mb-10 text-3xl font-bold text-gray-900">
+        <h2 className="text-text-primary mb-10 text-3xl font-bold">
           When to Use AI/ML (and When Not To)
         </h2>
-        <p className="mx-auto mb-8 max-w-3xl text-gray-600">
+        <p className="text-text-tertiary mx-auto mb-8 max-w-3xl">
           AI and ML can drive incredible results — but it&apos;s crucial to apply them where they
           create real value.
         </p>
         <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-2">
-          <div className="bg-background rounded-xl border border-green-100 p-8 shadow-md">
+          <div className="bg-surface-primary rounded-xl border p-8 shadow-md">
             <h3 className="mb-3 text-2xl font-semibold text-emerald-600">When to Use AI/ML</h3>
-            <ul className="list-inside list-disc space-y-3 text-left text-gray-600 marker:text-emerald-600">
+            <ul className="text-text-tertiary list-inside list-disc space-y-3 text-left marker:text-emerald-600">
               <li>Personalization, recommendations, and predictive analytics</li>
               <li>Automation and process optimization</li>
               <li>Pattern recognition or anomaly detection</li>
               <li>Complex decision-making and adaptive systems</li>
             </ul>
           </div>
-          <div className="bg-background rounded-xl border border-red-100 p-8 shadow-md">
+          <div className="bg-surface-primary rounded-xl border p-8 shadow-md">
             <h3 className="mb-3 text-2xl font-semibold text-orange-600">When Not to Use AI/ML</h3>
-            <ul className="list-inside list-disc space-y-3 text-left text-gray-600 marker:text-orange-600">
+            <ul className="text-text-tertiary list-inside list-disc space-y-3 text-left marker:text-orange-600">
               <li>Simple logic-based systems that don&apos;t require learning</li>
               <li>Small datasets with no clear predictive value</li>
               <li>Projects needing guaranteed deterministic results</li>
@@ -176,60 +176,56 @@ export default function AIMLPage() {
       </section>
 
       {/* 📰 BLOG / ARTICLES */}
-      <section className="mb-24 text-center">
-        <h2 className="mb-10 text-3xl font-bold text-gray-900">Insights from Our Team</h2>
-        <p className="mx-auto mb-10 max-w-2xl text-gray-600">
-          Articles and research from our AI engineers — covering model design, MLOps, and the future
-          of intelligent software systems.
-        </p>
-        <div className="grid gap-8 md:grid-cols-3">
-          {aiMlArticles.map((article) => (
-            <motion.div
-              key={article.name}
-              whileHover={{ scale: 1.03 }}
-              className="bg-background rounded-xl p-6 text-left shadow-md transition-shadow hover:shadow-lg"
-            >
-              <Link href={article.link}>
-                <div className="mb-4 h-40 w-full overflow-hidden rounded-lg bg-gray-200">
-                  {article.imageUrl ? (
-                    <Image
-                      src={article.imageUrl}
-                      alt={article.name}
-                      width={400}
-                      height={160}
-                      className="h-full w-full object-cover"
-                    />
-                  ) : (
-                    <div className="h-full w-full bg-gradient-to-br from-sky-500 to-indigo-500"></div>
-                  )}
-                </div>
-                <h3 className="mb-2 text-lg font-semibold">{article.name}</h3>
-                <p className="text-sm text-gray-600">{article.description}</p>
-              </Link>
-            </motion.div>
-          ))}
-        </div>
-      </section>
+      {aiMlArticles.length > 0 && (
+        <section className="mb-24 text-center">
+          <h2 className="text-text-primary mb-10 text-3xl font-bold">Insights from Our Team</h2>
+          <p className="text-text-tertiary mx-auto mb-10 max-w-2xl">
+            Articles and research from our AI engineers — covering model design, MLOps, and the
+            future of intelligent software systems.
+          </p>
+          <div className="grid gap-8 md:grid-cols-3">
+            {aiMlArticles.map((article) => (
+              <motion.div
+                key={article.name}
+                whileHover={{ scale: 1.03 }}
+                className="bg-background rounded-xl p-6 text-left shadow-md transition-shadow hover:shadow-lg"
+              >
+                <Link href={article.link}>
+                  <div className="mb-4 h-40 w-full overflow-hidden rounded-lg bg-gray-200">
+                    {article.imageUrl ? (
+                      <Image
+                        src={article.imageUrl}
+                        alt={article.name}
+                        width={400}
+                        height={160}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      <div className="h-full w-full bg-gradient-to-br from-sky-500 to-indigo-500"></div>
+                    )}
+                  </div>
+                  <h3 className="mb-2 text-lg font-semibold">{article.name}</h3>
+                  <p className="text-text-tertiary text-sm">{article.description}</p>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* 🚀 CTA */}
-      <section className="text-foreground mb-24 rounded-xl bg-purple-600 px-4 py-16 text-center">
+      <section className="text-background rounded-3xl bg-green-700 px-2 py-16 text-center shadow-md">
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">Ready to bring AI to your product?</h3>
-        <p className="mb-6 px-4 text-lg md:text-xl">
+        <p className="text-background mx-auto mb-6 max-w-2xl text-lg md:text-xl">
           Let&apos;s design intelligent, data-driven systems that give your business a competitive
           edge.
         </p>
         <div className="flex items-center justify-center gap-3">
           <Link
             href="/contact"
-            className="bg-background rounded-lg px-8 py-3 font-semibold text-purple-600 shadow-lg transition hover:scale-105 hover:bg-gray-100"
+            className="bg-background inline-block rounded-lg px-8 py-3 font-semibold text-green-700 shadow-lg transition hover:scale-105 hover:bg-gray-300"
           >
             Get Started
-          </Link>
-          <Link
-            href="/contact#brief"
-            className="text-foreground hover:bg-background/5 rounded-lg border border-white/30 px-6 py-3"
-          >
-            Send Brief
           </Link>
         </div>
       </section>

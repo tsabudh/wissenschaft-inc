@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export default function DiscoveryApproachPage() {
   return (
-    <main className="mx-auto flex min-h-screen max-w-7xl flex-col gap-12  px-6 py-16 text-gray-800">
+    <main className="text-text-primary mx-auto flex min-h-screen max-w-7xl flex-col gap-12 px-6 py-16">
       {/* Hero Section */}
       <section className="relative mb-20 px-6 py-20 text-center md:px-10">
-        <h1 className="mb-4 text-4xl font-extrabold text-gray-800 dark:text-gray-300 md:text-5xl">
+        <h1 className="text-text-primary mb-4 text-4xl font-extrabold md:text-5xl">
           Discovery Approach — Building Confidence Before We Build Code
         </h1>
-        <p className="mx-auto max-w-3xl text-lg text-gray-600">
+        <p className="text-text-tertiary mx-auto max-w-3xl text-lg">
           Every successful digital product begins with clarity. Our Discovery phase helps you move
           from ideas and uncertainty to a validated, actionable roadmap — designed to align your
           business goals, user needs, and technical realities. We don&apos;t just plan software — we
@@ -31,32 +31,32 @@ export default function DiscoveryApproachPage() {
       {/* What We Need From You */}
       <section className="bg-background rounded-3xl px-6 py-20 shadow-sm md:px-10">
         <div className="mb-10 text-center">
-          <h2 className="mb-3 text-3xl font-bold text-gray-800 dark:text-gray-300">What We Need From You</h2>
-          <p className="mx-auto max-w-2xl text-gray-600">
+          <h2 className="text-text-primary mb-3 text-3xl font-bold">What We Need From You</h2>
+          <p className="text-text-tertiary mx-auto max-w-2xl">
             Your insights are our foundation. The more we understand your goals, challenges, and
             customers, the stronger and faster we can build. You bring the vision — we bring the
             strategy, structure, and execution.
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-3">
-          <div className="rounded-xl  p-6 shadow-sm hover:shadow-md">
-            <h3 className="mb-2 text-lg font-semibold text-foreground">Business Context</h3>
-            <p className="text-gray-600">
+          <div className="bg-surface-secondary rounded-xl p-6 shadow-sm hover:shadow-md">
+            <h3 className="text-foreground mb-2 text-lg font-semibold">Business Context</h3>
+            <p className="text-text-tertiary">
               Share your objectives, target audience, market positioning, and internal processes.
               These insights help us design a product that serves both your customers and your
               bottom line.
             </p>
           </div>
-          <div className="rounded-xl  p-6 shadow-sm hover:shadow-md">
-            <h3 className="mb-2 text-lg font-semibold text-foreground">Access to Teams</h3>
-            <p className="text-gray-600">
+          <div className="bg-surface-secondary rounded-xl p-6 shadow-sm hover:shadow-md">
+            <h3 className="text-foreground mb-2 text-lg font-semibold">Access to Teams</h3>
+            <p className="text-text-tertiary">
               We collaborate with key stakeholders — product, design, and tech — to uncover hidden
               assumptions, dependencies, and opportunities that make your product more resilient.
             </p>
           </div>
-          <div className="rounded-xl  p-6 shadow-sm hover:shadow-md">
-            <h3 className="mb-2 text-lg font-semibold text-foreground">Open Collaboration</h3>
-            <p className="text-gray-600">
+          <div className="bg-surface-secondary rounded-xl p-6 shadow-sm hover:shadow-md">
+            <h3 className="text-foreground mb-2 text-lg font-semibold">Open Collaboration</h3>
+            <p className="text-text-tertiary">
               Discovery works best when we communicate openly. Regular touchpoints ensure every
               insight, idea, and pivot is aligned with your evolving vision.
             </p>
@@ -67,8 +67,8 @@ export default function DiscoveryApproachPage() {
       {/* Process Overview */}
       <section className="px-6 py-20 md:px-10">
         <div className="mb-10 text-center">
-          <h2 className="mb-3 text-3xl font-bold text-gray-800 dark:text-gray-300">Our Discovery Process</h2>
-          <p className="mx-auto max-w-3xl text-gray-600">
+          <h2 className="text-text-primary mb-3 text-3xl font-bold">Our Discovery Process</h2>
+          <p className="text-text-tertiary mx-auto max-w-3xl">
             We follow a structured yet flexible discovery framework that turns complexity into
             clarity. From deep analysis to prototype validation, every step builds momentum toward a
             confident launch.
@@ -77,7 +77,7 @@ export default function DiscoveryApproachPage() {
 
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div>
-            <ol className="list-inside list-decimal space-y-3 text-gray-700 marker:font-bold">
+            <ol className="text-text-tertiary list-inside list-decimal space-y-3 marker:font-bold">
               <li>
                 <strong>Kickoff & Alignment —</strong> We align on business goals, timelines, and
                 expectations to ensure our teams are perfectly in sync.
@@ -123,16 +123,16 @@ export default function DiscoveryApproachPage() {
             />
           </div>
           <div>
-            <h2 className="mb-4 text-3xl font-semibold text-foreground text-gray-800 dark:text-gray-300">
+            <h2 className="text-text-primary mb-4 text-3xl font-semibold">
               Collaborative Feedback & Prototyping
             </h2>
-            <p className="mb-4 text-gray-600">
+            <p className="text-text-tertiary mb-4">
               You&apos;ll see tangible progress early. We build clickable prototypes and technical
               mockups to visualize functionality before full-scale development begins. Each
               iteration is refined based on your feedback — ensuring the end product matches your
               expectations exactly.
             </p>
-            <p className="text-gray-600">
+            <p className="text-text-tertiary">
               This phase isn&apos;t just about design — it&apos;s about validating assumptions,
               mitigating risks, and giving you complete confidence in what comes next.
             </p>
@@ -144,16 +144,16 @@ export default function DiscoveryApproachPage() {
       <section className="px-6 py-20 md:px-10">
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div>
-            <h2 className="mb-4 text-3xl font-semibold text-foreground text-gray-800 dark:text-gray-300">
+            <h2 className="text-text-primary mb-4 text-3xl font-semibold">
               From Discovery to MVP — A Clear Path Forward
             </h2>
-            <p className="mb-4 text-gray-600">
+            <p className="text-text-tertiary mb-4">
               Once Discovery is complete, you&apos;ll have a clear, validated roadmap ready for
               development. Your MVP will focus on the features that drive the most business value,
               minimizing waste and maximizing learning. Every technical decision — from architecture
               to deployment — will be backed by data and aligned with your business strategy.
             </p>
-            <p className="text-gray-600">
+            <p className="text-text-tertiary">
               Whether you continue with us for development or use our documentation with your
               in-house team, you&apos;ll walk away with everything you need to move forward
               confidently.
@@ -171,17 +171,17 @@ export default function DiscoveryApproachPage() {
       </section>
 
       {/* CTA */}
-      <section className="text-foreground rounded-3xl bg-purple-700 px-2 py-16 text-center shadow-md">
-        <h3 className="mb-4 text-3xl font-bold md:text-4xl">
+      <section className="rounded-3xl bg-purple-700 px-2 py-16 text-center shadow-md">
+        <h3 className="text-white  dark:text-gray-200 mb-4 text-3xl font-bold md:text-4xl">
           Start Your Product Discovery With a Trusted Partner
         </h3>
-        <p className="mx-auto mb-6 max-w-2xl text-lg text-purple-100 md:text-xl">
+        <p className="text-gray-300  mx-auto mb-6 max-w-2xl text-lg md:text-xl">
           Let&apos;s turn your vision into a clear, validated, and measurable product plan.
           Together, we&apos;ll define success before development begins.
         </p>
         <Link
           href="/contact"
-          className="bg-background inline-block rounded-lg px-8 py-3 font-semibold text-purple-700 shadow-lg transition hover:scale-105 hover:bg-gray-100"
+          className="bg-background inline-block rounded-lg px-8 py-3 font-semibold text-purple-400 shadow-lg transition hover:scale-105 hover:bg-gray-300 hover:text-purple-700"
         >
           Schedule Your Discovery Call
         </Link>
