@@ -1,3 +1,4 @@
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 import { metadataMap } from "@/lib/metadataMap";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -63,6 +64,8 @@ export default function DiscoveryApproachPage() {
           </div>
         </div>
       </section>
+
+      <RoundGradient variant="second" />
 
       {/* Process Overview */}
       <section className="px-6 py-20 md:px-10">

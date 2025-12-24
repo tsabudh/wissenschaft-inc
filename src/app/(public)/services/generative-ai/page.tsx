@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { metadataMap } from "@/lib/metadataMap";
 import { Metadata } from "next";
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 
 export default function GenerativeAIPage() {
   return (
@@ -188,6 +189,7 @@ export default function GenerativeAIPage() {
           </div>
         </div>
       </section>
+      <RoundGradient variant="fourth" />
 
       {/* Why Choose Us */}
       <section className="text-center">

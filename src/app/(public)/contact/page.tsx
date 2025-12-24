@@ -5,6 +5,7 @@ import { Mail, Briefcase, Phone, MapPin, ArrowRight, CheckCircle2 } from "lucide
 import { motion } from "framer-motion";
 import clsx from "clsx";
 import { gtmEvent } from "@/components/gtm/GTMEvent";
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -33,7 +34,7 @@ export default function ContactPage() {
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 py-20 md:px-16">
       {/* Background gradient glow */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(37,99,235,0.15),transparent_50%)]" />
+      <RoundGradient />
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -59,8 +60,8 @@ export default function ContactPage() {
             transition={{ delay: 0.2 }}
             className="max-w-lg text-lg text-gray-600"
           >
-            Get in touch with our expert team — we&apos;ll take care of the technical complexities so you
-            can focus on what truly matters.
+            Get in touch with our expert team — we&apos;ll take care of the technical complexities
+            so you can focus on what truly matters.
           </motion.p>
 
           <div className="space-y-4">
@@ -116,7 +117,9 @@ export default function ContactPage() {
           >
             {/* Name */}
             <div>
-              <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-400">Full name</label>
+              <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-400">
+                Full name
+              </label>
               <input
                 type="text"
                 name="entry.30473038"
@@ -128,7 +131,9 @@ export default function ContactPage() {
 
             {/* Email */}
             <div>
-              <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-400">Email address</label>
+              <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-400">
+                Email address
+              </label>
               <input
                 type="email"
                 name="entry.428163587"
@@ -169,7 +174,9 @@ export default function ContactPage() {
 
             {/* Message */}
             <div>
-              <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-400">Your message</label>
+              <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-400">
+                Your message
+              </label>
               <textarea
                 name="entry.1966928524"
                 placeholder="Write your message..."
@@ -184,7 +191,7 @@ export default function ContactPage() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               type="submit"
-              className="text-white dark:text-gray-300 flex w-full items-center justify-center gap-2 rounded-lg bg-blue-600 py-3 font-semibold shadow-md transition hover:bg-blue-700"
+              className="flex w-full items-center justify-center gap-2 rounded-lg bg-blue-600 py-3 font-semibold text-white shadow-md transition hover:bg-blue-700 dark:text-gray-300"
             >
               {submitted ? (
                 <>

@@ -1,4 +1,5 @@
 "use client";
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 import CardProfileA from "@/components/ui/cards/card-profile-a";
 import teamData from "@/data/team.json";
 
@@ -8,11 +9,13 @@ export default function TeamPage() {
       {/* Hero Section */}
       <section className="mb-16 px-6 text-center">
         <h1 className="text-text-primary mb-4 text-4xl font-bold md:text-5xl">Meet the Team</h1>
-        <p className="mx-auto max-w-2xl text-lg text-text-tertiary">
+        <p className="text-text-tertiary mx-auto max-w-2xl text-lg">
           The minds driving Wissenschaft&apos;s excellence, innovation, and global impact.
         </p>
       </section>
 
+      <RoundGradient variant="fourth" />
+      
       {/* Team Grid */}
       <section className="mx-auto grid max-w-6xl gap-10 px-6 sm:grid-cols-2 md:grid-cols-4">
         {teamData.members.map((member, idx) => (

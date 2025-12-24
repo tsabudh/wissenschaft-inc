@@ -4,10 +4,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { typescriptArticles } from "@/data/articles";
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 
 export default function TypeScriptPage() {
   return (
     <main className="text-text-primary mx-auto min-h-screen max-w-7xl px-6 py-16 lg:px-20">
+      <RoundGradient variant="fifth" />
+
       {/* 🟣 HERO */}
       <section className="py-10 text-center">
         <motion.h1

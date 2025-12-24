@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { awsArticles } from "@/data/articles";
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 
 export default function AwsPage() {
   return (
@@ -128,6 +129,8 @@ export default function AwsPage() {
         </div>
       </section>
 
+      <RoundGradient variant="first" />
+
       {/* 📰 BLOG SECTION */}
       {awsArticles.length > 0 && (
         <section className="mb-24 text-center">
@@ -187,7 +190,6 @@ export default function AwsPage() {
           >
             Get Started
           </Link>
-          
         </div>
       </section>
     </main>

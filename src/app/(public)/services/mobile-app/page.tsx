@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
 import { metadataMap } from "@/lib/metadataMap";
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 
 export default function MobileAppPage() {
   return (
@@ -337,6 +338,7 @@ export default function MobileAppPage() {
           choice and integrate with existing enterprise systems where required.
         </p>
       </section>
+      <RoundGradient variant="fifth" />
 
       {/* WHY CHOOSE US */}
       <section id="why">

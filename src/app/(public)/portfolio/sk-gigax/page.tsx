@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 
 const caseStudy = {
   title: "Website for SK GigaX Europe",
@@ -148,6 +149,8 @@ export default function GigaXPage() {
             </article>
           </FadeIn>
         </section>
+      <RoundGradient variant="second" />
+
 
         {/* Results */}
         <section id="results" className="mb-12">

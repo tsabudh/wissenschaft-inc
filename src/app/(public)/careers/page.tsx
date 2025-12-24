@@ -1,3 +1,4 @@
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 import careers from "@/data/careers.json";
 import { metadataMap } from "@/lib/metadataMap";
 import { Metadata } from "next";
@@ -12,6 +13,8 @@ export default function CareersPage() {
           Be part of a culture that values creativity, technical excellence, and meaningful impact.
         </p>
       </section>
+
+      <RoundGradient variant="first" />
 
       {/* Job Listings */}
       <section className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">

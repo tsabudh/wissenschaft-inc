@@ -1,5 +1,6 @@
 "use client";
 
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 import { rustArticles } from "@/data/articles";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -100,6 +101,9 @@ export default function RustPage() {
           ))}
         </div>
       </section>
+
+      <RoundGradient variant="fourth" />
+
 
       {/* 🔗 TECH STACK INTEGRATION */}
       <section className="mb-24 text-center">

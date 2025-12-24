@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { aiMlArticles } from "@/data/articles";
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -174,6 +175,7 @@ export default function AIMLPage() {
           </div>
         </div>
       </section>
+      <RoundGradient variant="fifth" />
 
       {/* 📰 BLOG / ARTICLES */}
       {aiMlArticles.length > 0 && (

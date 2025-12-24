@@ -1,3 +1,4 @@
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 import aboutData from "@/data/about-company.json";
 import { metadataMap } from "@/lib/metadataMap";
 import { Metadata } from "next";
@@ -18,7 +19,7 @@ export default function AboutPage() {
             innovation, Wissenschaft surpasses global standards in delivering bespoke solutions that
             empower businesses to thrive in today&apos;s dynamic landscape.
           </p>
-
+          <RoundGradient variant="first"/>
           <div className="mt-16 grid gap-8 md:grid-cols-2">
             <div className="bg-surface-secondary rounded-lg p-8 shadow-sm transition-shadow hover:shadow-md">
               <h2 className="mb-3 text-2xl font-semibold">Our Mission</h2>
@@ -37,7 +38,7 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-        <section className="bg-surface-secondary py-16 rounded-lg">
+        <section className="bg-surface-secondary rounded-lg py-16">
           <div className="mx-auto">
             <h2 className="text-text-primary mb-10 text-center text-3xl font-semibold md:text-4xl">
               What Defines Wissenschaft

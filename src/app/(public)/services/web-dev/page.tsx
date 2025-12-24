@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { metadataMap } from "@/lib/metadataMap";
 import { Metadata } from "next";
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 
 export default function WebDevPage() {
   return (
@@ -42,6 +43,8 @@ export default function WebDevPage() {
             From lean startups to complex enterprise ecosystems — and everything in between.
           </p>
         </header>
+
+        <RoundGradient variant="second" />
 
         {/* Spectrum visual */}
         <div className="mb-8 flex flex-col items-center gap-6">

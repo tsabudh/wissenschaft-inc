@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { metadataMap } from "@/lib/metadataMap";
 import { Metadata } from "next";
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 
 export default function ProductDevPage() {
   return (
@@ -13,11 +14,12 @@ export default function ProductDevPage() {
         <h1 className="text-text-primary mb-4 text-5xl font-bold md:text-6xl">
           Product Development Services
         </h1>
-        <p className="mx-auto max-w-2xl text-lg text-text-tertiary md:text-xl">
+        <p className="text-text-tertiary mx-auto max-w-2xl text-lg md:text-xl">
           From idea to launch, we help you build innovative digital products that delight users and
           scale with your vision. Turn your concept into a market-ready solution.
         </p>
       </section>
+      <RoundGradient variant="first" />
 
       {/* Features / Services Section */}
       <section className="grid grid-cols-1 gap-10 md:grid-cols-3">
@@ -52,11 +54,11 @@ export default function ProductDevPage() {
           <h2 className="text-text-primary mb-4 text-4xl font-bold">
             Our Product Development Process
           </h2>
-          <p className="mb-4 text-text-tertiary">
+          <p className="text-text-tertiary mb-4">
             We combine agile development, modern tech stacks, and user-centered design to deliver
             meaningful digital products:
           </p>
-          <ul className="list-inside list-disc space-y-2 text-text-tertiary">
+          <ul className="text-text-tertiary list-inside list-disc space-y-2">
             <li>Discovery & Product Strategy</li>
             <li>Wireframing & UX/UI Design</li>
             <li>Agile Development & Testing</li>
@@ -76,8 +78,7 @@ export default function ProductDevPage() {
       </section>
 
       {/* Call to Action */}
-      <section
-      className="rounded-3xl bg-purple-700 px-2 py-16 text-center shadow-md">
+      <section className="rounded-3xl bg-purple-700 px-2 py-16 text-center shadow-md">
         <h3 className="mb-4 text-3xl font-bold text-white md:text-4xl dark:text-gray-200">
           Let&apos;s bring your product idea to life
         </h3>

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { gcpArticles } from "@/data/articles";
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -149,6 +150,8 @@ export default function GCPPage() {
           ))}
         </div>
       </section>
+      
+      <RoundGradient variant="second" />
 
       {/* ⚖️ WHEN TO USE / NOT USE */}
       <section className="mb-24 text-center">

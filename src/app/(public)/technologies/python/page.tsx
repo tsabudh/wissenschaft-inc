@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { pythonArticles } from "@/data/articles";
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -74,6 +75,8 @@ export default function PythonPage() {
           />
         </motion.div>
       </Section>
+
+      <RoundGradient variant="third" />
 
       {/* ⚙️ WHY WE USE PYTHON */}
       <Section className="text-center">
@@ -215,7 +218,7 @@ export default function PythonPage() {
       )}
 
       {/* 🚀 CTA */}
-      <Section className="text-foreground rounded-xl bg-purple-400 dark:bg-purple-600 px-4 py-16 text-center">
+      <Section className="text-foreground rounded-xl bg-purple-400 px-4 py-16 text-center dark:bg-purple-600">
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">
           Ready to build your next data-driven product?
         </h3>

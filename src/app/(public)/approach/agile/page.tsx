@@ -1,3 +1,4 @@
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 import { metadataMap } from "@/lib/metadataMap";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -11,7 +12,7 @@ export default function AgileApproachPage() {
         <h1 className="text-text-primary mb-4 text-4xl font-extrabold md:text-5xl">
           Agile Delivery — Turning Strategy Into Predictable, Continuous Progress
         </h1>
-        <p className="mx-auto max-w-3xl text-lg text-text-tertiary">
+        <p className="text-text-tertiary mx-auto max-w-3xl text-lg">
           Agile isn&apos;t about speed — it&apos;s about clarity, adaptability, and delivering value
           without surprises. Our Agile Delivery approach gives your business the confidence that
           every sprint moves your product forward, aligns with your goals, and responds to real user
@@ -35,7 +36,7 @@ export default function AgileApproachPage() {
           <h2 className="text-text-primary mb-3 text-3xl font-bold">
             What Agile Means for Your Business
           </h2>
-          <p className="mx-auto max-w-2xl text-text-tertiary">
+          <p className="text-text-tertiary mx-auto max-w-2xl">
             Agile isn&apos;t just a development method — it&apos;s a decision-making framework. It
             helps you reduce risk, stay aligned with customers, and validate the right features at
             the right time. You stay in control as the product evolves.
@@ -73,7 +74,7 @@ export default function AgileApproachPage() {
       <section className="px-6 py-20 md:px-10">
         <div className="mb-10 text-center">
           <h2 className="text-text-primary mb-3 text-3xl font-bold">Our Agile Delivery Process</h2>
-          <p className="mx-auto max-w-3xl text-text-tertiary">
+          <p className="text-text-tertiary mx-auto max-w-3xl">
             A predictable and collaborative framework designed to minimize risk, accelerate value,
             and keep your product aligned with user and business needs.
           </p>
@@ -81,7 +82,7 @@ export default function AgileApproachPage() {
 
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div>
-            <ol className="list-inside list-decimal space-y-3 text-text-tertiary marker:font-bold">
+            <ol className="text-text-tertiary list-inside list-decimal space-y-3 marker:font-bold">
               <li>
                 <strong>Sprint Planning —</strong> We set clear goals for each sprint based on
                 business priorities, scope, and available capacity.
@@ -131,7 +132,7 @@ export default function AgileApproachPage() {
             <h2 className="text-text-primary mb-4 text-3xl font-semibold">
               Full Transparency, Constant Communication
             </h2>
-            <p className="mb-4 text-text-tertiary">
+            <p className="text-text-tertiary mb-4">
               Agile thrives on collaboration. You&apos;ll have total visibility into planning,
               prioritization, progress, and decisions — no hidden work, no surprises.
             </p>
@@ -142,7 +143,7 @@ export default function AgileApproachPage() {
           </div>
         </div>
       </section>
-
+      <RoundGradient variant="fourth" />
       {/* Business Impact Section */}
       <section className="px-6 py-20 md:px-10">
         <div className="grid items-center gap-10 md:grid-cols-2">
@@ -150,7 +151,7 @@ export default function AgileApproachPage() {
             <h2 className="text-text-primary mb-4 text-3xl font-semibold">
               Predictable Delivery. Reduced Risk. Measurable Outcomes.
             </h2>
-            <p className="mb-4 text-text-tertiary">
+            <p className="text-text-tertiary mb-4">
               Agile gives you structured progress with room to adapt. Instead of long timelines and
               uncertain outcomes, you get continuous delivery and clear expectations every step of
               the way.
@@ -177,7 +178,7 @@ export default function AgileApproachPage() {
         <h3 className="mb-4 text-3xl font-bold md:text-4xl">
           Build With a Team That Delivers Value — Every Sprint
         </h3>
-        <p className="mx-auto mb-6 max-w-2xl text-lg text-background md:text-xl">
+        <p className="text-background mx-auto mb-6 max-w-2xl text-lg md:text-xl">
           Whether you&apos;re launching an MVP or scaling a mature system, our Agile Delivery model
           keeps you aligned, informed, and ahead of the curve.
         </p>

@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 
 const caseStudy = {
   title: "Website for SK AX USA",
@@ -92,6 +93,7 @@ export default function Page() {
                 </div>
               </FadeIn>
             </div>
+            <RoundGradient variant="third" />
 
             <div className="order-first lg:order-last">
               <FadeIn>

@@ -1,6 +1,7 @@
 // app/not-found.tsx
 "use client";
 
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 import { useRouter } from "next/navigation";
 
 export default function NotFoundPage() {
@@ -8,6 +9,7 @@ export default function NotFoundPage() {
 
   return (
     <div className="text-foreground flex min-h-screen flex-col items-center justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 px-4">
+      <RoundGradient variant="first" />
       <h1 className="animate-bounce text-9xl font-extrabold">404</h1>
       <h2 className="mt-4 text-3xl font-semibold md:text-4xl">Oops! Page not found</h2>
       <p className="text-foreground/80 mt-2 max-w-md text-center text-lg md:text-xl">

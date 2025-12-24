@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 
 export default function ApproachPage() {
   return (
@@ -165,6 +166,8 @@ export default function ApproachPage() {
           </div>
         </div>
       </section>
+      <RoundGradient variant="fifth" />
+
 
       {/* CTA SECTION */}
       <section 
