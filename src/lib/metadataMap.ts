@@ -2,6 +2,19 @@ import type { Metadata } from "next";
 
 export const metadataMap: Record<string, Metadata> = {
   // ---- Services  (app/(public)/services/*)
+  "/services/ai-ml": {
+    title: "AI & Machine Learning Services | Wissenschaft Inc",
+    description:
+      "Custom AI and machine learning solutions including model development, training, and deployment.",
+    openGraph: {
+      title: "AI & Machine Learning Services | Wissenschaft Inc",
+      description:
+        "Custom AI and machine learning solutions including model development, training, and deployment.",
+      url: "https://wissenschaft-inc.com/services/ai-ml",
+      images: [{ url: "/images/logo.png", width: 1200, height: 630 }],
+    },
+    alternates: { canonical: "https://wissenschaft-inc.com/services/ai-ml" },
+  },
   "/services/web-dev": {
     title: "Web Development Services | Wissenschaft Inc",
     description:
@@ -169,12 +182,10 @@ export const metadataMap: Record<string, Metadata> = {
 
   "/approach/agile": {
     title: "Our Agile Development Approach | Wissenschaft Inc",
-    description:
-      "How we apply agile principles to deliver fast, high-quality software.",
+    description: "How we apply agile principles to deliver fast, high-quality software.",
     openGraph: {
       title: "Our Agile Development Approach | Wissenschaft Inc",
-      description:
-        "How we apply agile principles to deliver fast, high-quality software.",
+      description: "How we apply agile principles to deliver fast, high-quality software.",
       url: "https://wissenschaft-inc.com/approach/agile",
       images: [{ url: "/images/logo.png", width: 1200, height: 630 }],
     },
@@ -183,12 +194,10 @@ export const metadataMap: Record<string, Metadata> = {
 
   "/approach/discovery": {
     title: "Product Discovery & Technical Research | Wissenschaft Inc",
-    description:
-      "Our discovery methodology for risk reduction and better product decisions.",
+    description: "Our discovery methodology for risk reduction and better product decisions.",
     openGraph: {
       title: "Product Discovery & Technical Research | Wissenschaft Inc",
-      description:
-        "Our discovery methodology for risk reduction and better product decisions.",
+      description: "Our discovery methodology for risk reduction and better product decisions.",
       url: "https://wissenschaft-inc.com/approach/discovery",
       images: [{ url: "/images/logo.png", width: 1200, height: 630 }],
     },
@@ -201,8 +210,7 @@ export const metadataMap: Record<string, Metadata> = {
     description: "Explore open positions and career opportunities at Wissenschaft Inc.",
     openGraph: {
       title: "Careers at Wissenschaft Inc | Join Our Team",
-      description:
-        "Explore open positions and career opportunities at Wissenschaft Inc.",
+      description: "Explore open positions and career opportunities at Wissenschaft Inc.",
       url: "https://wissenschaft-inc.com/careers",
       images: [{ url: "/images/logo.png", width: 1200, height: 630 }],
     },
