@@ -7,6 +7,8 @@ import clsx from "clsx";
 import { gtmEvent } from "@/components/gtm/GTMEvent";
 import RoundGradient from "@/components/ui/backgrounds/round-gradient";
 
+import wissenschaftData from "@/data/wissenschaft.json";
+
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
@@ -69,25 +71,20 @@ export default function ContactPage() {
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-blue-600" />
-                <a href="mailto:enquiry@wissenschaft.com" className="hover:text-blue-600">
-                  enquiry@wissenschaft.com
+                <a href={`mailto:${wissenschaftData.email}`} className="hover:text-blue-600">
+                  {wissenschaftData.email}
                 </a>
               </li>
-              <li className="flex items-center gap-3">
-                <Briefcase className="h-5 w-5 text-blue-600" />
-                <a href="mailto:career@wissenschaft.com" className="hover:text-blue-600">
-                  career@wissenschaft.com
-                </a>
-              </li>
+
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-blue-600" />
-                <a href="tel:+9779801234567" className="hover:text-blue-600">
-                  +977 9801234567
+                <a href={`tel:${wissenschaftData.phone}`} className="hover:text-blue-600">
+                  {wissenschaftData.phone}
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-blue-600" />
-                <span>Kumaripati, Lalitpur, Nepal</span>
+                <span>{wissenschaftData.address}</span>
               </li>
             </ul>
           </div>
