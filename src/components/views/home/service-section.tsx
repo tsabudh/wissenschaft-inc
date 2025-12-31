@@ -6,7 +6,7 @@ export default function ServiceSection() {
     <main className="px-6 lg:px-20">
       <section className="py-20">
         {/* Intro Section */}
-        <h2 className="text-text-brand mb-10 text-5xl font-medium">What we do</h2>
+        <h2 className="text-heading-secondary mb-10 text-5xl font-medium">What we do</h2>
 
         <div className="grid grid-cols-2 gap-10 max-lg:grid-cols-1">
           <ServiceCard

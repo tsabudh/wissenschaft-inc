@@ -7,7 +7,7 @@ import React from "react";
 export default function HeroSection() {
   return (
     <main className="relative overflow-hidden px-6 lg:px-20">
-      <section className="flex min-h-[100dvh] items-center py-20">
+      <section className="flex min-h-dvh items-center py-20">
         <div className="mx-auto max-w-5xl text-left">
           {/* Headline */}
           <h1 className="text-4xl leading-tight font-extrabold text-heading-primary sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">

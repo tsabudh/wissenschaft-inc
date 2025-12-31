@@ -51,18 +51,50 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger href="/services">Services</NavigationMenuTrigger>
                 <NavigationMenuContent className="p-4">
-                  <NavigationMenuLink asChild>
-                    <Link href="/services/web-dev">Web Development</Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link href="/services/mobile-app">Mobile Apps</Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link href="/services/product-dev">Product Development</Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link href="/services/generative-ai">Generative AI</Link>
-                  </NavigationMenuLink>
+                  <div className="">
+                    <div className="grid grid-rows-2 gap-4">
+                      <section className="_wrapper col-span-1 col-start-1">
+                        <h2 className="text-lg font-semibold whitespace-nowrap text-heading-secondary">
+                          Software Development
+                        </h2>
+                        <NavigationMenuLink asChild>
+                          <Link href="/services/web-dev">Web Development</Link>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                          <Link href="/services/mobile-app">Mobile Apps</Link>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                          <Link href="/services/product-dev">Product Development</Link>
+                        </NavigationMenuLink>
+                      </section>
+                      <section className="_wrapper col-span-1 col-start-2">
+                        <h2 className="text-lg font-semibold whitespace-nowrap text-heading-secondary">
+                          Artificial Intelligence
+                        </h2>
+                        <NavigationMenuLink asChild>
+                          <Link href="/services/generative-ai">Generative AI</Link>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                          <Link href="/services/ai-ml">AI & Machine Learning</Link>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                          <Link href="/services/computer-vision-nlp">Computer Vision & NLP</Link>
+                        </NavigationMenuLink>
+                      </section>
+                      <section className="_wrapper col-span-1 col-start-1">
+                        <h2 className="text-lg font-semibold whitespace-nowrap text-heading-secondary">Data Services</h2>
+                        <NavigationMenuLink asChild>
+                          <Link href="/services/data-engineering">Data Engineering</Link>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                          <Link href="/services/data-analytics">Data Analytics / BI</Link>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                          <Link href="/services/data-pipeline">Data Pipeline Automation / ETL</Link>
+                        </NavigationMenuLink>
+                      </section>
+                    </div>
+                  </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
@@ -82,10 +114,16 @@ export default function Navbar() {
                 <NavigationMenuTrigger>Our Process</NavigationMenuTrigger>
                 <NavigationMenuContent className="p-4">
                   <NavigationMenuLink asChild>
-                    <Link href="/approach/agile">Agile</Link>
+                    <Link href="/approach/agile-delivery">Agile Delivery</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="/approach/discovery">Discovery</Link>
+                    <Link href="/approach/discovery-planning">Discovery & Planning</Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link href="/approach/dev-qa">Development & QA</Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link href="/approach/launch-support">Launch & Support</Link>
                   </NavigationMenuLink>
                 </NavigationMenuContent>
               </NavigationMenuItem>

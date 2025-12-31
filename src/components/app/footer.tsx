@@ -41,7 +41,7 @@ export default function Footer() {
             <h3 className="text-secondary mb-4 font-semibold">Technologies</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <LinkFooter href="/technologies/ai-ml">AI/ML</LinkFooter>
+                <LinkFooter href="/technologies/ai-ml">AI/ML & Generative AI</LinkFooter>
               </li>
               <li>
                 <LinkFooter href="/technologies/gcp">GCP</LinkFooter>
@@ -57,6 +57,12 @@ export default function Footer() {
               </li>
               <li>
                 <LinkFooter href="/technologies/rust">Rust</LinkFooter>
+              </li>
+              <li>
+                <LinkFooter href="/technologies/data-engineering">Data Engineering</LinkFooter>
+              </li>
+              <li>
+                <LinkFooter href="/technologies/devops">DevOps</LinkFooter>
               </li>
             </ul>
           </div>
