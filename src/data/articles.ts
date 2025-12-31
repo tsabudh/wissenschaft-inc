@@ -85,3 +85,6 @@ export const awsArticles: Article[] = [
   //   link: "/blog/aws-lambda-serverless-architecture",
   // },
 ];
+
+export const devopsArticles: Article[] = [];
+export const dataEngineeringArticles: Article[] = [];

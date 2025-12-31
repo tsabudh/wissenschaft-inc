@@ -1,0 +1,123 @@
+{
+  "hero": {
+    "heading": "Transforming Ideas into Intelligent Solutions",
+    "subheading": "Harness the power of Computer Vision and NLP to elevate your business to new heights.",
+    "cta": {
+      "primary": {
+        "text": "Get Started",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "Learn More",
+        "href": "/services/computer-vision-nlp"
+      }
+    }
+  },
+  "whoWeBuildFor": {
+    "heading": "Who We Build For",
+    "subheading": "Empowering businesses across various sectors with innovative solutions.",
+    "description": "Our solutions cater to industries such as healthcare, finance, and retail, enabling them to leverage advanced technologies for improved efficiency and growth. We understand the unique challenges faced by each sector and tailor our offerings accordingly.",
+    "stages": ["Research", "Development", "Deployment"]
+  },
+  "coreServices": {
+    "heading": "Core Services",
+    "subheading": "Our Expertise in Computer Vision and NLP",
+    "services": [
+      {
+        "title": "Image Recognition",
+        "description": "Automate image analysis and recognition to streamline operations and enhance decision-making processes.",
+        "items": ["Object Detection", "Facial Recognition", "Scene Understanding"]
+      },
+      {
+        "title": "Natural Language Processing",
+        "description": "Enhance communication with intelligent text processing, allowing businesses to understand and respond to customer needs effectively.",
+        "items": ["Sentiment Analysis", "Chatbots", "Text Summarization"]
+      },
+      {
+        "title": "Data Annotation",
+        "description": "Accurate labeling for training AI models, ensuring high-quality data that drives successful outcomes.",
+        "items": ["Image Annotation", "Text Annotation", "Video Annotation"]
+      }
+    ]
+  },
+  "process": {
+    "heading": "Our Process",
+    "subheading": "A streamlined approach to deliver results that matter.",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Consultation",
+        "description": "Understanding your needs and goals through in-depth discussions and analysis."
+      },
+      {
+        "number": 2,
+        "title": "Development",
+        "description": "Building tailored solutions that align with your vision and objectives, ensuring a perfect fit for your business."
+      },
+      {
+        "number": 3,
+        "title": "Testing",
+        "description": "Ensuring quality and performance through rigorous testing protocols that guarantee reliability."
+      },
+      {
+        "number": 4,
+        "title": "Deployment",
+        "description": "Launching your solution with precision, ensuring a smooth transition and immediate impact."
+      },
+      {
+        "number": 5,
+        "title": "Support",
+        "description": "Ongoing assistance and updates to keep your solutions running optimally and to adapt to changing needs."
+      }
+    ]
+  },
+  "technologyStack": {
+    "heading": "Technology Stack",
+    "subheading": "Tools and technologies we leverage to drive innovation.",
+    "categories": [
+      {
+        "title": "Machine Learning",
+        "description": "Frameworks for building intelligent systems that learn and adapt over time.",
+        "items": ["TensorFlow", "PyTorch", "Scikit-learn"]
+      },
+      {
+        "title": "Computer Vision",
+        "description": "Technologies for image processing that empower businesses to extract valuable insights from visual data.",
+        "items": ["OpenCV", "Dlib", "YOLO"]
+      },
+      {
+        "title": "NLP Tools",
+        "description": "Libraries for natural language processing that enable machines to understand and interpret human language.",
+        "items": ["NLTK", "spaCy", "Transformers"]
+      }
+    ],
+    "note": "We continuously update our stack to include the latest technologies, ensuring our clients benefit from cutting-edge solutions."
+  },
+  "whyChooseUs": {
+    "heading": "Why Choose Us",
+    "description": "Your trusted partner in innovation, dedicated to your success.",
+    "reasons": [
+      {
+        "title": "Expert Team",
+        "description": "Our team consists of industry experts with a wealth of experience, ready to tackle your challenges."
+      },
+      {
+        "title": "Tailored Solutions",
+        "description": "We customize our services to meet your needs, ensuring that our solutions are as unique as your business."
+      },
+      {
+        "title": "Proven Track Record",
+        "description": "Successful projects across various industries demonstrate our commitment to excellence and client satisfaction."
+      }
+    ],
+    "industries": ["Healthcare", "Finance", "Retail", "Manufacturing"]
+  },
+  "cta": {
+    "heading": "Ready to Transform Your Business?",
+    "description": "Contact us today to discuss your project and discover how we can help you achieve your goals.",
+    "button": {
+      "text": "Contact Us",
+      "href": "/contact"
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+    "page": {
+        "title": "Data engineering solutions for scalable data infrastructure",
+        "description": "We build robust data foundations that power analytics, machine learning, and real-time insights. From data pipelines to data warehouses, we deliver infrastructure that scales with your business."
+    },
+    "hero": {
+        "heading": "Data engineering solutions for scalable data infrastructure.",
+        "subheading": "We build robust data foundations that power analytics, machine learning, and real-time insights. From data pipelines to data warehouses, we deliver infrastructure that scales with your business.",
+        "cta": {
+            "primary": { "text": "Start a project", "href": "/contact" },
+            "secondary": { "text": "Learn more", "href": "#who-we-build-for" }
+        }
+    },
+    "whoWeBuildFor": {
+        "heading": "Who we build for",
+        "subheading": "Organizations seeking reliable data infrastructure and analytics capabilities.",
+        "description": "From initial data collection to enterprise-scale data warehousing, we deliver solutions tailored to your data maturity and organizational needs.",
+        "stages": ["Growth Stage (Data Collection → Analytics)", "Enterprise (Data Warehouse → Real-time Platform)"],
+        "industries": [
+            { "name": "Healthcare", "description": "Patient data integration & compliance" },
+            { "name": "Finance", "description": "Transaction processing & reporting" },
+            { "name": "E-commerce", "description": "Event tracking & customer analytics" },
+            { "name": "Manufacturing", "description": "IoT data aggregation & monitoring" }
+        ]
+    },
+    "coreServices": {
+        "heading": "Core services",
+        "subheading": "Below is a quick overview of services that we provide.",
+        "services": [
+            {
+                "title": "Data pipeline development",
+                "description": "ETL/ELT systems for reliable data movement. Apache Airflow, Spark, and cloud-native solutions for batch and real-time processing.",
+                "items": [
+                    "ETL/ELT workflow design & automation",
+                    "Data transformation & enrichment",
+                    "Error handling & data quality checks"
+                ]
+            },
+            {
+                "title": "Data warehouse & lakehouse",
+                "description": "Centralized data repositories optimized for analytics and reporting. Snowflake, BigQuery, Redshift, and open data lakehouse architectures.",
+                "items": [
+                    "Schema design & dimensional modeling",
+                    "Data warehouse migration & optimization",
+                    "Data governance & access control"
+                ]
+            },
+            {
+                "title": "Real-time data streaming",
+                "description": "Event-driven architectures for continuous data processing. Kafka, Spark Streaming, and cloud messaging platforms.",
+                "items": [
+                    "Stream processing & aggregation",
+                    "Event sourcing & log-based systems",
+                    "Low-latency analytics & alerting"
+                ]
+            },
+            {
+                "title": "Data quality & governance",
+                "description": "Ensure data reliability, consistency, and compliance across your organization. Data validation, lineage tracking, and metadata management.",
+                "items": [
+                    "Data quality frameworks & monitoring",
+                    "Data lineage & impact analysis",
+                    "Metadata management & cataloging"
+                ]
+            },
+            {
+                "title": "Analytics infrastructure",
+                "description": "Self-service analytics platforms enabling business intelligence and reporting. dbt, Looker, and BI tool integration.",
+                "items": [
+                    "Semantic layer development",
+                    "Business intelligence dashboards",
+                    "Self-service analytics enablement"
+                ]
+            },
+            {
+                "title": "Data strategy & architecture",
+                "description": "Strategic planning for data initiatives, technology selection, and organizational capability building.",
+                "items": [
+                    "Data maturity assessment",
+                    "Technology stack recommendation",
+                    "Data team & process design"
+                ]
+            }
+        ]
+    },
+    "process": {
+        "heading": "Our process",
+        "subheading": "A methodical approach that builds scalable data foundations aligned with business objectives.",
+        "steps": [
+            {
+                "number": 1,
+                "title": "Requirements & assessment",
+                "description": "Understand data sources, volume, velocity, and business analytics needs."
+            },
+            {
+                "number": 2,
+                "title": "Architecture design",
+                "description": "Design scalable data infrastructure, select appropriate technologies, and plan implementation."
+            },
+            {
+                "number": 3,
+                "title": "Pipeline implementation",
+                "description": "Build data ingestion, transformation, and loading processes with quality checks."
+            },
+            {
+                "number": 4,
+                "title": "Testing & validation",
+                "description": "Performance testing, data validation, and monitoring setup for reliability."
+            },
+            {
+                "number": 5,
+                "title": "Deployment & optimization",
+                "description": "Production deployment, performance tuning, and ongoing support."
+            }
+        ]
+    },
+    "technologyStack": {
+        "heading": "Technology we typically use",
+        "subheading": "Battle-tested data engineering platforms and tools for enterprise-scale operations.",
+        "categories": [
+            {
+                "title": "Data Processing & Orchestration",
+                "description": "Apache Spark, Apache Airflow, Prefect, dbt, and cloud-native compute services.",
+                "items": [
+                    "Distributed batch processing",
+                    "Workflow orchestration & scheduling",
+                    "Data transformation frameworks"
+                ]
+            },
+            {
+                "title": "Data Storage & Warehousing",
+                "description": "Snowflake, BigQuery, Redshift, Data Lake Storage, and open data lakehouses (Delta Lake, Iceberg).",
+                "items": [
+                    "Cloud data warehouses",
+                    "Distributed data storage",
+                    "Real-time data lakehouses"
+                ]
+            },
+            {
+                "title": "Streaming & Real-time",
+                "description": "Apache Kafka, AWS Kinesis, Google Pub/Sub, and stream processing frameworks.",
+                "items": [
+                    "Event streaming platforms",
+                    "Stream processing & windowing",
+                    "Message brokers & event hubs"
+                ]
+            }
+        ],
+        "note": "We select technologies based on your specific requirements, prioritizing maintainability, scalability, and cost-effectiveness."
+    },
+    "whyChooseUs": {
+        "heading": "Why choose us",
+        "description": "We build data foundations that are reliable, scalable, and cost-efficient. Data engineering that enables your entire organization.",
+        "reasons": [
+            {
+                "title": "Production reliability",
+                "description": "Systems built for uptime, recoverability, and data accuracy."
+            },
+            {
+                "title": "Scalability by design",
+                "description": "Architectures that grow with your data volume and complexity."
+            },
+            {
+                "title": "Data quality first",
+                "description": "Quality checks, validation, and governance embedded throughout."
+            },
+            {
+                "title": "Business enablement",
+                "description": "We measure success by enabling analytics, insights, and informed decisions."
+            }
+        ],
+        "industries": [
+            "Technology & SaaS",
+            "Financial Services"
+        ]
+    },
+    "cta": {
+        "heading": "Ready to build your data foundation?",
+        "description": "Tell us about your data challenges and we'll design the right infrastructure for your needs.",
+        "button": { "text": "Get Started", "href": "/contact" }
+    }
+}

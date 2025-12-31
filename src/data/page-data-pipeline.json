@@ -1,0 +1,182 @@
+{
+    "page": {
+        "title": "Data pipeline and ETL solutions for seamless data integration",
+        "description": "We build robust data pipelines and ETL processes that reliably move, transform, and prepare your data for analytics and operations. From legacy system integration to real-time streaming, we deliver data infrastructure that scales."
+    },
+    "hero": {
+        "heading": "Data pipeline and ETL solutions for seamless data integration.",
+        "subheading": "We build robust data pipelines and ETL processes that reliably move, transform, and prepare your data for analytics and operations. From legacy system integration to real-time streaming, we deliver data infrastructure that scales.",
+        "cta": {
+            "primary": { "text": "Start a project", "href": "/contact" },
+            "secondary": { "text": "Learn more", "href": "#who-we-build-for" }
+        }
+    },
+    "whoWeBuildFor": {
+        "heading": "Who we build for",
+        "subheading": "Organizations managing complex data ecosystems and seeking reliable data integration.",
+        "description": "From batch processing to event-driven architectures, we deliver pipeline solutions that match your data maturity and operational requirements.",
+        "stages": ["Growing Integration (Batch ETL → Automation)", "Advanced Pipelines (Real-time Streaming → Event Architecture)"],
+        "industries": [
+            { "name": "Healthcare", "description": "Patient data integration & compliance-driven pipelines" },
+            { "name": "Finance", "description": "Transaction processing & regulatory data flows" },
+            { "name": "E-commerce", "description": "Order data & customer event streaming" },
+            { "name": "Manufacturing", "description": "IoT data ingestion & operational event processing" }
+        ]
+    },
+    "coreServices": {
+        "heading": "Core services",
+        "subheading": "Below is a quick overview of services that we provide.",
+        "services": [
+            {
+                "title": "ETL development & batch processing",
+                "description": "Reliable extract, transform, load processes for data warehouse population. Python, SQL, and orchestration frameworks.",
+                "items": [
+                    "End-to-end ETL pipeline design",
+                    "Data quality & validation checks",
+                    "Error handling & retry logic"
+                ]
+            },
+            {
+                "title": "Data integration & connectors",
+                "description": "Connect disparate systems and data sources. API integrations, database connectors, and middleware solutions.",
+                "items": [
+                    "Source system extraction",
+                    "Multi-source data consolidation",
+                    "Legacy system integration"
+                ]
+            },
+            {
+                "title": "Real-time streaming & event processing",
+                "description": "Build event-driven architectures for real-time data movement. Kafka, Flink, and cloud streaming platforms.",
+                "items": [
+                    "Event stream architecture",
+                    "Real-time data transformation",
+                    "Pub/sub messaging & distribution"
+                ]
+            },
+            {
+                "title": "Data quality & governance",
+                "description": "Ensure data accuracy, consistency, and compliance throughout your pipelines.",
+                "items": [
+                    "Data quality monitoring & alerting",
+                    "Data lineage & documentation",
+                    "Regulatory compliance frameworks"
+                ]
+            },
+            {
+                "title": "Pipeline orchestration & automation",
+                "description": "Orchestrate complex workflows and dependencies. Airflow, dbt, and workflow management platforms.",
+                "items": [
+                    "Workflow scheduling & dependency management",
+                    "Job monitoring & alerting",
+                    "Incremental & change data capture"
+                ]
+            },
+            {
+                "title": "Data warehouse & lakehouse design",
+                "description": "Build scalable data platforms. Snowflake, BigQuery, Databricks, and data lake architecture.",
+                "items": [
+                    "Schema design & optimization",
+                    "Performance tuning & indexing",
+                    "Cost optimization & scalability"
+                ]
+            }
+        ]
+    },
+    "process": {
+        "heading": "Our process",
+        "subheading": "A structured approach that delivers reliable data pipelines aligned with your integration requirements.",
+        "steps": [
+            {
+                "number": 1,
+                "title": "Assessment & planning",
+                "description": "Map data sources, identify integration patterns, and define pipeline requirements and SLAs."
+            },
+            {
+                "number": 2,
+                "title": "Architecture design",
+                "description": "Design data flow patterns, select appropriate tools, and plan transformation logic."
+            },
+            {
+                "number": 3,
+                "title": "Pipeline development",
+                "description": "Build ETL processes, implement data quality checks, and develop orchestration workflows."
+            },
+            {
+                "number": 4,
+                "title": "Testing & optimization",
+                "description": "Validate data accuracy, performance test, and optimize for scale and reliability."
+            },
+            {
+                "number": 5,
+                "title": "Deployment & monitoring",
+                "description": "Deploy to production, establish monitoring and alerting, and provide operational support."
+            }
+        ]
+    },
+    "technologyStack": {
+        "heading": "Technology we typically use",
+        "subheading": "Industry-leading tools and platforms for data pipeline development.",
+        "categories": [
+            {
+                "title": "Orchestration & Workflow",
+                "description": "Apache Airflow, dbt, Prefect, and Dagster for pipeline orchestration and dependency management.",
+                "items": [
+                    "Workflow scheduling & automation",
+                    "Job monitoring & alerting",
+                    "Data transformation coordination"
+                ]
+            },
+            {
+                "title": "Streaming & Real-time Processing",
+                "description": "Apache Kafka, Flink, Spark Streaming, and cloud event services for real-time data movement.",
+                "items": [
+                    "Event streaming platforms",
+                    "Stream processing & transformation",
+                    "Real-time data distribution"
+                ]
+            },
+            {
+                "title": "Data Warehouse & Storage",
+                "description": "Snowflake, BigQuery, Databricks, and data lake solutions for scalable data storage.",
+                "items": [
+                    "Cloud data warehouse platforms",
+                    "Data lake architecture",
+                    "Performance & cost optimization"
+                ]
+            }
+        ],
+        "note": "We select technologies based on your data volume, latency requirements, existing infrastructure, and team expertise."
+    },
+    "whyChooseUs": {
+        "heading": "Why choose us",
+        "description": "We deliver data pipelines that reliably move and prepare your data. Infrastructure that scales with your business and enables data-driven operations.",
+        "reasons": [
+            {
+                "title": "Reliability & uptime",
+                "description": "Robust pipelines with error handling, retry logic, and monitoring for mission-critical data flows."
+            },
+            {
+                "title": "Data quality assurance",
+                "description": "Comprehensive validation and quality checks ensuring accurate data throughout the pipeline."
+            },
+            {
+                "title": "Scalable architecture",
+                "description": "Pipelines designed to grow from gigabytes to petabytes without redesign."
+            },
+            {
+                "title": "Operational excellence",
+                "description": "Clear monitoring, alerting, and documentation for ease of operation and maintenance."
+            }
+        ],
+        "industries": [
+            "Technology & SaaS",
+            "Financial Services"
+        ]
+    },
+    "cta": {
+        "heading": "Ready to build reliable data pipelines?",
+        "description": "Tell us about your data integration challenges and we'll design the right pipeline architecture.",
+        "button": { "text": "Get Started", "href": "/contact" }
+    }
+}

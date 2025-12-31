@@ -1,0 +1,182 @@
+{
+    "page": {
+        "title": "AI and machine learning solutions for intelligent products",
+        "description": "We build intelligent systems that learn from data and make better decisions. From computer vision to natural language processing, we deliver AI that drives real business value."
+    },
+    "hero": {
+        "heading": "AI and machine learning solutions for intelligent products.",
+        "subheading": "We build intelligent systems that learn from data and make better decisions. From computer vision to natural language processing, we deliver AI that drives real business value.",
+        "cta": {
+            "primary": { "text": "Start a project", "href": "/contact" },
+            "secondary": { "text": "Learn more", "href": "#who-we-build-for" }
+        }
+    },
+    "whoWeBuildFor": {
+        "heading": "Who we build for",
+        "subheading": "Organizations looking to harness AI for competitive advantage and innovation.",
+        "description": "From proof-of-concept to production ML systems, we deliver responsible AI solutions tailored to your stage and regulatory requirements.",
+        "stages": ["Early Stage (POC → MVP)", "Enterprise (Scale → Production)"],
+        "industries": [
+            { "name": "Healthcare", "description": "Diagnostics & predictions" },
+            { "name": "Finance", "description": "Risk & fraud detection" },
+            { "name": "Retail", "description": "Recommendations & analytics" },
+            { "name": "Manufacturing", "description": "Predictive maintenance" }
+        ]
+    },
+    "coreServices": {
+        "heading": "Core services",
+        "subheading": "Below is a quick overview of services that we provide.",
+        "services": [
+            {
+                "title": "Machine learning engineering",
+                "description": "End-to-end ML pipelines from data ingestion to model deployment. Python, TensorFlow, PyTorch, scikit-learn, and cloud-native ML platforms.",
+                "items": [
+                    "Model development & experimentation",
+                    "Feature engineering & data pipelines",
+                    "Model validation & performance optimization"
+                ]
+            },
+            {
+                "title": "Computer vision",
+                "description": "Image recognition, object detection, and visual understanding. Deep learning architectures, real-time processing, and edge deployment.",
+                "items": [
+                    "Image classification & segmentation",
+                    "Object detection & tracking",
+                    "OCR & document processing"
+                ]
+            },
+            {
+                "title": "Natural language processing",
+                "description": "Text understanding, sentiment analysis, and language generation. Transformer models, LLM integration, and conversational AI.",
+                "items": [
+                    "Sentiment & intent analysis",
+                    "Named entity recognition",
+                    "Chatbots & generative AI"
+                ]
+            },
+            {
+                "title": "Data engineering & pipelines",
+                "description": "Robust data infrastructure for ML at scale. Data warehousing, ETL automation, and real-time streaming architectures.",
+                "items": [
+                    "Data collection & quality assurance",
+                    "Distributed data processing",
+                    "Real-time data streaming"
+                ]
+            },
+            {
+                "title": "MLOps & model management",
+                "description": "Operationalize ML with CI/CD, monitoring, and governance. Model versioning, drift detection, and automated retraining.",
+                "items": [
+                    "Model deployment & serving",
+                    "Performance monitoring & alerting",
+                    "Model governance & compliance"
+                ]
+            },
+            {
+                "title": "AI strategy & consulting",
+                "description": "AI readiness assessments, use case prioritization, and responsible AI frameworks to ensure successful implementation.",
+                "items": [
+                    "AI opportunity assessment",
+                    "Technical due diligence",
+                    "Ethics & responsible AI guidance"
+                ]
+            }
+        ]
+    },
+    "process": {
+        "heading": "Our process",
+        "subheading": "A rigorous, iterative approach that validates assumptions and minimizes risk.",
+        "steps": [
+            {
+                "number": 1,
+                "title": "Problem definition",
+                "description": "Define success metrics, data requirements, and feasibility analysis."
+            },
+            {
+                "number": 2,
+                "title": "Data exploration & preparation",
+                "description": "Data audit, cleaning, labeling, and feature engineering for model training."
+            },
+            {
+                "number": 3,
+                "title": "Model development & training",
+                "description": "Experimentation, hyperparameter tuning, and baseline model evaluation."
+            },
+            {
+                "number": 4,
+                "title": "Validation & testing",
+                "description": "Performance testing, bias detection, and fairness evaluation across cohorts."
+            },
+            {
+                "number": 5,
+                "title": "Deployment & monitoring",
+                "description": "Production deployment, drift monitoring, and continuous performance tracking."
+            }
+        ]
+    },
+    "technologyStack": {
+        "heading": "Technology we typically use",
+        "subheading": "Industry-standard ML frameworks and platforms optimized for production scale.",
+        "categories": [
+            {
+                "title": "ML Frameworks & Libraries",
+                "description": "TensorFlow, PyTorch, scikit-learn, XGBoost, LightGBM, and Hugging Face transformers.",
+                "items": [
+                    "Deep learning & neural networks",
+                    "Gradient boosting & ensemble methods",
+                    "Pre-trained models & transfer learning"
+                ]
+            },
+            {
+                "title": "Data & Infrastructure",
+                "description": "Spark, Airflow, Kubernetes, DVC, and cloud platforms (AWS SageMaker, GCP Vertex AI).",
+                "items": [
+                    "Distributed data processing",
+                    "Workflow orchestration",
+                    "Cloud ML managed services"
+                ]
+            },
+            {
+                "title": "Monitoring & Governance",
+                "description": "MLflow, Weights & Biases, Evidently, and custom dashboards for model performance.",
+                "items": [
+                    "Experiment tracking & versioning",
+                    "Drift & anomaly detection",
+                    "Model cards & documentation"
+                ]
+            }
+        ],
+        "note": "We stay current with the latest advances in AI and ML while maintaining production stability and responsible deployment practices."
+    },
+    "whyChooseUs": {
+        "heading": "Why choose us",
+        "description": "We go beyond algorithms. We combine data science with software engineering and product thinking to deliver AI that drives real impact.",
+        "reasons": [
+            {
+                "title": "Production-grade ML",
+                "description": "We build systems that scale, not just notebooks."
+            },
+            {
+                "title": "Responsible AI",
+                "description": "Bias detection, fairness testing, and ethical governance built-in."
+            },
+            {
+                "title": "Full-stack expertise",
+                "description": "From data pipelines to model serving to monitoring."
+            },
+            {
+                "title": "Business alignment",
+                "description": "We measure success by business outcomes, not just model metrics."
+            }
+        ],
+        "industries": [
+            "Healthcare & Life Sciences",
+            "Financial Services"
+        ]
+    },
+    "cta": {
+        "heading": "Ready to build intelligent products?",
+        "description": "Tell us about your AI challenge and we'll recommend the best path forward.",
+        "button": { "text": "Get Started", "href": "/contact" }
+    }
+}

@@ -1,0 +1,182 @@
+{
+    "page": {
+        "title": "Data analytics and BI solutions for actionable insights",
+        "description": "We transform raw data into actionable insights that drive business decisions. From dashboard development to advanced analytics, we deliver intelligence that fuels growth."
+    },
+    "hero": {
+        "heading": "Data analytics and BI solutions for actionable insights.",
+        "subheading": "We transform raw data into actionable insights that drive business decisions. From dashboard development to advanced analytics, we deliver intelligence that fuels growth.",
+        "cta": {
+            "primary": { "text": "Start a project", "href": "/contact" },
+            "secondary": { "text": "Learn more", "href": "#who-we-build-for" }
+        }
+    },
+    "whoWeBuildFor": {
+        "heading": "Who we build for",
+        "subheading": "Organizations seeking to unlock the value of their data through analytics and business intelligence.",
+        "description": "From initial reporting to advanced predictive analytics, we deliver solutions that match your analytics maturity and strategic goals.",
+        "stages": ["Growing Analytics (Basic Reporting → Self-Service)", "Advanced Analytics (Dashboards → Predictive Models)"],
+        "industries": [
+            { "name": "Healthcare", "description": "Clinical outcomes & operational analytics" },
+            { "name": "Finance", "description": "Risk analysis & financial reporting" },
+            { "name": "E-commerce", "description": "Customer behavior & sales analytics" },
+            { "name": "Manufacturing", "description": "Production metrics & supply chain insights" }
+        ]
+    },
+    "coreServices": {
+        "heading": "Core services",
+        "subheading": "Below is a quick overview of services that we provide.",
+        "services": [
+            {
+                "title": "Business intelligence dashboards",
+                "description": "Interactive dashboards and visualizations that bring data to life. Looker, Tableau, Power BI, and custom analytics applications.",
+                "items": [
+                    "Executive dashboards & KPI tracking",
+                    "Operational analytics & real-time monitoring",
+                    "Interactive data exploration"
+                ]
+            },
+            {
+                "title": "Semantic layer & analytics modeling",
+                "description": "Unified data definitions and logical data models for consistent analytics across your organization. dbt, Looker, and semantic layer development.",
+                "items": [
+                    "Business metric definition",
+                    "Data lineage & transformation logic",
+                    "Self-service analytics enablement"
+                ]
+            },
+            {
+                "title": "Advanced analytics & insights",
+                "description": "Statistical analysis, predictive modeling, and machine learning-ready analytics. Python, R, and cloud ML platforms.",
+                "items": [
+                    "Predictive modeling & forecasting",
+                    "Customer segmentation & cohort analysis",
+                    "Anomaly detection & insights automation"
+                ]
+            },
+            {
+                "title": "Data visualization & storytelling",
+                "description": "Transform complex data into compelling visual narratives that drive decisions and engagement.",
+                "items": [
+                    "Custom data visualization design",
+                    "Infographics & reports",
+                    "Data storytelling & presentation"
+                ]
+            },
+            {
+                "title": "Analytics infrastructure & tooling",
+                "description": "Build the technical foundation for self-service analytics and scalable reporting. Cloud BI platforms and analytics infrastructure.",
+                "items": [
+                    "BI platform deployment & optimization",
+                    "Analytics database tuning",
+                    "Data access & security controls"
+                ]
+            },
+            {
+                "title": "Analytics strategy & capability",
+                "description": "Strategic planning to mature your analytics capabilities and maximize ROI. Organization, processes, and technology alignment.",
+                "items": [
+                    "Analytics maturity assessment",
+                    "Tool selection & implementation roadmap",
+                    "Team training & capability building"
+                ]
+            }
+        ]
+    },
+    "process": {
+        "heading": "Our process",
+        "subheading": "A structured approach that delivers analytics solutions aligned with your business priorities.",
+        "steps": [
+            {
+                "number": 1,
+                "title": "Discovery & requirements",
+                "description": "Understand key business questions, user needs, and current analytics capabilities."
+            },
+            {
+                "number": 2,
+                "title": "Solution design",
+                "description": "Design analytics architecture, select appropriate tools, and plan data models and visualizations."
+            },
+            {
+                "number": 3,
+                "title": "Development & modeling",
+                "description": "Build semantic layers, develop dashboards, and create analytics artifacts."
+            },
+            {
+                "number": 4,
+                "title": "Testing & validation",
+                "description": "Validate data accuracy, test user experience, and ensure performance."
+            },
+            {
+                "number": 5,
+                "title": "Deployment & enablement",
+                "description": "Launch to production, train users, and provide ongoing support and optimization."
+            }
+        ]
+    },
+    "technologyStack": {
+        "heading": "Technology we typically use",
+        "subheading": "Industry-leading BI and analytics platforms trusted by enterprises.",
+        "categories": [
+            {
+                "title": "Business Intelligence & Visualization",
+                "description": "Looker, Tableau, Power BI, and Metabase for comprehensive analytics and reporting.",
+                "items": [
+                    "Interactive dashboards & reporting",
+                    "Ad-hoc analysis & exploration",
+                    "Embedded analytics"
+                ]
+            },
+            {
+                "title": "Analytics & Transformation",
+                "description": "dbt, SQL, and analytics frameworks for data modeling and metric definition.",
+                "items": [
+                    "Data transformation & modeling",
+                    "Metric layer development",
+                    "Documentation & lineage"
+                ]
+            },
+            {
+                "title": "Advanced Analytics & ML",
+                "description": "Python, R, and cloud ML services for predictive analytics and statistical modeling.",
+                "items": [
+                    "Predictive modeling",
+                    "Statistical analysis",
+                    "Machine learning pipelines"
+                ]
+            }
+        ],
+        "note": "We select technologies based on your existing infrastructure, team capabilities, and analytics requirements."
+    },
+    "whyChooseUs": {
+        "heading": "Why choose us",
+        "description": "We deliver analytics solutions that empower teams with data-driven insights. Intelligence that drives informed decisions and measurable business impact.",
+        "reasons": [
+            {
+                "title": "User-centric design",
+                "description": "Dashboards and analytics built with end users in mind for maximum adoption."
+            },
+            {
+                "title": "Data accuracy & trust",
+                "description": "Rigorous validation and documentation ensuring stakeholders trust the insights."
+            },
+            {
+                "title": "Scalable solutions",
+                "description": "Architectures that grow with your analytics maturity and user base."
+            },
+            {
+                "title": "Business impact focus",
+                "description": "We measure success by decisions enabled and business outcomes delivered."
+            }
+        ],
+        "industries": [
+            "Technology & SaaS",
+            "Financial Services"
+        ]
+    },
+    "cta": {
+        "heading": "Ready to transform your data into insights?",
+        "description": "Tell us about your analytics challenges and we'll design the right solution to drive decisions.",
+        "button": { "text": "Get Started", "href": "/contact" }
+    }
+}
